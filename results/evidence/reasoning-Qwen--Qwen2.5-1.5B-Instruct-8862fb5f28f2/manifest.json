@@ -1,0 +1,3414 @@
+{
+  "dependencies_sha256": {
+    "research/budget_probe.py": "1e78e6adcfcaef5730cc5aef3242c683838959fc9b99b7144bd3c98453a9188b",
+    "research/persistent_kv.py": "94fe254c0e0b89308842ad7d3956ad6cffc05d0356d2c1b5425662fce0ea0089",
+    "research/reasoning_protocol.py": "8033fd1b18b0dc9e3b2c94c2b3fedd61718cc54c0bc277e75802751cddfac873",
+    "research/reasoning_sessions.py": "e63998b72be1c422b668028b7fd12198e2a62dd4b5558cfc106c0ac692481c02",
+    "research/resources.py": "146d69f64ca4c58477874519ad71fb9fe9f38ed4dcd077dcfeddf15bd411efe3",
+    "research/semantic_index.py": "00bb7c5be5723d6c2779687b7a7bd47b26e2d56f49778a069dc996cf88b69c4c"
+  },
+  "fixture_sha256": "d8eeb9c53ea865fd4ac0fadb3353def7299252738bb053c469685a5202140230",
+  "implementation_hash": "20d93ae6286dfcf5ffb873cd0c923c61c3b26855821bd33a234d7a3a13326c8f",
+  "model": {
+    "config": {
+      "architectures": [
+        "Qwen2ForCausalLM"
+      ],
+      "attention_dropout": 0.0,
+      "bos_token_id": 151643,
+      "eos_token_id": 151645,
+      "hidden_act": "silu",
+      "hidden_size": 1536,
+      "initializer_range": 0.02,
+      "intermediate_size": 8960,
+      "max_position_embeddings": 32768,
+      "max_window_layers": 21,
+      "model_type": "qwen2",
+      "num_attention_heads": 12,
+      "num_hidden_layers": 28,
+      "num_key_value_heads": 2,
+      "rms_norm_eps": 1e-06,
+      "rope_theta": 1000000.0,
+      "sliding_window": 32768,
+      "tie_word_embeddings": true,
+      "torch_dtype": "bfloat16",
+      "transformers_version": "4.43.1",
+      "use_cache": true,
+      "use_sliding_window": false,
+      "vocab_size": 151936
+    },
+    "gated": false,
+    "model_id": "Qwen/Qwen2.5-1.5B-Instruct",
+    "parameters": 1543714304,
+    "revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306"
+  },
+  "runtime": {
+    "capability": [
+      7,
+      5
+    ],
+    "cuda": "12.4",
+    "cudnn": 90100,
+    "cudnn_sdp": true,
+    "device": "cuda",
+    "flash_sdp": true,
+    "fp16_reduced": true,
+    "gpu": "Tesla T4",
+    "interop_threads": 1,
+    "machine": "x86_64",
+    "math_sdp": true,
+    "math_sdp_reduced": false,
+    "mem_efficient_sdp": true,
+    "numpy": "2.2.4",
+    "os": "Linux-6.6.159+-x86_64-with-glibc2.39",
+    "python": "3.13.16",
+    "tf32": false,
+    "threads": 1,
+    "torch": "2.6.0+cu124",
+    "transformers": "4.51.3"
+  },
+  "schedule": [
+    {
+      "example_id": "reasoning-literal-8192-157",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "stock-json-r2-cap128",
+        "rounds": 2,
+        "schedule_labels": [
+          "128_per_round"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-literal-8192-157",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 512,
+        "format": "json",
+        "id": "stock-json-r1-cap512",
+        "rounds": 1,
+        "schedule_labels": [
+          "512_total"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-literal-8192-157",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 512,
+        "format": "json",
+        "id": "sparse-json-r1-cap512",
+        "rounds": 1,
+        "schedule_labels": [
+          "512_total"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-literal-8192-157",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 128,
+        "format": "direct",
+        "id": "stock-direct-r1-cap128",
+        "rounds": 1,
+        "schedule_labels": [
+          "direct_vanilla"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-literal-8192-157",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "stock-json-r4-cap128",
+        "rounds": 4,
+        "schedule_labels": [
+          "128_per_round",
+          "512_total"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-literal-8192-157",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "stock-json-r1-cap128",
+        "rounds": 1,
+        "schedule_labels": [
+          "128_per_round"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-literal-8192-157",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "sparse-json-r1-cap128",
+        "rounds": 1,
+        "schedule_labels": [
+          "128_per_round"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-literal-8192-157",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 256,
+        "format": "json",
+        "id": "sparse-json-r2-cap256",
+        "rounds": 2,
+        "schedule_labels": [
+          "512_total"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-literal-8192-157",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "sparse-json-r4-cap128",
+        "rounds": 4,
+        "schedule_labels": [
+          "128_per_round",
+          "512_total"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-literal-8192-157",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "sparse-json-r2-cap128",
+        "rounds": 2,
+        "schedule_labels": [
+          "128_per_round"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-literal-8192-157",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 256,
+        "format": "json",
+        "id": "stock-json-r2-cap256",
+        "rounds": 2,
+        "schedule_labels": [
+          "512_total"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-paraphrase-8192-157",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "stock-json-r4-cap128",
+        "rounds": 4,
+        "schedule_labels": [
+          "128_per_round",
+          "512_total"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-paraphrase-8192-157",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "sparse-json-r4-cap128",
+        "rounds": 4,
+        "schedule_labels": [
+          "128_per_round",
+          "512_total"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-paraphrase-8192-157",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 128,
+        "format": "direct",
+        "id": "stock-direct-r1-cap128",
+        "rounds": 1,
+        "schedule_labels": [
+          "direct_vanilla"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-paraphrase-8192-157",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 512,
+        "format": "json",
+        "id": "stock-json-r1-cap512",
+        "rounds": 1,
+        "schedule_labels": [
+          "512_total"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-paraphrase-8192-157",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "stock-json-r1-cap128",
+        "rounds": 1,
+        "schedule_labels": [
+          "128_per_round"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-paraphrase-8192-157",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 256,
+        "format": "json",
+        "id": "stock-json-r2-cap256",
+        "rounds": 2,
+        "schedule_labels": [
+          "512_total"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-paraphrase-8192-157",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "sparse-json-r1-cap128",
+        "rounds": 1,
+        "schedule_labels": [
+          "128_per_round"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-paraphrase-8192-157",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 512,
+        "format": "json",
+        "id": "sparse-json-r1-cap512",
+        "rounds": 1,
+        "schedule_labels": [
+          "512_total"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-paraphrase-8192-157",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 256,
+        "format": "json",
+        "id": "sparse-json-r2-cap256",
+        "rounds": 2,
+        "schedule_labels": [
+          "512_total"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-paraphrase-8192-157",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "sparse-json-r2-cap128",
+        "rounds": 2,
+        "schedule_labels": [
+          "128_per_round"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-paraphrase-8192-157",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "stock-json-r2-cap128",
+        "rounds": 2,
+        "schedule_labels": [
+          "128_per_round"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-linked_fact-8192-157",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "sparse-json-r4-cap128",
+        "rounds": 4,
+        "schedule_labels": [
+          "128_per_round",
+          "512_total"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-linked_fact-8192-157",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 512,
+        "format": "json",
+        "id": "stock-json-r1-cap512",
+        "rounds": 1,
+        "schedule_labels": [
+          "512_total"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-linked_fact-8192-157",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 256,
+        "format": "json",
+        "id": "sparse-json-r2-cap256",
+        "rounds": 2,
+        "schedule_labels": [
+          "512_total"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-linked_fact-8192-157",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 512,
+        "format": "json",
+        "id": "sparse-json-r1-cap512",
+        "rounds": 1,
+        "schedule_labels": [
+          "512_total"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-linked_fact-8192-157",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "stock-json-r1-cap128",
+        "rounds": 1,
+        "schedule_labels": [
+          "128_per_round"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-linked_fact-8192-157",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "stock-json-r4-cap128",
+        "rounds": 4,
+        "schedule_labels": [
+          "128_per_round",
+          "512_total"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-linked_fact-8192-157",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 128,
+        "format": "direct",
+        "id": "stock-direct-r1-cap128",
+        "rounds": 1,
+        "schedule_labels": [
+          "direct_vanilla"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-linked_fact-8192-157",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "sparse-json-r1-cap128",
+        "rounds": 1,
+        "schedule_labels": [
+          "128_per_round"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-linked_fact-8192-157",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 256,
+        "format": "json",
+        "id": "stock-json-r2-cap256",
+        "rounds": 2,
+        "schedule_labels": [
+          "512_total"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-linked_fact-8192-157",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "stock-json-r2-cap128",
+        "rounds": 2,
+        "schedule_labels": [
+          "128_per_round"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-linked_fact-8192-157",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "sparse-json-r2-cap128",
+        "rounds": 2,
+        "schedule_labels": [
+          "128_per_round"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-linked_fact-8192-157",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "sparse-json-r2-cap128",
+        "rounds": 2,
+        "schedule_labels": [
+          "128_per_round"
+        ]
+      },
+      "purpose": "repeated_timing",
+      "trial": 1
+    },
+    {
+      "example_id": "reasoning-linked_fact-8192-157",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 256,
+        "format": "json",
+        "id": "stock-json-r2-cap256",
+        "rounds": 2,
+        "schedule_labels": [
+          "512_total"
+        ]
+      },
+      "purpose": "repeated_timing",
+      "trial": 1
+    },
+    {
+      "example_id": "reasoning-linked_fact-8192-157",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 512,
+        "format": "json",
+        "id": "stock-json-r1-cap512",
+        "rounds": 1,
+        "schedule_labels": [
+          "512_total"
+        ]
+      },
+      "purpose": "repeated_timing",
+      "trial": 1
+    },
+    {
+      "example_id": "reasoning-linked_fact-8192-157",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "stock-json-r1-cap128",
+        "rounds": 1,
+        "schedule_labels": [
+          "128_per_round"
+        ]
+      },
+      "purpose": "repeated_timing",
+      "trial": 1
+    },
+    {
+      "example_id": "reasoning-linked_fact-8192-157",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "sparse-json-r4-cap128",
+        "rounds": 4,
+        "schedule_labels": [
+          "128_per_round",
+          "512_total"
+        ]
+      },
+      "purpose": "repeated_timing",
+      "trial": 1
+    },
+    {
+      "example_id": "reasoning-linked_fact-8192-157",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 512,
+        "format": "json",
+        "id": "sparse-json-r1-cap512",
+        "rounds": 1,
+        "schedule_labels": [
+          "512_total"
+        ]
+      },
+      "purpose": "repeated_timing",
+      "trial": 1
+    },
+    {
+      "example_id": "reasoning-linked_fact-8192-157",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "stock-json-r4-cap128",
+        "rounds": 4,
+        "schedule_labels": [
+          "128_per_round",
+          "512_total"
+        ]
+      },
+      "purpose": "repeated_timing",
+      "trial": 1
+    },
+    {
+      "example_id": "reasoning-linked_fact-8192-157",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "stock-json-r2-cap128",
+        "rounds": 2,
+        "schedule_labels": [
+          "128_per_round"
+        ]
+      },
+      "purpose": "repeated_timing",
+      "trial": 1
+    },
+    {
+      "example_id": "reasoning-linked_fact-8192-157",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 128,
+        "format": "direct",
+        "id": "stock-direct-r1-cap128",
+        "rounds": 1,
+        "schedule_labels": [
+          "direct_vanilla"
+        ]
+      },
+      "purpose": "repeated_timing",
+      "trial": 1
+    },
+    {
+      "example_id": "reasoning-linked_fact-8192-157",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 256,
+        "format": "json",
+        "id": "sparse-json-r2-cap256",
+        "rounds": 2,
+        "schedule_labels": [
+          "512_total"
+        ]
+      },
+      "purpose": "repeated_timing",
+      "trial": 1
+    },
+    {
+      "example_id": "reasoning-linked_fact-8192-157",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "sparse-json-r1-cap128",
+        "rounds": 1,
+        "schedule_labels": [
+          "128_per_round"
+        ]
+      },
+      "purpose": "repeated_timing",
+      "trial": 1
+    },
+    {
+      "example_id": "reasoning-linked_fact-8192-157",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 128,
+        "format": "direct",
+        "id": "stock-direct-r1-cap128",
+        "rounds": 1,
+        "schedule_labels": [
+          "direct_vanilla"
+        ]
+      },
+      "purpose": "repeated_timing",
+      "trial": 2
+    },
+    {
+      "example_id": "reasoning-linked_fact-8192-157",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "sparse-json-r1-cap128",
+        "rounds": 1,
+        "schedule_labels": [
+          "128_per_round"
+        ]
+      },
+      "purpose": "repeated_timing",
+      "trial": 2
+    },
+    {
+      "example_id": "reasoning-linked_fact-8192-157",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 256,
+        "format": "json",
+        "id": "stock-json-r2-cap256",
+        "rounds": 2,
+        "schedule_labels": [
+          "512_total"
+        ]
+      },
+      "purpose": "repeated_timing",
+      "trial": 2
+    },
+    {
+      "example_id": "reasoning-linked_fact-8192-157",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "stock-json-r2-cap128",
+        "rounds": 2,
+        "schedule_labels": [
+          "128_per_round"
+        ]
+      },
+      "purpose": "repeated_timing",
+      "trial": 2
+    },
+    {
+      "example_id": "reasoning-linked_fact-8192-157",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "sparse-json-r2-cap128",
+        "rounds": 2,
+        "schedule_labels": [
+          "128_per_round"
+        ]
+      },
+      "purpose": "repeated_timing",
+      "trial": 2
+    },
+    {
+      "example_id": "reasoning-linked_fact-8192-157",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "stock-json-r1-cap128",
+        "rounds": 1,
+        "schedule_labels": [
+          "128_per_round"
+        ]
+      },
+      "purpose": "repeated_timing",
+      "trial": 2
+    },
+    {
+      "example_id": "reasoning-linked_fact-8192-157",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "sparse-json-r4-cap128",
+        "rounds": 4,
+        "schedule_labels": [
+          "128_per_round",
+          "512_total"
+        ]
+      },
+      "purpose": "repeated_timing",
+      "trial": 2
+    },
+    {
+      "example_id": "reasoning-linked_fact-8192-157",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 512,
+        "format": "json",
+        "id": "stock-json-r1-cap512",
+        "rounds": 1,
+        "schedule_labels": [
+          "512_total"
+        ]
+      },
+      "purpose": "repeated_timing",
+      "trial": 2
+    },
+    {
+      "example_id": "reasoning-linked_fact-8192-157",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "stock-json-r4-cap128",
+        "rounds": 4,
+        "schedule_labels": [
+          "128_per_round",
+          "512_total"
+        ]
+      },
+      "purpose": "repeated_timing",
+      "trial": 2
+    },
+    {
+      "example_id": "reasoning-linked_fact-8192-157",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 512,
+        "format": "json",
+        "id": "sparse-json-r1-cap512",
+        "rounds": 1,
+        "schedule_labels": [
+          "512_total"
+        ]
+      },
+      "purpose": "repeated_timing",
+      "trial": 2
+    },
+    {
+      "example_id": "reasoning-linked_fact-8192-157",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 256,
+        "format": "json",
+        "id": "sparse-json-r2-cap256",
+        "rounds": 2,
+        "schedule_labels": [
+          "512_total"
+        ]
+      },
+      "purpose": "repeated_timing",
+      "trial": 2
+    },
+    {
+      "example_id": "reasoning-sum_two_facts-8192-157",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "stock-json-r2-cap128",
+        "rounds": 2,
+        "schedule_labels": [
+          "128_per_round"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-sum_two_facts-8192-157",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 256,
+        "format": "json",
+        "id": "stock-json-r2-cap256",
+        "rounds": 2,
+        "schedule_labels": [
+          "512_total"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-sum_two_facts-8192-157",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 128,
+        "format": "direct",
+        "id": "stock-direct-r1-cap128",
+        "rounds": 1,
+        "schedule_labels": [
+          "direct_vanilla"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-sum_two_facts-8192-157",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 256,
+        "format": "json",
+        "id": "sparse-json-r2-cap256",
+        "rounds": 2,
+        "schedule_labels": [
+          "512_total"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-sum_two_facts-8192-157",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "sparse-json-r1-cap128",
+        "rounds": 1,
+        "schedule_labels": [
+          "128_per_round"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-sum_two_facts-8192-157",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 512,
+        "format": "json",
+        "id": "sparse-json-r1-cap512",
+        "rounds": 1,
+        "schedule_labels": [
+          "512_total"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-sum_two_facts-8192-157",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "sparse-json-r4-cap128",
+        "rounds": 4,
+        "schedule_labels": [
+          "128_per_round",
+          "512_total"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-sum_two_facts-8192-157",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "sparse-json-r2-cap128",
+        "rounds": 2,
+        "schedule_labels": [
+          "128_per_round"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-sum_two_facts-8192-157",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "stock-json-r4-cap128",
+        "rounds": 4,
+        "schedule_labels": [
+          "128_per_round",
+          "512_total"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-sum_two_facts-8192-157",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "stock-json-r1-cap128",
+        "rounds": 1,
+        "schedule_labels": [
+          "128_per_round"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-sum_two_facts-8192-157",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 512,
+        "format": "json",
+        "id": "stock-json-r1-cap512",
+        "rounds": 1,
+        "schedule_labels": [
+          "512_total"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-literal-8192-163",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 128,
+        "format": "direct",
+        "id": "stock-direct-r1-cap128",
+        "rounds": 1,
+        "schedule_labels": [
+          "direct_vanilla"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-literal-8192-163",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 256,
+        "format": "json",
+        "id": "stock-json-r2-cap256",
+        "rounds": 2,
+        "schedule_labels": [
+          "512_total"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-literal-8192-163",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "stock-json-r4-cap128",
+        "rounds": 4,
+        "schedule_labels": [
+          "128_per_round",
+          "512_total"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-literal-8192-163",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "stock-json-r2-cap128",
+        "rounds": 2,
+        "schedule_labels": [
+          "128_per_round"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-literal-8192-163",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "sparse-json-r4-cap128",
+        "rounds": 4,
+        "schedule_labels": [
+          "128_per_round",
+          "512_total"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-literal-8192-163",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 256,
+        "format": "json",
+        "id": "sparse-json-r2-cap256",
+        "rounds": 2,
+        "schedule_labels": [
+          "512_total"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-literal-8192-163",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 512,
+        "format": "json",
+        "id": "sparse-json-r1-cap512",
+        "rounds": 1,
+        "schedule_labels": [
+          "512_total"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-literal-8192-163",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "sparse-json-r2-cap128",
+        "rounds": 2,
+        "schedule_labels": [
+          "128_per_round"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-literal-8192-163",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 512,
+        "format": "json",
+        "id": "stock-json-r1-cap512",
+        "rounds": 1,
+        "schedule_labels": [
+          "512_total"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-literal-8192-163",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "sparse-json-r1-cap128",
+        "rounds": 1,
+        "schedule_labels": [
+          "128_per_round"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-literal-8192-163",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "stock-json-r1-cap128",
+        "rounds": 1,
+        "schedule_labels": [
+          "128_per_round"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-paraphrase-8192-163",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "stock-json-r4-cap128",
+        "rounds": 4,
+        "schedule_labels": [
+          "128_per_round",
+          "512_total"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-paraphrase-8192-163",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "sparse-json-r2-cap128",
+        "rounds": 2,
+        "schedule_labels": [
+          "128_per_round"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-paraphrase-8192-163",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 512,
+        "format": "json",
+        "id": "sparse-json-r1-cap512",
+        "rounds": 1,
+        "schedule_labels": [
+          "512_total"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-paraphrase-8192-163",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 256,
+        "format": "json",
+        "id": "sparse-json-r2-cap256",
+        "rounds": 2,
+        "schedule_labels": [
+          "512_total"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-paraphrase-8192-163",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 128,
+        "format": "direct",
+        "id": "stock-direct-r1-cap128",
+        "rounds": 1,
+        "schedule_labels": [
+          "direct_vanilla"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-paraphrase-8192-163",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "stock-json-r2-cap128",
+        "rounds": 2,
+        "schedule_labels": [
+          "128_per_round"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-paraphrase-8192-163",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "sparse-json-r1-cap128",
+        "rounds": 1,
+        "schedule_labels": [
+          "128_per_round"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-paraphrase-8192-163",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "stock-json-r1-cap128",
+        "rounds": 1,
+        "schedule_labels": [
+          "128_per_round"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-paraphrase-8192-163",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 512,
+        "format": "json",
+        "id": "stock-json-r1-cap512",
+        "rounds": 1,
+        "schedule_labels": [
+          "512_total"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-paraphrase-8192-163",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "sparse-json-r4-cap128",
+        "rounds": 4,
+        "schedule_labels": [
+          "128_per_round",
+          "512_total"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-paraphrase-8192-163",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 256,
+        "format": "json",
+        "id": "stock-json-r2-cap256",
+        "rounds": 2,
+        "schedule_labels": [
+          "512_total"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-linked_fact-8192-163",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "sparse-json-r1-cap128",
+        "rounds": 1,
+        "schedule_labels": [
+          "128_per_round"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-linked_fact-8192-163",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 256,
+        "format": "json",
+        "id": "stock-json-r2-cap256",
+        "rounds": 2,
+        "schedule_labels": [
+          "512_total"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-linked_fact-8192-163",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "sparse-json-r2-cap128",
+        "rounds": 2,
+        "schedule_labels": [
+          "128_per_round"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-linked_fact-8192-163",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 128,
+        "format": "direct",
+        "id": "stock-direct-r1-cap128",
+        "rounds": 1,
+        "schedule_labels": [
+          "direct_vanilla"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-linked_fact-8192-163",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "sparse-json-r4-cap128",
+        "rounds": 4,
+        "schedule_labels": [
+          "128_per_round",
+          "512_total"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-linked_fact-8192-163",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "stock-json-r4-cap128",
+        "rounds": 4,
+        "schedule_labels": [
+          "128_per_round",
+          "512_total"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-linked_fact-8192-163",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "stock-json-r1-cap128",
+        "rounds": 1,
+        "schedule_labels": [
+          "128_per_round"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-linked_fact-8192-163",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 512,
+        "format": "json",
+        "id": "stock-json-r1-cap512",
+        "rounds": 1,
+        "schedule_labels": [
+          "512_total"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-linked_fact-8192-163",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "stock-json-r2-cap128",
+        "rounds": 2,
+        "schedule_labels": [
+          "128_per_round"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-linked_fact-8192-163",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 256,
+        "format": "json",
+        "id": "sparse-json-r2-cap256",
+        "rounds": 2,
+        "schedule_labels": [
+          "512_total"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-linked_fact-8192-163",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 512,
+        "format": "json",
+        "id": "sparse-json-r1-cap512",
+        "rounds": 1,
+        "schedule_labels": [
+          "512_total"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-sum_two_facts-8192-163",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "sparse-json-r4-cap128",
+        "rounds": 4,
+        "schedule_labels": [
+          "128_per_round",
+          "512_total"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-sum_two_facts-8192-163",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "stock-json-r4-cap128",
+        "rounds": 4,
+        "schedule_labels": [
+          "128_per_round",
+          "512_total"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-sum_two_facts-8192-163",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "sparse-json-r1-cap128",
+        "rounds": 1,
+        "schedule_labels": [
+          "128_per_round"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-sum_two_facts-8192-163",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 256,
+        "format": "json",
+        "id": "sparse-json-r2-cap256",
+        "rounds": 2,
+        "schedule_labels": [
+          "512_total"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-sum_two_facts-8192-163",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 512,
+        "format": "json",
+        "id": "stock-json-r1-cap512",
+        "rounds": 1,
+        "schedule_labels": [
+          "512_total"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-sum_two_facts-8192-163",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "stock-json-r2-cap128",
+        "rounds": 2,
+        "schedule_labels": [
+          "128_per_round"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-sum_two_facts-8192-163",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 128,
+        "format": "direct",
+        "id": "stock-direct-r1-cap128",
+        "rounds": 1,
+        "schedule_labels": [
+          "direct_vanilla"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-sum_two_facts-8192-163",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "sparse-json-r2-cap128",
+        "rounds": 2,
+        "schedule_labels": [
+          "128_per_round"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-sum_two_facts-8192-163",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 512,
+        "format": "json",
+        "id": "sparse-json-r1-cap512",
+        "rounds": 1,
+        "schedule_labels": [
+          "512_total"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-sum_two_facts-8192-163",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "stock-json-r1-cap128",
+        "rounds": 1,
+        "schedule_labels": [
+          "128_per_round"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-sum_two_facts-8192-163",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 256,
+        "format": "json",
+        "id": "stock-json-r2-cap256",
+        "rounds": 2,
+        "schedule_labels": [
+          "512_total"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-literal-32768-157",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 512,
+        "format": "json",
+        "id": "stock-json-r1-cap512",
+        "rounds": 1,
+        "schedule_labels": [
+          "512_total"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-literal-32768-157",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 512,
+        "format": "json",
+        "id": "sparse-json-r1-cap512",
+        "rounds": 1,
+        "schedule_labels": [
+          "512_total"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-literal-32768-157",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 128,
+        "format": "direct",
+        "id": "stock-direct-r1-cap128",
+        "rounds": 1,
+        "schedule_labels": [
+          "direct_vanilla"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-literal-32768-157",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "stock-json-r1-cap128",
+        "rounds": 1,
+        "schedule_labels": [
+          "128_per_round"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-literal-32768-157",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "sparse-json-r4-cap128",
+        "rounds": 4,
+        "schedule_labels": [
+          "128_per_round",
+          "512_total"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-literal-32768-157",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 256,
+        "format": "json",
+        "id": "sparse-json-r2-cap256",
+        "rounds": 2,
+        "schedule_labels": [
+          "512_total"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-literal-32768-157",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "sparse-json-r1-cap128",
+        "rounds": 1,
+        "schedule_labels": [
+          "128_per_round"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-literal-32768-157",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "sparse-json-r2-cap128",
+        "rounds": 2,
+        "schedule_labels": [
+          "128_per_round"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-literal-32768-157",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "stock-json-r4-cap128",
+        "rounds": 4,
+        "schedule_labels": [
+          "128_per_round",
+          "512_total"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-literal-32768-157",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "stock-json-r2-cap128",
+        "rounds": 2,
+        "schedule_labels": [
+          "128_per_round"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-literal-32768-157",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 256,
+        "format": "json",
+        "id": "stock-json-r2-cap256",
+        "rounds": 2,
+        "schedule_labels": [
+          "512_total"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-paraphrase-32768-157",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 512,
+        "format": "json",
+        "id": "sparse-json-r1-cap512",
+        "rounds": 1,
+        "schedule_labels": [
+          "512_total"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-paraphrase-32768-157",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "sparse-json-r2-cap128",
+        "rounds": 2,
+        "schedule_labels": [
+          "128_per_round"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-paraphrase-32768-157",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "stock-json-r2-cap128",
+        "rounds": 2,
+        "schedule_labels": [
+          "128_per_round"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-paraphrase-32768-157",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "sparse-json-r4-cap128",
+        "rounds": 4,
+        "schedule_labels": [
+          "128_per_round",
+          "512_total"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-paraphrase-32768-157",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "stock-json-r4-cap128",
+        "rounds": 4,
+        "schedule_labels": [
+          "128_per_round",
+          "512_total"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-paraphrase-32768-157",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 128,
+        "format": "direct",
+        "id": "stock-direct-r1-cap128",
+        "rounds": 1,
+        "schedule_labels": [
+          "direct_vanilla"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-paraphrase-32768-157",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 256,
+        "format": "json",
+        "id": "stock-json-r2-cap256",
+        "rounds": 2,
+        "schedule_labels": [
+          "512_total"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-paraphrase-32768-157",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "stock-json-r1-cap128",
+        "rounds": 1,
+        "schedule_labels": [
+          "128_per_round"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-paraphrase-32768-157",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 256,
+        "format": "json",
+        "id": "sparse-json-r2-cap256",
+        "rounds": 2,
+        "schedule_labels": [
+          "512_total"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-paraphrase-32768-157",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "sparse-json-r1-cap128",
+        "rounds": 1,
+        "schedule_labels": [
+          "128_per_round"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-paraphrase-32768-157",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 512,
+        "format": "json",
+        "id": "stock-json-r1-cap512",
+        "rounds": 1,
+        "schedule_labels": [
+          "512_total"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-linked_fact-32768-157",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 512,
+        "format": "json",
+        "id": "sparse-json-r1-cap512",
+        "rounds": 1,
+        "schedule_labels": [
+          "512_total"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-linked_fact-32768-157",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 512,
+        "format": "json",
+        "id": "stock-json-r1-cap512",
+        "rounds": 1,
+        "schedule_labels": [
+          "512_total"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-linked_fact-32768-157",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "stock-json-r1-cap128",
+        "rounds": 1,
+        "schedule_labels": [
+          "128_per_round"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-linked_fact-32768-157",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "sparse-json-r2-cap128",
+        "rounds": 2,
+        "schedule_labels": [
+          "128_per_round"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-linked_fact-32768-157",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 256,
+        "format": "json",
+        "id": "stock-json-r2-cap256",
+        "rounds": 2,
+        "schedule_labels": [
+          "512_total"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-linked_fact-32768-157",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 256,
+        "format": "json",
+        "id": "sparse-json-r2-cap256",
+        "rounds": 2,
+        "schedule_labels": [
+          "512_total"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-linked_fact-32768-157",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "sparse-json-r4-cap128",
+        "rounds": 4,
+        "schedule_labels": [
+          "128_per_round",
+          "512_total"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-linked_fact-32768-157",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "stock-json-r4-cap128",
+        "rounds": 4,
+        "schedule_labels": [
+          "128_per_round",
+          "512_total"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-linked_fact-32768-157",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "sparse-json-r1-cap128",
+        "rounds": 1,
+        "schedule_labels": [
+          "128_per_round"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-linked_fact-32768-157",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 128,
+        "format": "direct",
+        "id": "stock-direct-r1-cap128",
+        "rounds": 1,
+        "schedule_labels": [
+          "direct_vanilla"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-linked_fact-32768-157",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "stock-json-r2-cap128",
+        "rounds": 2,
+        "schedule_labels": [
+          "128_per_round"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-linked_fact-32768-157",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 256,
+        "format": "json",
+        "id": "stock-json-r2-cap256",
+        "rounds": 2,
+        "schedule_labels": [
+          "512_total"
+        ]
+      },
+      "purpose": "repeated_timing",
+      "trial": 1
+    },
+    {
+      "example_id": "reasoning-linked_fact-32768-157",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 512,
+        "format": "json",
+        "id": "sparse-json-r1-cap512",
+        "rounds": 1,
+        "schedule_labels": [
+          "512_total"
+        ]
+      },
+      "purpose": "repeated_timing",
+      "trial": 1
+    },
+    {
+      "example_id": "reasoning-linked_fact-32768-157",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "sparse-json-r4-cap128",
+        "rounds": 4,
+        "schedule_labels": [
+          "128_per_round",
+          "512_total"
+        ]
+      },
+      "purpose": "repeated_timing",
+      "trial": 1
+    },
+    {
+      "example_id": "reasoning-linked_fact-32768-157",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 128,
+        "format": "direct",
+        "id": "stock-direct-r1-cap128",
+        "rounds": 1,
+        "schedule_labels": [
+          "direct_vanilla"
+        ]
+      },
+      "purpose": "repeated_timing",
+      "trial": 1
+    },
+    {
+      "example_id": "reasoning-linked_fact-32768-157",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 256,
+        "format": "json",
+        "id": "sparse-json-r2-cap256",
+        "rounds": 2,
+        "schedule_labels": [
+          "512_total"
+        ]
+      },
+      "purpose": "repeated_timing",
+      "trial": 1
+    },
+    {
+      "example_id": "reasoning-linked_fact-32768-157",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "sparse-json-r2-cap128",
+        "rounds": 2,
+        "schedule_labels": [
+          "128_per_round"
+        ]
+      },
+      "purpose": "repeated_timing",
+      "trial": 1
+    },
+    {
+      "example_id": "reasoning-linked_fact-32768-157",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "stock-json-r4-cap128",
+        "rounds": 4,
+        "schedule_labels": [
+          "128_per_round",
+          "512_total"
+        ]
+      },
+      "purpose": "repeated_timing",
+      "trial": 1
+    },
+    {
+      "example_id": "reasoning-linked_fact-32768-157",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "stock-json-r1-cap128",
+        "rounds": 1,
+        "schedule_labels": [
+          "128_per_round"
+        ]
+      },
+      "purpose": "repeated_timing",
+      "trial": 1
+    },
+    {
+      "example_id": "reasoning-linked_fact-32768-157",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "stock-json-r2-cap128",
+        "rounds": 2,
+        "schedule_labels": [
+          "128_per_round"
+        ]
+      },
+      "purpose": "repeated_timing",
+      "trial": 1
+    },
+    {
+      "example_id": "reasoning-linked_fact-32768-157",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "sparse-json-r1-cap128",
+        "rounds": 1,
+        "schedule_labels": [
+          "128_per_round"
+        ]
+      },
+      "purpose": "repeated_timing",
+      "trial": 1
+    },
+    {
+      "example_id": "reasoning-linked_fact-32768-157",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 512,
+        "format": "json",
+        "id": "stock-json-r1-cap512",
+        "rounds": 1,
+        "schedule_labels": [
+          "512_total"
+        ]
+      },
+      "purpose": "repeated_timing",
+      "trial": 1
+    },
+    {
+      "example_id": "reasoning-linked_fact-32768-157",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "stock-json-r4-cap128",
+        "rounds": 4,
+        "schedule_labels": [
+          "128_per_round",
+          "512_total"
+        ]
+      },
+      "purpose": "repeated_timing",
+      "trial": 2
+    },
+    {
+      "example_id": "reasoning-linked_fact-32768-157",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 256,
+        "format": "json",
+        "id": "stock-json-r2-cap256",
+        "rounds": 2,
+        "schedule_labels": [
+          "512_total"
+        ]
+      },
+      "purpose": "repeated_timing",
+      "trial": 2
+    },
+    {
+      "example_id": "reasoning-linked_fact-32768-157",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "stock-json-r1-cap128",
+        "rounds": 1,
+        "schedule_labels": [
+          "128_per_round"
+        ]
+      },
+      "purpose": "repeated_timing",
+      "trial": 2
+    },
+    {
+      "example_id": "reasoning-linked_fact-32768-157",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 512,
+        "format": "json",
+        "id": "sparse-json-r1-cap512",
+        "rounds": 1,
+        "schedule_labels": [
+          "512_total"
+        ]
+      },
+      "purpose": "repeated_timing",
+      "trial": 2
+    },
+    {
+      "example_id": "reasoning-linked_fact-32768-157",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "stock-json-r2-cap128",
+        "rounds": 2,
+        "schedule_labels": [
+          "128_per_round"
+        ]
+      },
+      "purpose": "repeated_timing",
+      "trial": 2
+    },
+    {
+      "example_id": "reasoning-linked_fact-32768-157",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 512,
+        "format": "json",
+        "id": "stock-json-r1-cap512",
+        "rounds": 1,
+        "schedule_labels": [
+          "512_total"
+        ]
+      },
+      "purpose": "repeated_timing",
+      "trial": 2
+    },
+    {
+      "example_id": "reasoning-linked_fact-32768-157",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 128,
+        "format": "direct",
+        "id": "stock-direct-r1-cap128",
+        "rounds": 1,
+        "schedule_labels": [
+          "direct_vanilla"
+        ]
+      },
+      "purpose": "repeated_timing",
+      "trial": 2
+    },
+    {
+      "example_id": "reasoning-linked_fact-32768-157",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "sparse-json-r4-cap128",
+        "rounds": 4,
+        "schedule_labels": [
+          "128_per_round",
+          "512_total"
+        ]
+      },
+      "purpose": "repeated_timing",
+      "trial": 2
+    },
+    {
+      "example_id": "reasoning-linked_fact-32768-157",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 256,
+        "format": "json",
+        "id": "sparse-json-r2-cap256",
+        "rounds": 2,
+        "schedule_labels": [
+          "512_total"
+        ]
+      },
+      "purpose": "repeated_timing",
+      "trial": 2
+    },
+    {
+      "example_id": "reasoning-linked_fact-32768-157",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "sparse-json-r1-cap128",
+        "rounds": 1,
+        "schedule_labels": [
+          "128_per_round"
+        ]
+      },
+      "purpose": "repeated_timing",
+      "trial": 2
+    },
+    {
+      "example_id": "reasoning-linked_fact-32768-157",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "sparse-json-r2-cap128",
+        "rounds": 2,
+        "schedule_labels": [
+          "128_per_round"
+        ]
+      },
+      "purpose": "repeated_timing",
+      "trial": 2
+    },
+    {
+      "example_id": "reasoning-sum_two_facts-32768-157",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "sparse-json-r1-cap128",
+        "rounds": 1,
+        "schedule_labels": [
+          "128_per_round"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-sum_two_facts-32768-157",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 256,
+        "format": "json",
+        "id": "stock-json-r2-cap256",
+        "rounds": 2,
+        "schedule_labels": [
+          "512_total"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-sum_two_facts-32768-157",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "sparse-json-r2-cap128",
+        "rounds": 2,
+        "schedule_labels": [
+          "128_per_round"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-sum_two_facts-32768-157",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "stock-json-r2-cap128",
+        "rounds": 2,
+        "schedule_labels": [
+          "128_per_round"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-sum_two_facts-32768-157",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 512,
+        "format": "json",
+        "id": "stock-json-r1-cap512",
+        "rounds": 1,
+        "schedule_labels": [
+          "512_total"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-sum_two_facts-32768-157",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 128,
+        "format": "direct",
+        "id": "stock-direct-r1-cap128",
+        "rounds": 1,
+        "schedule_labels": [
+          "direct_vanilla"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-sum_two_facts-32768-157",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "sparse-json-r4-cap128",
+        "rounds": 4,
+        "schedule_labels": [
+          "128_per_round",
+          "512_total"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-sum_two_facts-32768-157",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 512,
+        "format": "json",
+        "id": "sparse-json-r1-cap512",
+        "rounds": 1,
+        "schedule_labels": [
+          "512_total"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-sum_two_facts-32768-157",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 256,
+        "format": "json",
+        "id": "sparse-json-r2-cap256",
+        "rounds": 2,
+        "schedule_labels": [
+          "512_total"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-sum_two_facts-32768-157",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "stock-json-r1-cap128",
+        "rounds": 1,
+        "schedule_labels": [
+          "128_per_round"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-sum_two_facts-32768-157",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "stock-json-r4-cap128",
+        "rounds": 4,
+        "schedule_labels": [
+          "128_per_round",
+          "512_total"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-literal-32768-163",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "sparse-json-r1-cap128",
+        "rounds": 1,
+        "schedule_labels": [
+          "128_per_round"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-literal-32768-163",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "stock-json-r1-cap128",
+        "rounds": 1,
+        "schedule_labels": [
+          "128_per_round"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-literal-32768-163",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 512,
+        "format": "json",
+        "id": "stock-json-r1-cap512",
+        "rounds": 1,
+        "schedule_labels": [
+          "512_total"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-literal-32768-163",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 512,
+        "format": "json",
+        "id": "sparse-json-r1-cap512",
+        "rounds": 1,
+        "schedule_labels": [
+          "512_total"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-literal-32768-163",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 256,
+        "format": "json",
+        "id": "sparse-json-r2-cap256",
+        "rounds": 2,
+        "schedule_labels": [
+          "512_total"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-literal-32768-163",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 256,
+        "format": "json",
+        "id": "stock-json-r2-cap256",
+        "rounds": 2,
+        "schedule_labels": [
+          "512_total"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-literal-32768-163",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "stock-json-r4-cap128",
+        "rounds": 4,
+        "schedule_labels": [
+          "128_per_round",
+          "512_total"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-literal-32768-163",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "sparse-json-r4-cap128",
+        "rounds": 4,
+        "schedule_labels": [
+          "128_per_round",
+          "512_total"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-literal-32768-163",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 128,
+        "format": "direct",
+        "id": "stock-direct-r1-cap128",
+        "rounds": 1,
+        "schedule_labels": [
+          "direct_vanilla"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-literal-32768-163",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "sparse-json-r2-cap128",
+        "rounds": 2,
+        "schedule_labels": [
+          "128_per_round"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-literal-32768-163",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "stock-json-r2-cap128",
+        "rounds": 2,
+        "schedule_labels": [
+          "128_per_round"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-paraphrase-32768-163",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "sparse-json-r1-cap128",
+        "rounds": 1,
+        "schedule_labels": [
+          "128_per_round"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-paraphrase-32768-163",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "stock-json-r2-cap128",
+        "rounds": 2,
+        "schedule_labels": [
+          "128_per_round"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-paraphrase-32768-163",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 128,
+        "format": "direct",
+        "id": "stock-direct-r1-cap128",
+        "rounds": 1,
+        "schedule_labels": [
+          "direct_vanilla"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-paraphrase-32768-163",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 256,
+        "format": "json",
+        "id": "stock-json-r2-cap256",
+        "rounds": 2,
+        "schedule_labels": [
+          "512_total"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-paraphrase-32768-163",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 256,
+        "format": "json",
+        "id": "sparse-json-r2-cap256",
+        "rounds": 2,
+        "schedule_labels": [
+          "512_total"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-paraphrase-32768-163",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "stock-json-r4-cap128",
+        "rounds": 4,
+        "schedule_labels": [
+          "128_per_round",
+          "512_total"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-paraphrase-32768-163",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 512,
+        "format": "json",
+        "id": "sparse-json-r1-cap512",
+        "rounds": 1,
+        "schedule_labels": [
+          "512_total"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-paraphrase-32768-163",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "sparse-json-r4-cap128",
+        "rounds": 4,
+        "schedule_labels": [
+          "128_per_round",
+          "512_total"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-paraphrase-32768-163",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "stock-json-r1-cap128",
+        "rounds": 1,
+        "schedule_labels": [
+          "128_per_round"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-paraphrase-32768-163",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "sparse-json-r2-cap128",
+        "rounds": 2,
+        "schedule_labels": [
+          "128_per_round"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-paraphrase-32768-163",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 512,
+        "format": "json",
+        "id": "stock-json-r1-cap512",
+        "rounds": 1,
+        "schedule_labels": [
+          "512_total"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-linked_fact-32768-163",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 256,
+        "format": "json",
+        "id": "sparse-json-r2-cap256",
+        "rounds": 2,
+        "schedule_labels": [
+          "512_total"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-linked_fact-32768-163",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "sparse-json-r1-cap128",
+        "rounds": 1,
+        "schedule_labels": [
+          "128_per_round"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-linked_fact-32768-163",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 128,
+        "format": "direct",
+        "id": "stock-direct-r1-cap128",
+        "rounds": 1,
+        "schedule_labels": [
+          "direct_vanilla"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-linked_fact-32768-163",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 512,
+        "format": "json",
+        "id": "stock-json-r1-cap512",
+        "rounds": 1,
+        "schedule_labels": [
+          "512_total"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-linked_fact-32768-163",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "sparse-json-r2-cap128",
+        "rounds": 2,
+        "schedule_labels": [
+          "128_per_round"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-linked_fact-32768-163",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 512,
+        "format": "json",
+        "id": "sparse-json-r1-cap512",
+        "rounds": 1,
+        "schedule_labels": [
+          "512_total"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-linked_fact-32768-163",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 256,
+        "format": "json",
+        "id": "stock-json-r2-cap256",
+        "rounds": 2,
+        "schedule_labels": [
+          "512_total"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-linked_fact-32768-163",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "stock-json-r2-cap128",
+        "rounds": 2,
+        "schedule_labels": [
+          "128_per_round"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-linked_fact-32768-163",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "stock-json-r4-cap128",
+        "rounds": 4,
+        "schedule_labels": [
+          "128_per_round",
+          "512_total"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-linked_fact-32768-163",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "stock-json-r1-cap128",
+        "rounds": 1,
+        "schedule_labels": [
+          "128_per_round"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-linked_fact-32768-163",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "sparse-json-r4-cap128",
+        "rounds": 4,
+        "schedule_labels": [
+          "128_per_round",
+          "512_total"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-sum_two_facts-32768-163",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "sparse-json-r2-cap128",
+        "rounds": 2,
+        "schedule_labels": [
+          "128_per_round"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-sum_two_facts-32768-163",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "sparse-json-r1-cap128",
+        "rounds": 1,
+        "schedule_labels": [
+          "128_per_round"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-sum_two_facts-32768-163",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 512,
+        "format": "json",
+        "id": "stock-json-r1-cap512",
+        "rounds": 1,
+        "schedule_labels": [
+          "512_total"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-sum_two_facts-32768-163",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "stock-json-r2-cap128",
+        "rounds": 2,
+        "schedule_labels": [
+          "128_per_round"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-sum_two_facts-32768-163",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 512,
+        "format": "json",
+        "id": "sparse-json-r1-cap512",
+        "rounds": 1,
+        "schedule_labels": [
+          "512_total"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-sum_two_facts-32768-163",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 128,
+        "format": "direct",
+        "id": "stock-direct-r1-cap128",
+        "rounds": 1,
+        "schedule_labels": [
+          "direct_vanilla"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-sum_two_facts-32768-163",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "sparse-json-r4-cap128",
+        "rounds": 4,
+        "schedule_labels": [
+          "128_per_round",
+          "512_total"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-sum_two_facts-32768-163",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "stock-json-r4-cap128",
+        "rounds": 4,
+        "schedule_labels": [
+          "128_per_round",
+          "512_total"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-sum_two_facts-32768-163",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 256,
+        "format": "json",
+        "id": "sparse-json-r2-cap256",
+        "rounds": 2,
+        "schedule_labels": [
+          "512_total"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-sum_two_facts-32768-163",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 256,
+        "format": "json",
+        "id": "stock-json-r2-cap256",
+        "rounds": 2,
+        "schedule_labels": [
+          "512_total"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    },
+    {
+      "example_id": "reasoning-sum_two_facts-32768-163",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "stock-json-r1-cap128",
+        "rounds": 1,
+        "schedule_labels": [
+          "128_per_round"
+        ]
+      },
+      "purpose": "quality",
+      "trial": 0
+    }
+  ],
+  "scope": "separate exploratory 1/2/4-round cohort; greedy; stock batched prompts; shared dense immutable archive",
+  "script_sha256": "26926e655be0511a498580bbcc7adc981143bc1a945852bf5f4b2ab94e7644f6"
+}

@@ -1,0 +1,402 @@
+{
+  "machine": "arm64",
+  "numpy_version": "2.2.4",
+  "partial_sha256": "b546b03938220f20d1d1959c8c4dbf6ebf727648c54ca222764242d278fe1026",
+  "plan": {
+    "additional_allocation_allowance_bytes": 1073741824,
+    "candidate_ceiling": 32,
+    "deadline_s": 600,
+    "disk_reserve_bytes": 1073741824,
+    "head_dim": 128,
+    "initial_minimum_available_bytes": 3221225472,
+    "kv_heads": 2,
+    "layers": 28,
+    "lengths": [
+      4096,
+      8192,
+      32768,
+      131072,
+      524288,
+      1048576
+    ],
+    "page": 128,
+    "preflight": {
+      "available_bytes": 3676143616,
+      "disk_free_bytes": 15471255552,
+      "process_rss_bytes": 175505408
+    },
+    "query_heads": 12,
+    "rss_limit_bytes": 2147483648,
+    "runtime_minimum_available_bytes": 2147483648,
+    "seed": 317,
+    "sink": 128,
+    "thread_environment": {
+      "MKL_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1"
+    },
+    "trials": 7,
+    "warmup_all_layer_passes": 1,
+    "window": 2000
+  },
+  "platform": "macOS-27.0-arm64-arm-64bit",
+  "quest_source_sha256": "a97ecdfcc3fb5652b02649ac00b10899e7a2f851a111e4c93342ff66f49c6ce1",
+  "representations_source_sha256": "2a9765aa4ea39a2ee46ccb99974027c444172b0453a57d7bf66f5856ca7eab85",
+  "retrieval_source_sha256": "0303b4d4049359fdbd481e9810e20b901ffa014145e95e2bc529139729bf08a0",
+  "rows": [
+    {
+      "actual_candidate_counts": [
+        15
+      ],
+      "all_layer_search_ms": [
+        5.622709169983864,
+        5.983457900583744,
+        6.504958029836416,
+        5.091124912723899,
+        7.219916908070445,
+        5.793500225991011,
+        6.370999850332737
+      ],
+      "archive_tokens": 4096,
+      "capacity_pages_per_layer": 32,
+      "complete_pages": 16,
+      "cutoff": 2097,
+      "eligible_complete_pages": 15,
+      "fixed_key_count_per_layer": 2177,
+      "fixed_key_tensor_bytes": 31209472,
+      "host": {
+        "host_observation_scope": "synthetic metadata build, warmup and lookup trials; timed trials exclude metadata build",
+        "host_rss_end_bytes": 218923008,
+        "host_rss_sampled_peak_bytes": 218923008,
+        "host_rss_samples": 2,
+        "host_rss_start_bytes": 212385792,
+        "host_sampling_interval_s": 0.1,
+        "process_io_delta": {},
+        "system_memory_end": {
+          "active": 3374039040,
+          "available": 3651895296,
+          "free": 306675712,
+          "inactive": 3337601024,
+          "percent": 78.7,
+          "total": 17179869184,
+          "used": 8249163776,
+          "wired": 4875124736
+        },
+        "system_memory_start": {
+          "active": 3373858816,
+          "available": 3652108288,
+          "free": 306888704,
+          "inactive": 3337601024,
+          "percent": 78.7,
+          "total": 17179869184,
+          "used": 8248967168,
+          "wired": 4875108352
+        }
+      },
+      "median_ms": 5.983457900583744,
+      "metadata_bytes": 1842176,
+      "partial_tokens": 49,
+      "post_trial_resource_guard": {
+        "available_bytes": 3651895296,
+        "disk_free_bytes": 15471255552,
+        "process_rss_bytes": 220446720
+      }
+    },
+    {
+      "actual_candidate_counts": [
+        32
+      ],
+      "all_layer_search_ms": [
+        7.322040852159262,
+        6.677665980532765,
+        7.0709590800106525,
+        5.807208130136132,
+        6.682791979983449,
+        6.356291938573122,
+        6.770584033802152
+      ],
+      "archive_tokens": 8192,
+      "capacity_pages_per_layer": 64,
+      "complete_pages": 48,
+      "cutoff": 6193,
+      "eligible_complete_pages": 47,
+      "fixed_key_count_per_layer": 2177,
+      "fixed_key_tensor_bytes": 31209472,
+      "host": {
+        "host_observation_scope": "synthetic metadata build, warmup and lookup trials; timed trials exclude metadata build",
+        "host_rss_end_bytes": 224002048,
+        "host_rss_sampled_peak_bytes": 224002048,
+        "host_rss_samples": 2,
+        "host_rss_start_bytes": 220446720,
+        "host_sampling_interval_s": 0.1,
+        "process_io_delta": {},
+        "system_memory_end": {
+          "active": 3374039040,
+          "available": 3651895296,
+          "free": 306675712,
+          "inactive": 3337601024,
+          "percent": 78.7,
+          "total": 17179869184,
+          "used": 8249163776,
+          "wired": 4875124736
+        },
+        "system_memory_start": {
+          "active": 3374039040,
+          "available": 3651895296,
+          "free": 306675712,
+          "inactive": 3337601024,
+          "percent": 78.7,
+          "total": 17179869184,
+          "used": 8249163776,
+          "wired": 4875124736
+        }
+      },
+      "median_ms": 6.682791979983449,
+      "metadata_bytes": 3684352,
+      "partial_tokens": 49,
+      "post_trial_resource_guard": {
+        "available_bytes": 3651895296,
+        "disk_free_bytes": 15471243264,
+        "process_rss_bytes": 223969280
+      }
+    },
+    {
+      "actual_candidate_counts": [
+        32
+      ],
+      "all_layer_search_ms": [
+        7.911208085715771,
+        8.218124974519014,
+        8.150625042617321,
+        11.134166968986392,
+        8.338124956935644,
+        9.829000104218721,
+        8.005000185221434
+      ],
+      "archive_tokens": 32768,
+      "capacity_pages_per_layer": 256,
+      "complete_pages": 240,
+      "cutoff": 30769,
+      "eligible_complete_pages": 239,
+      "fixed_key_count_per_layer": 2177,
+      "fixed_key_tensor_bytes": 31209472,
+      "host": {
+        "host_observation_scope": "synthetic metadata build, warmup and lookup trials; timed trials exclude metadata build",
+        "host_rss_end_bytes": 236191744,
+        "host_rss_sampled_peak_bytes": 236191744,
+        "host_rss_samples": 2,
+        "host_rss_start_bytes": 223969280,
+        "host_sampling_interval_s": 0.1,
+        "process_io_delta": {},
+        "system_memory_end": {
+          "active": 3374039040,
+          "available": 3651895296,
+          "free": 306675712,
+          "inactive": 3337601024,
+          "percent": 78.7,
+          "total": 17179869184,
+          "used": 8249163776,
+          "wired": 4875124736
+        },
+        "system_memory_start": {
+          "active": 3374039040,
+          "available": 3651895296,
+          "free": 306675712,
+          "inactive": 3337601024,
+          "percent": 78.7,
+          "total": 17179869184,
+          "used": 8249163776,
+          "wired": 4875124736
+        }
+      },
+      "median_ms": 8.218124974519014,
+      "metadata_bytes": 14737408,
+      "partial_tokens": 49,
+      "post_trial_resource_guard": {
+        "available_bytes": 3651895296,
+        "disk_free_bytes": 15471243264,
+        "process_rss_bytes": 236175360
+      }
+    },
+    {
+      "actual_candidate_counts": [
+        32
+      ],
+      "all_layer_search_ms": [
+        19.99695901758969,
+        21.105250110849738,
+        20.466166781261563,
+        19.369582878425717,
+        21.30958391353488,
+        19.928582943975925,
+        18.30383390188217
+      ],
+      "archive_tokens": 131072,
+      "capacity_pages_per_layer": 1024,
+      "complete_pages": 1008,
+      "cutoff": 129073,
+      "eligible_complete_pages": 1007,
+      "fixed_key_count_per_layer": 2177,
+      "fixed_key_tensor_bytes": 31209472,
+      "host": {
+        "host_observation_scope": "synthetic metadata build, warmup and lookup trials; timed trials exclude metadata build",
+        "host_rss_end_bytes": 290013184,
+        "host_rss_sampled_peak_bytes": 290045952,
+        "host_rss_samples": 4,
+        "host_rss_start_bytes": 236175360,
+        "host_sampling_interval_s": 0.1,
+        "process_io_delta": {},
+        "system_memory_end": {
+          "active": 3374039040,
+          "available": 3651895296,
+          "free": 306675712,
+          "inactive": 3337601024,
+          "percent": 78.7,
+          "total": 17179869184,
+          "used": 8249163776,
+          "wired": 4875124736
+        },
+        "system_memory_start": {
+          "active": 3374039040,
+          "available": 3651895296,
+          "free": 306675712,
+          "inactive": 3337601024,
+          "percent": 78.7,
+          "total": 17179869184,
+          "used": 8249163776,
+          "wired": 4875124736
+        }
+      },
+      "median_ms": 19.99695901758969,
+      "metadata_bytes": 58949632,
+      "partial_tokens": 49,
+      "post_trial_resource_guard": {
+        "available_bytes": 3651895296,
+        "disk_free_bytes": 15471239168,
+        "process_rss_bytes": 290013184
+      }
+    },
+    {
+      "actual_candidate_counts": [
+        32
+      ],
+      "all_layer_search_ms": [
+        73.50745797157288,
+        112.74733277969062,
+        115.64416601322591,
+        74.61579190567136,
+        73.94216605462134,
+        70.67987485788763,
+        73.61158402636647
+      ],
+      "archive_tokens": 524288,
+      "capacity_pages_per_layer": 4096,
+      "complete_pages": 4080,
+      "cutoff": 522289,
+      "eligible_complete_pages": 4079,
+      "fixed_key_count_per_layer": 2177,
+      "fixed_key_tensor_bytes": 31209472,
+      "host": {
+        "host_observation_scope": "synthetic metadata build, warmup and lookup trials; timed trials exclude metadata build",
+        "host_rss_end_bytes": 535134208,
+        "host_rss_sampled_peak_bytes": 535166976,
+        "host_rss_samples": 10,
+        "host_rss_start_bytes": 290013184,
+        "host_sampling_interval_s": 0.1,
+        "process_io_delta": {},
+        "system_memory_end": {
+          "active": 3530686464,
+          "available": 3522412544,
+          "free": 100220928,
+          "inactive": 3413917696,
+          "percent": 79.5,
+          "total": 17179869184,
+          "used": 8376516608,
+          "wired": 4845830144
+        },
+        "system_memory_start": {
+          "active": 3374039040,
+          "available": 3651895296,
+          "free": 306675712,
+          "inactive": 3337601024,
+          "percent": 78.7,
+          "total": 17179869184,
+          "used": 8249163776,
+          "wired": 4875124736
+        }
+      },
+      "median_ms": 73.94216605462134,
+      "metadata_bytes": 235798528,
+      "partial_tokens": 49,
+      "post_trial_resource_guard": {
+        "available_bytes": 3522412544,
+        "disk_free_bytes": 15471218688,
+        "process_rss_bytes": 535134208
+      }
+    },
+    {
+      "actual_candidate_counts": [
+        32
+      ],
+      "all_layer_search_ms": [
+        157.87479211576283,
+        166.93458380177617,
+        156.797916861251,
+        162.8225001040846,
+        158.84587517939508,
+        159.58274994045496,
+        158.12208293937147
+      ],
+      "archive_tokens": 1048576,
+      "capacity_pages_per_layer": 8192,
+      "complete_pages": 8176,
+      "cutoff": 1046577,
+      "eligible_complete_pages": 8175,
+      "fixed_key_count_per_layer": 2177,
+      "fixed_key_tensor_bytes": 31209472,
+      "host": {
+        "host_observation_scope": "synthetic metadata build, warmup and lookup trials; timed trials exclude metadata build",
+        "host_rss_end_bytes": 980860928,
+        "host_rss_sampled_peak_bytes": 981172224,
+        "host_rss_samples": 19,
+        "host_rss_start_bytes": 535134208,
+        "host_sampling_interval_s": 0.1,
+        "process_io_delta": {},
+        "system_memory_end": {
+          "active": 3377545216,
+          "available": 3440148480,
+          "free": 83509248,
+          "inactive": 3344580608,
+          "percent": 80.0,
+          "total": 17179869184,
+          "used": 8103772160,
+          "wired": 4726226944
+        },
+        "system_memory_start": {
+          "active": 3530686464,
+          "available": 3522412544,
+          "free": 100220928,
+          "inactive": 3413917696,
+          "percent": 79.5,
+          "total": 17179869184,
+          "used": 8376516608,
+          "wired": 4845830144
+        }
+      },
+      "median_ms": 158.84587517939508,
+      "metadata_bytes": 471597056,
+      "partial_tokens": 49,
+      "post_trial_resource_guard": {
+        "available_bytes": 3440115712,
+        "disk_free_bytes": 15471198208,
+        "process_rss_bytes": 980860928
+      }
+    }
+  ],
+  "scope": "synthetic CPU scan and fixed-key normalization only; no GPU, KV disk reads, model inference, generation or quality; above-native lengths represent index only",
+  "source_sha256": "c42ffc338018c1b94975ace73cb03cd44674af5025dc8bdd4e9f477407f7ffa9",
+  "status": "complete",
+  "torch_threads": 1,
+  "torch_version": "2.6.0"
+}

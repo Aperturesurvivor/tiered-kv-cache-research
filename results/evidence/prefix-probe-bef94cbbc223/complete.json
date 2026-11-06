@@ -1,0 +1,44 @@
+{
+  "control": "prefix retention: 4/29/128 initial tokens",
+  "original_stock_and_sparse_outputs_reproduced": true,
+  "question_logit_payloads": {
+    "prefix_128": {
+      "dtype": "float32",
+      "path": "artifacts/scratch/prefix-probe-bef94cbbc223/prefix_128-question-logits.npy",
+      "sha256": "4345ca4033439cf49bde0b1f834b5f8544519d67c575c50b00dd913e85784c50",
+      "shape": [
+        24,
+        151936
+      ]
+    },
+    "prefix_29": {
+      "dtype": "float32",
+      "path": "artifacts/scratch/prefix-probe-bef94cbbc223/prefix_29-question-logits.npy",
+      "sha256": "dcbababcebf9421f9c9532993d63ec990266bf857101cbfcfaf1192900775e14",
+      "shape": [
+        24,
+        151936
+      ]
+    },
+    "rare_context": {
+      "dtype": "float32",
+      "path": "artifacts/scratch/prefix-probe-bef94cbbc223/rare_context-question-logits.npy",
+      "sha256": "e63257cc4269015ff61b7a51f0a089a9abd147f04fbdaed2c05278a6de27efad",
+      "shape": [
+        24,
+        151936
+      ]
+    },
+    "stock_hf": {
+      "dtype": "float32",
+      "path": "artifacts/scratch/prefix-probe-bef94cbbc223/stock_hf-question-logits.npy",
+      "sha256": "d23122069a3af3be1a3b96b515f0ff6d5c6e85ba619b54ee12f028bae466d43c",
+      "shape": [
+        24,
+        151936
+      ]
+    }
+  },
+  "rows": 4,
+  "weights_unchanged": true
+}

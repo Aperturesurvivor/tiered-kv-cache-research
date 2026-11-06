@@ -1,0 +1,18 @@
+{
+  "backend_boot_id": "f2a4a03a-a73e-4bca-9557-f756da7da01c",
+  "observation_epoch": 1793819765.8804736,
+  "controller_shell_pid": 103920,
+  "controller_shell_create_time": 1793804413.74,
+  "controller_shell_wait_returncode": 1,
+  "controller_pid": 103921,
+  "controller_create_time": 1793804413.74,
+  "controller_pid_exists": false,
+  "worker_pid": 104085,
+  "worker_create_time": 1793804445.79,
+  "worker_pid_exists": false,
+  "local_saved_rows": 220,
+  "local_results_directories": ["reasoning-Qwen--Qwen3-4B-Instruct-2507-67a2e095096b", "evidence"],
+  "controller_error": "AssertionError at line 196: unfiltered results directories must number one",
+  "worker_marker": {"rows": 220, "quality_rows": 176, "repeated_timing_rows": 44, "weights_unchanged": true},
+  "state_sha256_reported_by_independent_auditor": "6b89157087bb62bf8ab1f252a145feec74c6b113deaab520f727041d92420576"
+}

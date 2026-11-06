@@ -1,0 +1,17 @@
+{
+  "events": 4648,
+  "evidence": {
+    "cpu": {
+      "file": "validation-8192-cpu-events.json",
+      "sha256": "d09da9d0ce77e4d520cf942886797a906aa472f7bf1816aad63aa1e3e28b5253"
+    },
+    "device": {
+      "file": "validation-8192-device-events.json",
+      "sha256": "d09da9d0ce77e4d520cf942886797a906aa472f7bf1816aad63aa1e3e28b5253"
+    }
+  },
+  "exact_kv": true,
+  "max_abs_logit": 0.0,
+  "routes_equal": true,
+  "status": "passed"
+}

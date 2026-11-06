@@ -1,0 +1,115 @@
+{
+  "checkpoint_sha256": "f80a6120a61a004d3d5c53191631d1bdb061c3c71d690d5fff5de86db6e8012e",
+  "example_sha256": "79aa3fdf0daada4be1be1c4785fc66e9237a3e0a718fc5f14688757aa6da73fc",
+  "implementation_hash": "c34ae62f98c06bf1d14af674994d04f4594da12c604a072753de768c933f79ec",
+  "policies": [
+    {
+      "B": 1024,
+      "C": 0,
+      "R": 128,
+      "W": 2000,
+      "batch_size": 1,
+      "buffered_writes": true,
+      "fixed_blocks": [
+        23,
+        24,
+        22,
+        25
+      ],
+      "full": false,
+      "id": "rare_context",
+      "k": 4,
+      "merge": "mean_rot",
+      "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+      "precision": "float16",
+      "protocol": "exact_shared",
+      "retrieval": "fixed",
+      "rope_variant": "original",
+      "sink_tokens": 4
+    },
+    {
+      "B": 1024,
+      "C": 0,
+      "R": 128,
+      "W": 2000,
+      "batch_size": 1,
+      "buffered_writes": true,
+      "fixed_blocks": [
+        23,
+        24,
+        22,
+        25
+      ],
+      "full": false,
+      "id": "prefix_29",
+      "k": 4,
+      "merge": "mean_rot",
+      "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+      "precision": "float16",
+      "protocol": "exact_shared",
+      "retrieval": "fixed",
+      "rope_variant": "original",
+      "sink_tokens": 29
+    },
+    {
+      "B": 1024,
+      "C": 0,
+      "R": 128,
+      "W": 2000,
+      "batch_size": 1,
+      "buffered_writes": true,
+      "fixed_blocks": [
+        23,
+        24,
+        22,
+        25
+      ],
+      "full": false,
+      "id": "prefix_128",
+      "k": 4,
+      "merge": "mean_rot",
+      "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+      "precision": "float16",
+      "protocol": "exact_shared",
+      "retrieval": "fixed",
+      "rope_variant": "original",
+      "sink_tokens": 128
+    }
+  ],
+  "runtime": {
+    "capability": [
+      7,
+      5
+    ],
+    "cuda": "12.4",
+    "cudnn": 90100,
+    "cudnn_sdp": true,
+    "device": "cuda",
+    "flash_sdp": true,
+    "fp16_reduced": true,
+    "gpu": "Tesla T4",
+    "interop_threads": 1,
+    "machine": "x86_64",
+    "math_sdp": true,
+    "math_sdp_reduced": false,
+    "mem_efficient_sdp": true,
+    "numpy": "2.2.4",
+    "os": "Linux-6.6.159+-x86_64-with-glibc2.39",
+    "python": "3.13.16",
+    "tf32": false,
+    "threads": 1,
+    "torch": "2.6.0+cu124",
+    "transformers": "4.51.3"
+  },
+  "scope": "post-hoc first-query prefix-retention control; 4/29/128 initial tokens; original case reused; no performance claim",
+  "script_sha256": "18b5632a1d68957a530609ddc52ba04994ad4b4d312b05b2b959e7bd7c837a52",
+  "source_files_sha256": {
+    "complete.json": "347390daab17fefc404c683a390cb86ac2c76472b79c80ab6397a0a630e25e76",
+    "fixtures.json": "3b5ba000652ba1f3166abb973fc52f40bb323cb940ada2d98a9177ad0ff4b9b1",
+    "manifest.json": "26dad00a0d5cbc46c47f69f3da9f08c480f8be73733356c432e1471e6fdfbbba",
+    "samples.jsonl": "9409bfc2d631e7610d047a1b402429f769ebb41eb9b4b1eccd6200f4c95ca22e",
+    "validation.json": "17620aa40be655fb3db766a3ef138c6355345f5221c2735c71e53dc128985c90"
+  },
+  "source_revision": "23964ff04123671c230249d7b58ebe7403616b0f",
+  "turn": 0
+}

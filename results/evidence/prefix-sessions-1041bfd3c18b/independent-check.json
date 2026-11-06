@@ -1,0 +1,49 @@
+{
+  "rows": 36,
+  "original_controls_reproduced": 24,
+  "layer_position_checks": 672,
+  "summary": {
+    "stock_hf": {
+      "correct_codes": 11,
+      "strict_answers": 2,
+      "by_budget": {
+        "4096": 2,
+        "8192": 3,
+        "16384": 3,
+        "32768": 3
+      },
+      "max_active_KV_entries": 31874
+    },
+    "rare_context": {
+      "correct_codes": 8,
+      "strict_answers": 8,
+      "by_budget": {
+        "4096": 3,
+        "8192": 3,
+        "16384": 2,
+        "32768": 0
+      },
+      "max_active_KV_entries": 2516
+    },
+    "prefix_128": {
+      "correct_codes": 9,
+      "strict_answers": 6,
+      "by_budget": {
+        "4096": 3,
+        "8192": 3,
+        "16384": 2,
+        "32768": 1
+      },
+      "max_active_KV_entries": 2640
+    }
+  },
+  "verification_script_sha256": "a16854f2ae2c146da3443f91842ea0fbf3b5e9e54cd804592a02f540304cec37",
+  "raw_files_sha256": {
+    "manifest.json": "c650e76cce4ea460c9df36c895829213b77555c6bb96aa2fc0bf473ac7fcc7f4",
+    "fixtures.json": "3b5ba000652ba1f3166abb973fc52f40bb323cb940ada2d98a9177ad0ff4b9b1",
+    "samples.jsonl": "b8d9d7d9ae2a7620f25db75fb031f960c68077368c371d0a080f753992506860",
+    "validation.json": "5da5ae73339901553f313d9b79bacdfc27ac21ee16cf1668eec26cd6f640dc4b",
+    "complete.json": "b2c0ecf9c5e483e253a9ee0e2d120d6e78bdd2e13e819d6562a611058b7ccfe6"
+  },
+  "scope": "Independent source, tokenizer, scoring, position/coverage and saved-receipt checks; CUDA tensor equality not rerun locally; no performance conclusion."
+}

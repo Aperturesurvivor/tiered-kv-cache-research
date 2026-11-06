@@ -1,0 +1,865 @@
+{
+  "loaded_parameters": 1711376384,
+  "online": [
+    {
+      "active_KV_entries": 512,
+      "checkpoint_position": 256,
+      "config_hash": "94d3f534187590ea35ceb5ae7080ad9284dbeab510d001fe34dcc6f823947522",
+      "config_id": "full_buffered",
+      "emitted_pending_consumed_once": true,
+      "index_bytes": 0,
+      "ingestion_tokens_s": 30.70780949034177,
+      "kv_bit_identical": true,
+      "kv_max_error": 0.0,
+      "max_logit_error": 0.0,
+      "next_token": 504,
+      "peak_mps_allocated": 3639005696,
+      "peak_mps_driver": 3821010944,
+      "peak_rss": 5050097664,
+      "pressure_max": 0,
+      "processed_tokens": 512,
+      "protocol": "online_tiered",
+      "resume_forward_calls": 256,
+      "resume_s": 8.25889936099884,
+      "status": "ok",
+      "swap_delta": 0,
+      "system_min_available": 10020691968,
+      "uninterrupted_s": 16.67328306700074
+    },
+    {
+      "active_KV_entries": 192,
+      "checkpoint_position": 256,
+      "config_hash": "d2fedcc1c99cb634e54d34a9eab2b93b3175d0b37fd7d8e5dc04ef7183a2f00f",
+      "config_id": "default",
+      "emitted_pending_consumed_once": true,
+      "index_bytes": 16,
+      "ingestion_tokens_s": 19.135690487165334,
+      "kv_bit_identical": true,
+      "kv_max_error": 0.0,
+      "max_logit_error": 0.0,
+      "next_token": 504,
+      "peak_mps_allocated": 3639005696,
+      "peak_mps_driver": 3852468224,
+      "peak_rss": 5050097664,
+      "pressure_max": 0,
+      "processed_tokens": 512,
+      "protocol": "online_tiered",
+      "resume_forward_calls": 256,
+      "resume_s": 13.32278225599839,
+      "status": "ok",
+      "swap_delta": 0,
+      "system_min_available": 9930899456,
+      "uninterrupted_s": 26.75628560899895
+    }
+  ],
+  "parity": [
+    {
+      "argmax_margins": [
+        0.046875,
+        0.1640625,
+        0.0703125,
+        1.265625,
+        2.4453125,
+        2.8828125,
+        3.515625,
+        3.78125,
+        2.5703125,
+        1.9921875,
+        1.53125,
+        1.3203125,
+        2.5,
+        3.0546875,
+        3.1484375,
+        2.71875,
+        1.9765625
+      ],
+      "atol": 0.0001,
+      "cross_shape": {
+        "adapter_max_abs": 0.0,
+        "scope": "diagnostic only: chunked vs one-shot floating-point computation",
+        "stock_greedy_agreement": true,
+        "stock_max_abs": 0.0
+      },
+      "greedy_agreement": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "length": 64,
+      "max_errors": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "probe": "synthetic",
+      "rtol": 0.0001,
+      "same_chunk_stock": [
+        {
+          "greedy_agreement": true,
+          "label": "prefill-64",
+          "max_abs": 0.0,
+          "stock_margin": 0.046875
+        },
+        {
+          "greedy_agreement": true,
+          "label": "decode-1",
+          "max_abs": 0.0,
+          "stock_margin": 0.1640625
+        },
+        {
+          "greedy_agreement": true,
+          "label": "decode-2",
+          "max_abs": 0.0,
+          "stock_margin": 0.0703125
+        },
+        {
+          "greedy_agreement": true,
+          "label": "decode-3",
+          "max_abs": 0.0,
+          "stock_margin": 1.265625
+        },
+        {
+          "greedy_agreement": true,
+          "label": "decode-4",
+          "max_abs": 0.0,
+          "stock_margin": 2.4453125
+        },
+        {
+          "greedy_agreement": true,
+          "label": "decode-5",
+          "max_abs": 0.0,
+          "stock_margin": 2.8828125
+        },
+        {
+          "greedy_agreement": true,
+          "label": "decode-6",
+          "max_abs": 0.0,
+          "stock_margin": 3.515625
+        },
+        {
+          "greedy_agreement": true,
+          "label": "decode-7",
+          "max_abs": 0.0,
+          "stock_margin": 3.78125
+        },
+        {
+          "greedy_agreement": true,
+          "label": "decode-8",
+          "max_abs": 0.0,
+          "stock_margin": 2.5703125
+        },
+        {
+          "greedy_agreement": true,
+          "label": "decode-9",
+          "max_abs": 0.0,
+          "stock_margin": 1.9921875
+        },
+        {
+          "greedy_agreement": true,
+          "label": "decode-10",
+          "max_abs": 0.0,
+          "stock_margin": 1.53125
+        },
+        {
+          "greedy_agreement": true,
+          "label": "decode-11",
+          "max_abs": 0.0,
+          "stock_margin": 1.3203125
+        },
+        {
+          "greedy_agreement": true,
+          "label": "decode-12",
+          "max_abs": 0.0,
+          "stock_margin": 2.5
+        },
+        {
+          "greedy_agreement": true,
+          "label": "decode-13",
+          "max_abs": 0.0,
+          "stock_margin": 3.0546875
+        },
+        {
+          "greedy_agreement": true,
+          "label": "decode-14",
+          "max_abs": 0.0,
+          "stock_margin": 3.1484375
+        },
+        {
+          "greedy_agreement": true,
+          "label": "decode-15",
+          "max_abs": 0.0,
+          "stock_margin": 2.71875
+        },
+        {
+          "greedy_agreement": true,
+          "label": "decode-16",
+          "max_abs": 0.0,
+          "stock_margin": 1.9765625
+        }
+      ]
+    },
+    {
+      "argmax_margins": [
+        0.3046875,
+        0.4765625,
+        0.5546875,
+        3.03125,
+        0.1171875,
+        5.421875,
+        4.9296875,
+        13.578125,
+        3.390625,
+        6.828125,
+        13.171875,
+        8.3359375,
+        1.3671875,
+        0.234375,
+        2.28125,
+        0.359375,
+        2.15625
+      ],
+      "atol": 0.0001,
+      "cross_shape": {
+        "adapter_max_abs": 0.015625,
+        "scope": "diagnostic only: chunked vs one-shot floating-point computation",
+        "stock_greedy_agreement": true,
+        "stock_max_abs": 0.015625
+      },
+      "greedy_agreement": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "length": 512,
+      "max_errors": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "probe": "synthetic",
+      "rtol": 0.0001,
+      "same_chunk_stock": [
+        {
+          "greedy_agreement": true,
+          "label": "prefill-128",
+          "max_abs": 0.0,
+          "stock_margin": 0.265625
+        },
+        {
+          "greedy_agreement": true,
+          "label": "prefill-256",
+          "max_abs": 0.0,
+          "stock_margin": 0.0546875
+        },
+        {
+          "greedy_agreement": true,
+          "label": "prefill-384",
+          "max_abs": 0.0,
+          "stock_margin": 0.734375
+        },
+        {
+          "greedy_agreement": true,
+          "label": "prefill-512",
+          "max_abs": 0.0,
+          "stock_margin": 0.3125
+        },
+        {
+          "greedy_agreement": true,
+          "label": "decode-1",
+          "max_abs": 0.0,
+          "stock_margin": 0.484375
+        },
+        {
+          "greedy_agreement": true,
+          "label": "decode-2",
+          "max_abs": 0.0,
+          "stock_margin": 0.5625
+        },
+        {
+          "greedy_agreement": true,
+          "label": "decode-3",
+          "max_abs": 0.0,
+          "stock_margin": 3.03125
+        },
+        {
+          "greedy_agreement": true,
+          "label": "decode-4",
+          "max_abs": 0.0,
+          "stock_margin": 0.1171875
+        },
+        {
+          "greedy_agreement": true,
+          "label": "decode-5",
+          "max_abs": 0.0,
+          "stock_margin": 5.421875
+        },
+        {
+          "greedy_agreement": true,
+          "label": "decode-6",
+          "max_abs": 0.0,
+          "stock_margin": 4.9296875
+        },
+        {
+          "greedy_agreement": true,
+          "label": "decode-7",
+          "max_abs": 0.0,
+          "stock_margin": 13.578125
+        },
+        {
+          "greedy_agreement": true,
+          "label": "decode-8",
+          "max_abs": 0.0,
+          "stock_margin": 3.390625
+        },
+        {
+          "greedy_agreement": true,
+          "label": "decode-9",
+          "max_abs": 0.0,
+          "stock_margin": 6.8125
+        },
+        {
+          "greedy_agreement": true,
+          "label": "decode-10",
+          "max_abs": 0.0,
+          "stock_margin": 13.171875
+        },
+        {
+          "greedy_agreement": true,
+          "label": "decode-11",
+          "max_abs": 0.0,
+          "stock_margin": 8.3359375
+        },
+        {
+          "greedy_agreement": true,
+          "label": "decode-12",
+          "max_abs": 0.0,
+          "stock_margin": 1.375
+        },
+        {
+          "greedy_agreement": true,
+          "label": "decode-13",
+          "max_abs": 0.0,
+          "stock_margin": 0.234375
+        },
+        {
+          "greedy_agreement": true,
+          "label": "decode-14",
+          "max_abs": 0.0,
+          "stock_margin": 2.28125
+        },
+        {
+          "greedy_agreement": true,
+          "label": "decode-15",
+          "max_abs": 0.0,
+          "stock_margin": 0.34375
+        },
+        {
+          "greedy_agreement": true,
+          "label": "decode-16",
+          "max_abs": 0.0,
+          "stock_margin": 2.140625
+        }
+      ]
+    },
+    {
+      "argmax_margins": [
+        0.1328125,
+        0.5234375,
+        0.1640625,
+        0.4453125,
+        0.1796875,
+        4.40625,
+        0.0625,
+        1.015625,
+        0.0625,
+        1.2421875,
+        2.2734375,
+        0.1796875,
+        5.4921875,
+        1.3359375,
+        0.2890625,
+        2.640625,
+        0.7890625
+      ],
+      "atol": 0.0001,
+      "cross_shape": {
+        "adapter_max_abs": 0.015625,
+        "scope": "diagnostic only: chunked vs one-shot floating-point computation",
+        "stock_greedy_agreement": true,
+        "stock_max_abs": 0.015625
+      },
+      "greedy_agreement": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "length": 1025,
+      "max_errors": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "probe": "synthetic",
+      "rtol": 0.0001,
+      "same_chunk_stock": [
+        {
+          "greedy_agreement": true,
+          "label": "prefill-128",
+          "max_abs": 0.0,
+          "stock_margin": 0.265625
+        },
+        {
+          "greedy_agreement": true,
+          "label": "prefill-256",
+          "max_abs": 0.0,
+          "stock_margin": 0.0546875
+        },
+        {
+          "greedy_agreement": true,
+          "label": "prefill-384",
+          "max_abs": 0.0,
+          "stock_margin": 0.734375
+        },
+        {
+          "greedy_agreement": true,
+          "label": "prefill-512",
+          "max_abs": 0.0,
+          "stock_margin": 0.3125
+        },
+        {
+          "greedy_agreement": true,
+          "label": "prefill-640",
+          "max_abs": 0.0,
+          "stock_margin": 1.4140625
+        },
+        {
+          "greedy_agreement": true,
+          "label": "prefill-768",
+          "max_abs": 0.0,
+          "stock_margin": 1.5234375
+        },
+        {
+          "greedy_agreement": true,
+          "label": "prefill-896",
+          "max_abs": 0.0,
+          "stock_margin": 0.3828125
+        },
+        {
+          "greedy_agreement": true,
+          "label": "prefill-1024",
+          "max_abs": 0.0,
+          "stock_margin": 0.0078125
+        },
+        {
+          "greedy_agreement": true,
+          "label": "prefill-1025",
+          "max_abs": 0.0,
+          "stock_margin": 0.1328125
+        },
+        {
+          "greedy_agreement": true,
+          "label": "decode-1",
+          "max_abs": 0.0,
+          "stock_margin": 0.53125
+        },
+        {
+          "greedy_agreement": true,
+          "label": "decode-2",
+          "max_abs": 0.0,
+          "stock_margin": 0.1640625
+        },
+        {
+          "greedy_agreement": true,
+          "label": "decode-3",
+          "max_abs": 0.0,
+          "stock_margin": 0.4453125
+        },
+        {
+          "greedy_agreement": true,
+          "label": "decode-4",
+          "max_abs": 0.0,
+          "stock_margin": 0.171875
+        },
+        {
+          "greedy_agreement": true,
+          "label": "decode-5",
+          "max_abs": 0.0,
+          "stock_margin": 4.3984375
+        },
+        {
+          "greedy_agreement": true,
+          "label": "decode-6",
+          "max_abs": 0.0,
+          "stock_margin": 0.0546875
+        },
+        {
+          "greedy_agreement": true,
+          "label": "decode-7",
+          "max_abs": 0.0,
+          "stock_margin": 1.0078125
+        },
+        {
+          "greedy_agreement": true,
+          "label": "decode-8",
+          "max_abs": 0.0,
+          "stock_margin": 0.0546875
+        },
+        {
+          "greedy_agreement": true,
+          "label": "decode-9",
+          "max_abs": 0.0,
+          "stock_margin": 1.25
+        },
+        {
+          "greedy_agreement": true,
+          "label": "decode-10",
+          "max_abs": 0.0,
+          "stock_margin": 2.265625
+        },
+        {
+          "greedy_agreement": true,
+          "label": "decode-11",
+          "max_abs": 0.0,
+          "stock_margin": 0.1953125
+        },
+        {
+          "greedy_agreement": true,
+          "label": "decode-12",
+          "max_abs": 0.0,
+          "stock_margin": 5.484375
+        },
+        {
+          "greedy_agreement": true,
+          "label": "decode-13",
+          "max_abs": 0.0,
+          "stock_margin": 1.328125
+        },
+        {
+          "greedy_agreement": true,
+          "label": "decode-14",
+          "max_abs": 0.0,
+          "stock_margin": 0.296875
+        },
+        {
+          "greedy_agreement": true,
+          "label": "decode-15",
+          "max_abs": 0.0,
+          "stock_margin": 2.640625
+        },
+        {
+          "greedy_agreement": true,
+          "label": "decode-16",
+          "max_abs": 0.0,
+          "stock_margin": 0.78125
+        }
+      ]
+    },
+    {
+      "argmax_margins": [
+        11.484375,
+        9.03125,
+        9.625,
+        9.15625,
+        6.171875,
+        12.546875,
+        9.078125,
+        11.234375,
+        7.65625,
+        11.171875,
+        9.140625,
+        10.25,
+        9.0078125,
+        5.7265625,
+        11.828125,
+        10.0,
+        10.03125
+      ],
+      "atol": 0.0001,
+      "cross_shape": {
+        "adapter_max_abs": 0.037109375,
+        "scope": "diagnostic only: chunked vs one-shot floating-point computation",
+        "stock_greedy_agreement": true,
+        "stock_max_abs": 0.037109375
+      },
+      "greedy_agreement": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "length": 1025,
+      "max_errors": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "probe": "natural_text",
+      "rtol": 0.0001,
+      "same_chunk_stock": [
+        {
+          "greedy_agreement": true,
+          "label": "prefill-128",
+          "max_abs": 0.0,
+          "stock_margin": 7.25
+        },
+        {
+          "greedy_agreement": true,
+          "label": "prefill-256",
+          "max_abs": 0.0,
+          "stock_margin": 6.84375
+        },
+        {
+          "greedy_agreement": true,
+          "label": "prefill-384",
+          "max_abs": 0.0,
+          "stock_margin": 8.984375
+        },
+        {
+          "greedy_agreement": true,
+          "label": "prefill-512",
+          "max_abs": 0.0,
+          "stock_margin": 8.21875
+        },
+        {
+          "greedy_agreement": true,
+          "label": "prefill-640",
+          "max_abs": 0.0,
+          "stock_margin": 11.28125
+        },
+        {
+          "greedy_agreement": true,
+          "label": "prefill-768",
+          "max_abs": 0.0,
+          "stock_margin": 10.140625
+        },
+        {
+          "greedy_agreement": true,
+          "label": "prefill-896",
+          "max_abs": 0.0,
+          "stock_margin": 11.4375
+        },
+        {
+          "greedy_agreement": true,
+          "label": "prefill-1024",
+          "max_abs": 0.0,
+          "stock_margin": 11.4375
+        },
+        {
+          "greedy_agreement": true,
+          "label": "prefill-1025",
+          "max_abs": 0.0,
+          "stock_margin": 11.4765625
+        },
+        {
+          "greedy_agreement": true,
+          "label": "decode-1",
+          "max_abs": 0.0,
+          "stock_margin": 9.03125
+        },
+        {
+          "greedy_agreement": true,
+          "label": "decode-2",
+          "max_abs": 0.0,
+          "stock_margin": 9.609375
+        },
+        {
+          "greedy_agreement": true,
+          "label": "decode-3",
+          "max_abs": 0.0,
+          "stock_margin": 9.140625
+        },
+        {
+          "greedy_agreement": true,
+          "label": "decode-4",
+          "max_abs": 0.0,
+          "stock_margin": 6.171875
+        },
+        {
+          "greedy_agreement": true,
+          "label": "decode-5",
+          "max_abs": 0.0,
+          "stock_margin": 12.5390625
+        },
+        {
+          "greedy_agreement": true,
+          "label": "decode-6",
+          "max_abs": 0.0,
+          "stock_margin": 9.078125
+        },
+        {
+          "greedy_agreement": true,
+          "label": "decode-7",
+          "max_abs": 0.0,
+          "stock_margin": 11.234375
+        },
+        {
+          "greedy_agreement": true,
+          "label": "decode-8",
+          "max_abs": 0.0,
+          "stock_margin": 7.640625
+        },
+        {
+          "greedy_agreement": true,
+          "label": "decode-9",
+          "max_abs": 0.0,
+          "stock_margin": 11.171875
+        },
+        {
+          "greedy_agreement": true,
+          "label": "decode-10",
+          "max_abs": 0.0,
+          "stock_margin": 9.140625
+        },
+        {
+          "greedy_agreement": true,
+          "label": "decode-11",
+          "max_abs": 0.0,
+          "stock_margin": 10.234375
+        },
+        {
+          "greedy_agreement": true,
+          "label": "decode-12",
+          "max_abs": 0.0,
+          "stock_margin": 9.0078125
+        },
+        {
+          "greedy_agreement": true,
+          "label": "decode-13",
+          "max_abs": 0.0,
+          "stock_margin": 5.7265625
+        },
+        {
+          "greedy_agreement": true,
+          "label": "decode-14",
+          "max_abs": 0.0,
+          "stock_margin": 11.796875
+        },
+        {
+          "greedy_agreement": true,
+          "label": "decode-15",
+          "max_abs": 0.0,
+          "stock_margin": 10.015625
+        },
+        {
+          "greedy_agreement": true,
+          "label": "decode-16",
+          "max_abs": 0.0,
+          "stock_margin": 10.015625
+        }
+      ]
+    }
+  ],
+  "status": "passed",
+  "weights_sha256": "7c6fdf96c2489792315a773d9f8c5fc279ddf4fd5b4088734c4abf9237e53183"
+}

@@ -1,0 +1,264 @@
+{
+  "scope": "Selected values checked by direct offline aggregation of saved JSONL/CSV rows where available; other values are transcribed from saved audited reports. Hashes bind files, not independent experimental replication.",
+  "source_files": [
+    {
+      "path": "results/evidence/demand-Qwen--Qwen2.5-1.5B-Instruct-confirm-d8a93a273235/PROVENANCE.md",
+      "sha256": "96f614c2b67930c20b6643bf4f3f175c85c01bab8246cd9b6312c837f20cb3f5"
+    },
+    {
+      "path": "results/evidence/demand-Qwen--Qwen2.5-1.5B-Instruct-confirm-d8a93a273235/report.md",
+      "sha256": "3aaee48b7ba7779f11a3b61343e0c9020feba73ae76d64dc43bde6b3f64bb7bb"
+    },
+    {
+      "path": "results/evidence/demand-Qwen--Qwen2.5-1.5B-Instruct-confirm-d8a93a273235/summary.json",
+      "sha256": "952c3961d5f8235cb60e4e8938a443e3ffe68685dda3233c16d49c9f9f25f3d6"
+    },
+    {
+      "path": "results/evidence/demand-Qwen--Qwen2.5-1.5B-Instruct-confirm-d8a93a273235/samples.jsonl",
+      "sha256": "6f154a9b5a3ee131ca7cf401e4be4815bf46a3dd12a2c823275358210a035366"
+    },
+    {
+      "path": "results/evidence/demand-Qwen--Qwen2.5-1.5B-Instruct-confirm-d8a93a273235/latency.csv",
+      "sha256": "ae7c7d9e64be9ba5a0a297793661c614a70aec0b0b228cd1a0d43b5b3d22c081"
+    },
+    {
+      "path": "results/evidence/demand-Qwen--Qwen2.5-1.5B-Instruct-confirm-d8a93a273235/independent-check.json",
+      "sha256": "84f7214009fae8354d7e26237478cec84d1dcc62bcd80692f371ab055e43bd78"
+    },
+    {
+      "path": "results/evidence/demand-Qwen--Qwen3-0.6B-confirm-479bee540057/README.md",
+      "sha256": "2364cb41868b689298466e745777e1c0af4e4e924fc835f4bcccafb7793c9a72"
+    },
+    {
+      "path": "results/evidence/demand-Qwen--Qwen3-0.6B-confirm-479bee540057/report.md",
+      "sha256": "7a54975d9d29149fd65b35041543a001f66764dbfadb1430192f6c5c4efddf3c"
+    },
+    {
+      "path": "results/evidence/demand-Qwen--Qwen3-0.6B-confirm-479bee540057/summary.json",
+      "sha256": "cda0cd9a138069af888ea137c54ad6cbf838c506966df406712404496a2b2415"
+    },
+    {
+      "path": "results/evidence/demand-Qwen--Qwen3-0.6B-confirm-479bee540057/latency.csv",
+      "sha256": "e1a554112c288c40919f9ebdbec48d2c87afcbd18a0dd10538e1fbf09d7c6d41"
+    },
+    {
+      "path": "results/evidence/demand-Qwen--Qwen3-0.6B-confirm-479bee540057/independent-check.json",
+      "sha256": "475d59089ebfee56904b435f618bd1f0bab5bc9a1b47a61cd616ff50d730a8c6"
+    },
+    {
+      "path": "results/evidence/attention-device-cost-af741c7-attempt2/README.md",
+      "sha256": "6c0f81d54d3f9012d6dd30280d4e90271964e3dfacf6c96fd2784ffedceafa70"
+    },
+    {
+      "path": "results/evidence/attention-device-cost-af741c7-attempt2/derived-costs.json",
+      "sha256": "c70bda66f94c51e81311b4b1e6e6eba158b6e60bc01f055d570a6a5821da2e3a"
+    },
+    {
+      "path": "results/evidence/attention-device-cost-af741c7-attempt2/independent-check.json",
+      "sha256": "0b75c61e5f5c741d93fda92516c007740225ed613638de250254606de96a99e8"
+    },
+    {
+      "path": "results/evidence/attention-observer-ablation-fresh-1/README.md",
+      "sha256": "4db86a945e94b8acc796584a7ea6ddd0f9eb7267a1b5b34ae5f30cbcde7ff506"
+    },
+    {
+      "path": "results/evidence/attention-observer-ablation-fresh-1/report.json",
+      "sha256": "2ac7085baba871f34e6c6b2fc6c7c0dbfd880c28fb069abcca5d1d82a0189b4e"
+    },
+    {
+      "path": "results/evidence/attention-observer-ablation-fresh-1/audit.json",
+      "sha256": "bbd2f2a00b1370c605c747439ce7b4f16d51e5fdc50b27a3858c43371a628758"
+    },
+    {
+      "path": "results/evidence/reasoning-Qwen--Qwen2.5-1.5B-Instruct-8862fb5f28f2/PROVENANCE.md",
+      "sha256": "9d69fb51e8015820eddb3e60f2fbf1f90f94befc50faf677d19bb4a077492a45"
+    },
+    {
+      "path": "results/evidence/reasoning-Qwen--Qwen2.5-1.5B-Instruct-8862fb5f28f2/report.md",
+      "sha256": "febc0b1c1c2c7ec4b51a1d1c70e45668699b693fcc10f0214e7507f84e39cb48"
+    },
+    {
+      "path": "results/evidence/reasoning-Qwen--Qwen2.5-1.5B-Instruct-8862fb5f28f2/summary.json",
+      "sha256": "09d56ae692bebb3c42caf3074054464bb9666374c7bd760bf8f4934b34b47ffc"
+    },
+    {
+      "path": "results/evidence/reasoning-Qwen--Qwen2.5-1.5B-Instruct-8862fb5f28f2/samples.jsonl",
+      "sha256": "7407fb4d2dd3b6389e5042bad7cb544ce26d8e085383e23c65e859b8ced7afc8"
+    },
+    {
+      "path": "results/evidence/reasoning-Qwen--Qwen3-4B-Instruct-2507-67a2e095096b/README.md",
+      "sha256": "0b5abde7f2eb0cdcd54290bad077e1c2d8d876dc1f0f1319e0a58ce045a5dacd"
+    },
+    {
+      "path": "results/evidence/reasoning-Qwen--Qwen3-4B-Instruct-2507-67a2e095096b/report.md",
+      "sha256": "fac8cb01b87a7e32cc4fe0a5e88075e13d1a2b14fdafcb0b3cc9383e114a5c7a"
+    },
+    {
+      "path": "results/evidence/reasoning-Qwen--Qwen3-4B-Instruct-2507-67a2e095096b/summary.json",
+      "sha256": "d794494d188a01d1901f9eb26e55eb72185d3d1c8b942dacccae5b47d59e961a"
+    },
+    {
+      "path": "results/evidence/memory-Qwen--Qwen2.5-1.5B-Instruct-566c642d5409/PROVENANCE.md",
+      "sha256": "59d51aa159f6c710ee211f5aa9535ea1ed407cf4e8f66c8f69a7776c9412b125"
+    },
+    {
+      "path": "results/evidence/memory-Qwen--Qwen2.5-1.5B-Instruct-566c642d5409/report.md",
+      "sha256": "8a7d1501c17463f63cc9381bd9ec40255a4bbb3a32dd03698b8c82c895be40fc"
+    },
+    {
+      "path": "results/evidence/memory-Qwen--Qwen2.5-1.5B-Instruct-566c642d5409/summary.json",
+      "sha256": "ea8ccd7cbbed0a686dbf513d8279cd14c390b4e1a399fe33dfcf0bca5aa1fd83"
+    },
+    {
+      "path": "results/evidence/memory-Qwen--Qwen2.5-1.5B-Instruct-566c642d5409/samples.jsonl",
+      "sha256": "8992971cc686896006dba4a1a79639de7d2b9314b9e5120a9d017d08a3ba280f"
+    },
+    {
+      "path": "results/evidence/memory-Qwen--Qwen2.5-1.5B-Instruct-566c642d5409/derived-costs.json",
+      "sha256": "3249a510341f3980da9e46fad2fc55c1b525776c8f523dd9b68129fde70fb3fb"
+    },
+    {
+      "path": "results/evidence/memory-Qwen--Qwen3-4B-Instruct-2507-991d4e87104b/README.md",
+      "sha256": "8ddba4ec1d5e2b6733d8a8a1810dd3ddb55279c1891d2a02ce1e6d7d5b1e94a1"
+    },
+    {
+      "path": "results/evidence/memory-Qwen--Qwen3-4B-Instruct-2507-991d4e87104b/report.md",
+      "sha256": "d2939bd39963978049b9768ee35d11b2d74054956f3d40ae97d9c368443b30f4"
+    },
+    {
+      "path": "results/evidence/memory-Qwen--Qwen3-4B-Instruct-2507-991d4e87104b/summary.json",
+      "sha256": "775269869808dab7698f37a5fc7fd97e1adf55d02f57548a317529ab0134023d"
+    },
+    {
+      "path": "results/evidence/demand-Qwen--Qwen3-0.6B-confirm-479bee540057/raw/demand-Qwen--Qwen3-0.6B-confirm-479bee540057/samples.jsonl",
+      "sha256": "50a27701355cd876d9a9da64ec8ff84ba108131493eb359369d48f8d7496b3c1"
+    },
+    {
+      "path": "results/evidence/attention-device-cost-af741c7-attempt2/raw/samples.jsonl",
+      "sha256": "6ea0b3de505bce6bb7df3af5df7d6c75429b9935c8d1e4fb1475bf853df08862"
+    },
+    {
+      "path": "results/evidence/attention-observer-ablation-fresh-1/observer-samples.jsonl",
+      "sha256": "4b9d52c203317c7359acbc7ec6b44a91cb39e7d1a88bcca4d4c9c17c174542cf"
+    },
+    {
+      "path": "results/evidence/reasoning-Qwen--Qwen3-4B-Instruct-2507-67a2e095096b/run/samples.jsonl",
+      "sha256": "a9d1841df37bc2f0bc4493e1374b2c939fcb168f3728821dfd91bc757c5c886b"
+    },
+    {
+      "path": "results/evidence/memory-Qwen--Qwen3-4B-Instruct-2507-991d4e87104b/run/samples.jsonl",
+      "sha256": "6ffdcc670a40842ae78a2db3de87cbe75c9347de3f1cdd5936fccba94c2c1544"
+    }
+  ],
+  "direct_raw_row_counts": {
+    "demand-Qwen--Qwen2.5-1.5B-Instruct-confirm-d8a93a273235": 264,
+    "reasoning-Qwen--Qwen2.5-1.5B-Instruct-8862fb5f28f2": 220,
+    "memory-Qwen--Qwen2.5-1.5B-Instruct-566c642d5409": 160,
+    "qwen3_06_confirmation": 264,
+    "qwen4_reasoning": 220,
+    "qwen4_memory": 160,
+    "matched_reranker": 18,
+    "observer_ablation": 12
+  },
+  "selected_results": {
+    "qwen15_confirmation": {
+      "rows": 264,
+      "quality_all": {
+        "full_buffered": [
+          30,
+          30
+        ],
+        "rare_context": [
+          24,
+          30
+        ]
+      },
+      "quality_32k": {
+        "full_buffered": [
+          12,
+          12
+        ],
+        "rare_context": [
+          6,
+          12
+        ]
+      }
+    },
+    "qwen3_06_confirmation": {
+      "rows": 264,
+      "quality_all": {
+        "full_buffered": [
+          26,
+          30
+        ],
+        "rare_context": [
+          24,
+          30
+        ]
+      },
+      "steady_decode_32k_mean_ms": {
+        "native_stock": 209.62,
+        "rare_context": 85.29
+      },
+      "cuda_allocated_peak_gib": {
+        "native_stock": 4.87,
+        "rare_context": 1.42
+      },
+      "quality_32k": {
+        "full_buffered": [
+          8,
+          12
+        ],
+        "rare_context": [
+          7,
+          12
+        ]
+      }
+    },
+    "attention_device_cost_32k": {
+      "requests_total": 18,
+      "serving_median_s": {
+        "native_stock": 10.079,
+        "cpu_reranker": 61.092,
+        "device_reranker": 52.668
+      },
+      "paired_device_over_stock_median": 5.237
+    },
+    "observer_ablation_32k": {
+      "requests_total": 12,
+      "serving_median_s": {
+        "on": 52.027,
+        "off": 43.147
+      },
+      "median_paired_off_over_on": 0.829
+    },
+    "reasoning_32k_exact_per_8": {
+      "qwen15": {
+        "stock_direct": 4,
+        "sparse_r1": 2,
+        "sparse_r2": 2,
+        "sparse_r4": 2
+      },
+      "qwen4": {
+        "stock_direct": 6,
+        "sparse_r1": 2,
+        "sparse_r2": 2,
+        "sparse_r4": 3
+      }
+    },
+    "memory_32k_exact_per_10": {
+      "qwen15": {
+        "stock_none": 5,
+        "sparse_none": 3,
+        "sparse_addresses": 5
+      },
+      "qwen4": {
+        "stock_none": 10,
+        "sparse_none": 4,
+        "sparse_notes": 5,
+        "sparse_addresses": 6,
+        "sparse_both": 6
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "epoch": 1793795283.107824,
+  "controller_pid": 45531,
+  "controller_create_time": 1793791173.46,
+  "controller_shell_wait": 0,
+  "controller_pid_exists": false,
+  "worker_pid": 45591,
+  "worker_create_time": 1793791184.67,
+  "worker_pid_exists": false,
+  "worker_returncode_from_state": 0,
+  "state_status": "complete",
+  "state_sha256": "9de86ae04476383b8e17ccd6e892cd068d40e7637d8e4b12bff6e98b7e89c73d",
+  "rows": 9,
+  "run": "demand-Qwen--Qwen2.5-1.5B-Instruct-online-79ab5d653296",
+  "file_count": 11,
+  "all_local_backup_hashes_match": true,
+  "complete_sha256": "b4546027af381a528289374e06c22d75213f2097efc4661401e47c8131490e08"
+}

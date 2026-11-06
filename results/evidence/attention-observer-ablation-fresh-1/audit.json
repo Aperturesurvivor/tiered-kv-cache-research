@@ -1,0 +1,24 @@
+{
+  "complete_sha256": "61a4d731df04db8c5a9fbb14362102d4c13428a87f861f422eb181ca09263861",
+  "output_files": 24,
+  "rows": 12,
+  "samples_sha256": "4b9d52c203317c7359acbc7ec6b44a91cb39e7d1a88bcca4d4c9c17c174542cf",
+  "scope": "Saved scalar logit checks and KV/position hashes are reconciled, but raw logits, tensors and IDs are not reconstructed. Off-arm per-event routing is unobserved. No inference or model load.",
+  "source_files": 74,
+  "state_sha256": "64056293bd8e1589b665c9481c0e35c9bcccdbbd7fa2853a134c0e7956f40fdf",
+  "status": "verified_complete",
+  "terminal_sha256": "7e2e20f8f4a1fe0606d87296270a9773f522e6eb4f7b9686844f389f4e484d5c",
+  "timed_off_routes_observed": false,
+  "timed_on_routes_verified": true,
+  "validation_passed": true,
+  "validations": {
+    "32768": {
+      "events": 4648,
+      "max_abs_logit": 0.0
+    },
+    "8192": {
+      "events": 4648,
+      "max_abs_logit": 0.0
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "epoch": 1793780070.5048106,
+  "controller_pid": 359947,
+  "controller_create_time": 1793777975.21,
+  "controller_returncode": 0,
+  "children_observed": [],
+  "local_rows": 24,
+  "free_content_bytes": 29606133760,
+  "local_marker": {
+    "status": "complete",
+    "rows": 24,
+    "weights_unchanged": true,
+    "plan_sha256": "dd31e825291215a5e35db43d11e79ae6de5b7a23e725f45e132066f96a943a29",
+    "samples_sha256": "c7cab93148fe9995085e092b2f19dc42171126ae506f76f72114b3d49e7a8d59",
+    "integrity_sha256": "ce26f7e197baf77c9bc742e193c44480a6baf11012c804fca7c53fab27b48403"
+  }
+}

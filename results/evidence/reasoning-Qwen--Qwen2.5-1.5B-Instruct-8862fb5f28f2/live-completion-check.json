@@ -1,0 +1,15 @@
+{
+  "observed_at": 1793745482.626164,
+  "method": "Colab terminal Popen.poll and psutil through native Safari UI",
+  "supervisor_pid": 202917,
+  "supervisor_create_time": 1793740010.44,
+  "supervisor_returncode": 0,
+  "worker_pid": 203605,
+  "worker_exists": false,
+  "following_memory_supervisor_returncode": null,
+  "following_4b_supervisor_returncode": null,
+  "following_update_supervisor_returncode": null,
+  "archive_status": "running",
+  "original_dispatcher_status": "stopped",
+  "following_memory_status": "waiting_for_archive_metadata_boundary"
+}

@@ -1,0 +1,13 @@
+{
+  "metrics": {
+    "count_scope": "request forwards including all prompt replay and consumed generated tokens; excludes one-time archive construction; logical attention pairs are not measured GPU FLOPs",
+    "layer_summed_valid_KV_positions": 143114244,
+    "logical_attention_head_pairs": 1717370928,
+    "max_active_KV_entries": 30873,
+    "model_token_evaluations": 166,
+    "prompt_token_evaluations": 102,
+    "transformer_forward_calls": 65
+  },
+  "scope": "untimed stock workload warmup; caches not purged",
+  "status": "passed"
+}

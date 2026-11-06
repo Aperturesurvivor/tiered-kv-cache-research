@@ -1,0 +1,107 @@
+{
+  "disk_guard_bytes": 9761886720,
+  "fixtures": [
+    "transfer-linked_fact-8192-283",
+    "transfer-linked_fact-32768-283"
+  ],
+  "forced_token_source": "last 64 archive-prefix tokens",
+  "plan_sha256": "dd31e825291215a5e35db43d11e79ae6de5b7a23e725f45e132066f96a943a29",
+  "schedule": [
+    [
+      8192,
+      0,
+      "stock"
+    ],
+    [
+      8192,
+      0,
+      "cpu"
+    ],
+    [
+      8192,
+      0,
+      "device"
+    ],
+    [
+      8192,
+      1,
+      "cpu"
+    ],
+    [
+      8192,
+      1,
+      "device"
+    ],
+    [
+      8192,
+      1,
+      "stock"
+    ],
+    [
+      8192,
+      2,
+      "device"
+    ],
+    [
+      8192,
+      2,
+      "stock"
+    ],
+    [
+      8192,
+      2,
+      "cpu"
+    ],
+    [
+      32768,
+      0,
+      "stock"
+    ],
+    [
+      32768,
+      0,
+      "cpu"
+    ],
+    [
+      32768,
+      0,
+      "device"
+    ],
+    [
+      32768,
+      1,
+      "cpu"
+    ],
+    [
+      32768,
+      1,
+      "device"
+    ],
+    [
+      32768,
+      1,
+      "stock"
+    ],
+    [
+      32768,
+      2,
+      "device"
+    ],
+    [
+      32768,
+      2,
+      "stock"
+    ],
+    [
+      32768,
+      2,
+      "cpu"
+    ]
+  ],
+  "sources": {
+    "research/attention_device_cost.py": "2e745374ecba6d6776de2215dc42354d3101de038a9e61731979f3677f645953",
+    "research/attention_device_rerank.py": "13be7a244ebf66731d4208a2ecf2b6b55abc75eef2ee0e73dd9cfb52929ba409",
+    "research/attention_device_summaries.py": "69a98c16452cf62e1bd555ebed758ea402ec9ead52bbbef0526f5f2b76c6e757"
+  },
+  "timing_scope": "synchronized wall time per forced token; sparse route and position-hash instrumentation included; separate untimed KV hashing and stock warmup; OS and model caches warm, not purged; no physical SSD or cold-cache claim; evidence serialization excluded, completed before the next trial"
+}

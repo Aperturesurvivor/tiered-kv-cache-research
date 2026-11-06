@@ -1,0 +1,32 @@
+{
+  "auditor_sha256": "effbaaa008c921a3283bcbf582e3e29479c7689351b1095b62c8f9f482d226c9",
+  "files_sha256": {
+    "complete.json": "b4546027af381a528289374e06c22d75213f2097efc4661401e47c8131490e08",
+    "coverage.json": "d888414362e0138c3792ed939c60e07f62654f197d83fb00be971e68ff8b7cec",
+    "fixtures.json": "23266dbe0a424c8ab9a4fbd3175b9dd601c67a14f2d96bc50a1f46cdde014213",
+    "index-resources.json": "9bb075413c38009385eebf4e82b73379b8624ccfc27d202c10898bb384de2c02",
+    "manifest.json": "6d1d1140b654296379b0f63c494cdb7222efac51d6d27057eecbb908b98cba31",
+    "online-tokens-default.json": "d1a18bedb3f3feddb3c0af1063d7cb3a2a368b9468767639e295bbce43e6f5fc",
+    "online-tokens-full_buffered.json": "d1a18bedb3f3feddb3c0af1063d7cb3a2a368b9468767639e295bbce43e6f5fc",
+    "online-tokens.json": "df991bad3b965fc0c6d29cb3fc7ccdf28ed52cfb3f2add32ad05afdc342e4112",
+    "online.jsonl": "366d52b6cc96ae70fb7bce9b01073d71eccf297834e1ec305b9906a302350da6",
+    "samples.jsonl": "bd87f3efff5ed9ca39e85ab10a7b38603403f63a8dd9a4cc620a9c10f3ec34fb",
+    "validation.json": "a114caa30589a2d79ab743ed4918c115c43ce8fd99d8a049eb704a227d3d4e7f"
+  },
+  "matrix": {
+    "expected_rows": 9,
+    "missing_rows": 0,
+    "observed_rows": 9
+  },
+  "rows": 9,
+  "same_chunk_max_abs_by_probe": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "scope": "Saved parity and online validation records inspected; raw logits are not reconstructed. Initial weight digest is saved; complete marker records frozen post-run equality, not a second raw digest. Prebuilt text index and fixture tokens are outside online ingestion; full_buffered is custom dense disk-writing control, not stock HF. Three correlated cases do not establish quality equivalence or latency scaling.",
+  "state_sha256": "1c759d699e30c4d27d7ea62cf19cdeb0131ac705fe3fbe5e1fbebd06301f68a7",
+  "status": "verified_complete",
+  "terminal_sha256": "8f4e63aacdd92a9c4927be2d03e96a03fbbec87e107b955208df3680c2d06cfd"
+}

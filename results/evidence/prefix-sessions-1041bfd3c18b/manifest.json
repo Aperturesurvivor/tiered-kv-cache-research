@@ -1,0 +1,49 @@
+{
+  "checkpoint_sha256": {
+    "persistent-16384": "495d8b2fa6e820e58ad345e5374d3574bceabb5f0771c2de5e7693c51b204410",
+    "persistent-32768": "f80a6120a61a004d3d5c53191631d1bdb061c3c71d690d5fff5de86db6e8012e",
+    "persistent-4096": "c8c34140a1e869f31534076f3e4385ad36fa66b45f9fd96a48ad2f5a168f6f69",
+    "persistent-8192": "175393613c111bd143ad3dbae59550cbbfca087110778487a1f0db22e3a05ca6"
+  },
+  "implementation_hash": "c34ae62f98c06bf1d14af674994d04f4594da12c604a072753de768c933f79ec",
+  "policies": [
+    "stock_hf",
+    "rare_context",
+    "prefix_128"
+  ],
+  "runtime": {
+    "capability": [
+      7,
+      5
+    ],
+    "cuda": "12.4",
+    "cudnn": 90100,
+    "cudnn_sdp": true,
+    "device": "cuda",
+    "flash_sdp": true,
+    "fp16_reduced": true,
+    "gpu": "Tesla T4",
+    "interop_threads": 1,
+    "machine": "x86_64",
+    "math_sdp": true,
+    "math_sdp_reduced": false,
+    "mem_efficient_sdp": true,
+    "numpy": "2.2.4",
+    "os": "Linux-6.6.159+-x86_64-with-glibc2.39",
+    "python": "3.13.16",
+    "tf32": false,
+    "threads": 1,
+    "torch": "2.6.0+cu124",
+    "transformers": "4.51.3"
+  },
+  "scope": "post-hoc all twelve original persistent queries; one known prefix-128 win; no performance claim",
+  "script_sha256": "232b5d37f2ae112601a9b347a7016a3b4cedafc7c2dbd44dc51ed2f815f021f9",
+  "source_files_sha256": {
+    "complete.json": "347390daab17fefc404c683a390cb86ac2c76472b79c80ab6397a0a630e25e76",
+    "fixtures.json": "3b5ba000652ba1f3166abb973fc52f40bb323cb940ada2d98a9177ad0ff4b9b1",
+    "manifest.json": "26dad00a0d5cbc46c47f69f3da9f08c480f8be73733356c432e1471e6fdfbbba",
+    "samples.jsonl": "9409bfc2d631e7610d047a1b402429f769ebb41eb9b4b1eccd6200f4c95ca22e",
+    "validation.json": "17620aa40be655fb3db766a3ef138c6355345f5221c2735c71e53dc128985c90"
+  },
+  "source_revision": "23964ff04123671c230249d7b58ebe7403616b0f"
+}

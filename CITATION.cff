@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite the manuscript."
+title: "Tiered KV Cache Research"
+type: software
+authors:
+  - family-names: Wilson
+    given-names: Josiah
+url: "https://github.com/Aperturesurvivor/tiered-kv-cache-research/tree/v1.0.0"
+license: MIT
+version: 1.0.0
+date-released: 2026-11-06
+preferred-citation:
+  type: report
+  title: "Exact Storage, Inexact Recall: An Empirical Study of Disk-Backed Sparse KV Memory for Frozen Language Models"
+  authors:
+    - family-names: Wilson
+      given-names: Josiah
+  date-released: 2026-11-06
+  url: "https://github.com/Aperturesurvivor/tiered-kv-cache-research/tree/v1.0.0"

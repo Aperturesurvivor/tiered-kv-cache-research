@@ -1,0 +1,21 @@
+{
+  "complete_sha256": "902a897e40abf971bd613c7f33e29d8ef3907860d33df3198243269a0c7da86f",
+  "output_files": 26,
+  "rows": 18,
+  "samples_sha256": "6ea0b3de505bce6bb7df3af5df7d6c75429b9935c8d1e4fb1475bf853df08862",
+  "scope": "Saved position hashes, route budgets, exact KV hashes and runner/controller assertions reconciled. Position hashes cannot reconstruct all attention IDs. Model answer quality and independent hardware performance claims are out of scope.",
+  "source_files": 73,
+  "state_sha256": "0db0e03f77d93bd02e2f73a9a21c9f1dd7ed0cda66f1e4012265fb2e433134c2",
+  "status": "verified_complete",
+  "terminal_sha256": "581220a508db47cdbd80bbb54e942e5ebb9500ea5bebf5fc4d1eeaf926fe4b03",
+  "validation": {
+    "32768": {
+      "events": 4648,
+      "max_abs_logit": 0.0
+    },
+    "8192": {
+      "events": 4648,
+      "max_abs_logit": 0.0
+    }
+  }
+}

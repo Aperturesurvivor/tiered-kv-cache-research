@@ -1,0 +1,495 @@
+{
+  "fixture_sha256": "26ac898237345dd76786e70eff6c7071edd2c14a0be3e2fffbbd3d2d86a2227f",
+  "implementation_hash": "0981ad021829bd87cd32ee4ca72c8f96f709e41cab117b1a41882aac973cbced",
+  "memory_prompt_token_cap": 256,
+  "memory_state_token_cap": 256,
+  "model": {
+    "config": {
+      "architectures": [
+        "Qwen2ForCausalLM"
+      ],
+      "attention_dropout": 0.0,
+      "bos_token_id": 151643,
+      "eos_token_id": 151645,
+      "hidden_act": "silu",
+      "hidden_size": 1536,
+      "initializer_range": 0.02,
+      "intermediate_size": 8960,
+      "max_position_embeddings": 32768,
+      "max_window_layers": 21,
+      "model_type": "qwen2",
+      "num_attention_heads": 12,
+      "num_hidden_layers": 28,
+      "num_key_value_heads": 2,
+      "rms_norm_eps": 1e-06,
+      "rope_theta": 1000000.0,
+      "sliding_window": 32768,
+      "tie_word_embeddings": true,
+      "torch_dtype": "bfloat16",
+      "transformers_version": "4.43.1",
+      "use_cache": true,
+      "use_sliding_window": false,
+      "vocab_size": 151936
+    },
+    "gated": false,
+    "model_id": "Qwen/Qwen2.5-1.5B-Instruct",
+    "parameters": 1543714304,
+    "revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306"
+  },
+  "runtime": {
+    "capability": [
+      7,
+      5
+    ],
+    "cuda": "12.4",
+    "cudnn": 90100,
+    "cudnn_sdp": true,
+    "device": "cuda",
+    "flash_sdp": true,
+    "fp16_reduced": true,
+    "gpu": "Tesla T4",
+    "interop_threads": 1,
+    "machine": "x86_64",
+    "math_sdp": true,
+    "math_sdp_reduced": false,
+    "mem_efficient_sdp": true,
+    "numpy": "2.2.4",
+    "os": "Linux-6.6.159+-x86_64-with-glibc2.39",
+    "python": "3.13.16",
+    "tf32": false,
+    "threads": 1,
+    "torch": "2.6.0+cu124",
+    "transformers": "4.51.3"
+  },
+  "schedule": [
+    {
+      "episode_id": "reasoning-linked_fact-8192-157",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "sparse-memory-notes-r2-cap128",
+        "memory": "notes",
+        "memory_seed": "empty",
+        "rounds": 2
+      },
+      "queries": 5
+    },
+    {
+      "episode_id": "reasoning-linked_fact-8192-157",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "sparse-memory-addresses-r2-cap128",
+        "memory": "addresses",
+        "memory_seed": "empty",
+        "rounds": 2
+      },
+      "queries": 5
+    },
+    {
+      "episode_id": "reasoning-linked_fact-8192-157",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "sparse-memory-none-r2-cap128",
+        "memory": "none",
+        "memory_seed": "empty",
+        "rounds": 2
+      },
+      "queries": 5
+    },
+    {
+      "episode_id": "reasoning-linked_fact-8192-157",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "sparse-memory-both-r2-cap128",
+        "memory": "both",
+        "memory_seed": "empty",
+        "rounds": 2
+      },
+      "queries": 5
+    },
+    {
+      "episode_id": "reasoning-linked_fact-8192-157",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "sparse-memory-both-stale-r2-cap128",
+        "memory": "both",
+        "memory_seed": "synthetic_stale",
+        "rounds": 2
+      },
+      "queries": 5
+    },
+    {
+      "episode_id": "reasoning-linked_fact-8192-157",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "stock-memory-notes-stale-r2-cap128",
+        "memory": "notes",
+        "memory_seed": "synthetic_stale",
+        "rounds": 2
+      },
+      "queries": 5
+    },
+    {
+      "episode_id": "reasoning-linked_fact-8192-157",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "stock-memory-notes-r2-cap128",
+        "memory": "notes",
+        "memory_seed": "empty",
+        "rounds": 2
+      },
+      "queries": 5
+    },
+    {
+      "episode_id": "reasoning-linked_fact-8192-157",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "stock-memory-none-r2-cap128",
+        "memory": "none",
+        "memory_seed": "empty",
+        "rounds": 2
+      },
+      "queries": 5
+    },
+    {
+      "episode_id": "reasoning-linked_fact-8192-163",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "sparse-memory-none-r2-cap128",
+        "memory": "none",
+        "memory_seed": "empty",
+        "rounds": 2
+      },
+      "queries": 5
+    },
+    {
+      "episode_id": "reasoning-linked_fact-8192-163",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "stock-memory-notes-r2-cap128",
+        "memory": "notes",
+        "memory_seed": "empty",
+        "rounds": 2
+      },
+      "queries": 5
+    },
+    {
+      "episode_id": "reasoning-linked_fact-8192-163",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "stock-memory-notes-stale-r2-cap128",
+        "memory": "notes",
+        "memory_seed": "synthetic_stale",
+        "rounds": 2
+      },
+      "queries": 5
+    },
+    {
+      "episode_id": "reasoning-linked_fact-8192-163",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "sparse-memory-both-stale-r2-cap128",
+        "memory": "both",
+        "memory_seed": "synthetic_stale",
+        "rounds": 2
+      },
+      "queries": 5
+    },
+    {
+      "episode_id": "reasoning-linked_fact-8192-163",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "sparse-memory-both-r2-cap128",
+        "memory": "both",
+        "memory_seed": "empty",
+        "rounds": 2
+      },
+      "queries": 5
+    },
+    {
+      "episode_id": "reasoning-linked_fact-8192-163",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "sparse-memory-notes-r2-cap128",
+        "memory": "notes",
+        "memory_seed": "empty",
+        "rounds": 2
+      },
+      "queries": 5
+    },
+    {
+      "episode_id": "reasoning-linked_fact-8192-163",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "sparse-memory-addresses-r2-cap128",
+        "memory": "addresses",
+        "memory_seed": "empty",
+        "rounds": 2
+      },
+      "queries": 5
+    },
+    {
+      "episode_id": "reasoning-linked_fact-8192-163",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "stock-memory-none-r2-cap128",
+        "memory": "none",
+        "memory_seed": "empty",
+        "rounds": 2
+      },
+      "queries": 5
+    },
+    {
+      "episode_id": "reasoning-linked_fact-32768-157",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "stock-memory-none-r2-cap128",
+        "memory": "none",
+        "memory_seed": "empty",
+        "rounds": 2
+      },
+      "queries": 5
+    },
+    {
+      "episode_id": "reasoning-linked_fact-32768-157",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "sparse-memory-both-stale-r2-cap128",
+        "memory": "both",
+        "memory_seed": "synthetic_stale",
+        "rounds": 2
+      },
+      "queries": 5
+    },
+    {
+      "episode_id": "reasoning-linked_fact-32768-157",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "sparse-memory-none-r2-cap128",
+        "memory": "none",
+        "memory_seed": "empty",
+        "rounds": 2
+      },
+      "queries": 5
+    },
+    {
+      "episode_id": "reasoning-linked_fact-32768-157",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "stock-memory-notes-stale-r2-cap128",
+        "memory": "notes",
+        "memory_seed": "synthetic_stale",
+        "rounds": 2
+      },
+      "queries": 5
+    },
+    {
+      "episode_id": "reasoning-linked_fact-32768-157",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "stock-memory-notes-r2-cap128",
+        "memory": "notes",
+        "memory_seed": "empty",
+        "rounds": 2
+      },
+      "queries": 5
+    },
+    {
+      "episode_id": "reasoning-linked_fact-32768-157",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "sparse-memory-addresses-r2-cap128",
+        "memory": "addresses",
+        "memory_seed": "empty",
+        "rounds": 2
+      },
+      "queries": 5
+    },
+    {
+      "episode_id": "reasoning-linked_fact-32768-157",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "sparse-memory-both-r2-cap128",
+        "memory": "both",
+        "memory_seed": "empty",
+        "rounds": 2
+      },
+      "queries": 5
+    },
+    {
+      "episode_id": "reasoning-linked_fact-32768-157",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "sparse-memory-notes-r2-cap128",
+        "memory": "notes",
+        "memory_seed": "empty",
+        "rounds": 2
+      },
+      "queries": 5
+    },
+    {
+      "episode_id": "reasoning-linked_fact-32768-163",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "stock-memory-none-r2-cap128",
+        "memory": "none",
+        "memory_seed": "empty",
+        "rounds": 2
+      },
+      "queries": 5
+    },
+    {
+      "episode_id": "reasoning-linked_fact-32768-163",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "stock-memory-notes-r2-cap128",
+        "memory": "notes",
+        "memory_seed": "empty",
+        "rounds": 2
+      },
+      "queries": 5
+    },
+    {
+      "episode_id": "reasoning-linked_fact-32768-163",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "sparse-memory-both-stale-r2-cap128",
+        "memory": "both",
+        "memory_seed": "synthetic_stale",
+        "rounds": 2
+      },
+      "queries": 5
+    },
+    {
+      "episode_id": "reasoning-linked_fact-32768-163",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "sparse-memory-none-r2-cap128",
+        "memory": "none",
+        "memory_seed": "empty",
+        "rounds": 2
+      },
+      "queries": 5
+    },
+    {
+      "episode_id": "reasoning-linked_fact-32768-163",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "sparse-memory-both-r2-cap128",
+        "memory": "both",
+        "memory_seed": "empty",
+        "rounds": 2
+      },
+      "queries": 5
+    },
+    {
+      "episode_id": "reasoning-linked_fact-32768-163",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "sparse-memory-addresses-r2-cap128",
+        "memory": "addresses",
+        "memory_seed": "empty",
+        "rounds": 2
+      },
+      "queries": 5
+    },
+    {
+      "episode_id": "reasoning-linked_fact-32768-163",
+      "policy": {
+        "attention": "sparse",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "sparse-memory-notes-r2-cap128",
+        "memory": "notes",
+        "memory_seed": "empty",
+        "rounds": 2
+      },
+      "queries": 5
+    },
+    {
+      "episode_id": "reasoning-linked_fact-32768-163",
+      "policy": {
+        "attention": "stock",
+        "cap_per_round": 128,
+        "format": "json",
+        "id": "stock-memory-notes-stale-r2-cap128",
+        "memory": "notes",
+        "memory_seed": "synthetic_stale",
+        "rounds": 2
+      },
+      "queries": 5
+    }
+  ],
+  "scope": "correlated exploratory episodes; fresh per-query KV; only bounded declared memory persists; synthetic stale cases labeled separately",
+  "sources_sha256": {
+    "research/budget_probe.py": "1e78e6adcfcaef5730cc5aef3242c683838959fc9b99b7144bd3c98453a9188b",
+    "research/memory_harness.py": "38c0eab82cbb522d9e3ba2334bc419a36381dee0fd5e7e2ac9faef95bba43762",
+    "research/memory_protocol.py": "4c1d63f0ab36f504cfc78bc75479214ba841f0234d373fa2ee683a8f4ac6b2ab",
+    "research/memory_run.py": "ccfc073fd9b213aa149dce04354b362c1041dae2aa5e08d0b1072e45dc1282ed",
+    "research/persistent_kv.py": "94fe254c0e0b89308842ad7d3956ad6cffc05d0356d2c1b5425662fce0ea0089",
+    "research/reasoning_protocol.py": "8033fd1b18b0dc9e3b2c94c2b3fedd61718cc54c0bc277e75802751cddfac873",
+    "research/reasoning_run.py": "e6abc3b0a3a5363bdf709d6ca45ebd32e9031b90d7525c6691bcfe82e1adc8c2",
+    "research/reasoning_sessions.py": "e63998b72be1c422b668028b7fd12198e2a62dd4b5558cfc106c0ac692481c02",
+    "research/resources.py": "146d69f64ca4c58477874519ad71fb9fe9f38ed4dcd077dcfeddf15bd411efe3",
+    "research/semantic_index.py": "00bb7c5be5723d6c2779687b7a7bd47b26e2d56f49778a069dc996cf88b69c4c"
+  }
+}

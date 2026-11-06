@@ -1,0 +1,19 @@
+{
+  "epoch": 1793799066.606521,
+  "boot_id": "f2a4a03a-a73e-4bca-9557-f756da7da01c",
+  "controller_pid": 64404,
+  "controller_create_time": 1793795464.47,
+  "controller_shell_wait_returncode": 0,
+  "controller_pid_exists": false,
+  "worker_pid": 64471,
+  "worker_create_time": 1793795475.63,
+  "worker_pid_exists": false,
+  "worker_returncode_from_state": 0,
+  "state_status": "complete",
+  "state_sha256": "1c759d699e30c4d27d7ea62cf19cdeb0131ac705fe3fbe5e1fbebd06301f68a7",
+  "rows": 9,
+  "run": "demand-HuggingFaceTB--SmolLM2-1.7B-Instruct-online-ac5605aa219e",
+  "file_count": 11,
+  "all_local_backup_hashes_match": true,
+  "complete_sha256": "b4546027af381a528289374e06c22d75213f2097efc4661401e47c8131490e08"
+}

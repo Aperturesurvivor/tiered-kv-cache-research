@@ -1,0 +1,43 @@
+{
+  "host_observation_scope": "whole policy call, including initialization, query/decode and checkpoint; stock includes prefill",
+  "host_rss_end_bytes": 1586479104,
+  "host_rss_sampled_peak_bytes": 1668493312,
+  "host_rss_samples": 69,
+  "host_rss_start_bytes": 1457479680,
+  "host_sampling_interval_s": 0.1,
+  "process_io_delta": {
+    "read_bytes": 15020032,
+    "read_chars": 13554220,
+    "read_count": 2885,
+    "write_bytes": 8892416,
+    "write_chars": 7779647,
+    "write_count": 3920
+  },
+  "scope": "index preparation and query lookup; generator not loaded",
+  "system_memory_end": {
+    "active": 5017935872,
+    "available": 10632863744,
+    "buffers": 117346304,
+    "cached": 10246176768,
+    "free": 613568512,
+    "inactive": 7069380608,
+    "percent": 21.9,
+    "shared": 10571776,
+    "slab": 698523648,
+    "total": 13605810176,
+    "used": 2628718592
+  },
+  "system_memory_start": {
+    "active": 5016014848,
+    "available": 10735104000,
+    "buffers": 115625984,
+    "cached": 10204987392,
+    "free": 758857728,
+    "inactive": 6913122304,
+    "percent": 21.1,
+    "shared": 10575872,
+    "slab": 698081280,
+    "total": 13605810176,
+    "used": 2526339072
+  }
+}

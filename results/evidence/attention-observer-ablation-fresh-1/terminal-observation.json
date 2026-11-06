@@ -1,0 +1,18 @@
+{
+  "observation_epoch": 1793789026.0043385,
+  "backend_boot_id": "f2a4a03a-a73e-4bca-9557-f756da7da01c",
+  "controller_pid": 30436,
+  "controller_create_time": 1793787725.62,
+  "controller_pid_exists": false,
+  "controller_shell_wait_returncode": 0,
+  "worker_pid": 30741,
+  "worker_create_time": 1793787783.43,
+  "worker_pid_exists": false,
+  "worker_returncode_from_controller_state": 0,
+  "controller_state_status": "complete",
+  "controller_state_sha256": "64056293bd8e1589b665c9481c0e35c9bcccdbbd7fa2853a134c0e7956f40fdf",
+  "rows": 12,
+  "backup_file_hash_count": 24,
+  "timed_off_routes_observed": false,
+  "backup_path": "tiered-kv-results/attention-observer-ablation-fresh-1"
+}

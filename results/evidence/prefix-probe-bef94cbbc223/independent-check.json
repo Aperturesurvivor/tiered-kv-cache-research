@@ -1,0 +1,89 @@
+{
+  "verification_script_sha256": "222538fde64411be17ca7bbeb1e8e2ffc85687ce2718e14b29855b31a3be3016",
+  "source_revision": "23964ff04123671c230249d7b58ebe7403616b0f",
+  "raw_files_sha256": {
+    "manifest.json": "0ebddef27bec8e98bf30e97787fa9ce8a361ebd14e460a60751fc947d43ef245",
+    "complete.json": "6d560c7a78e8ac913020226efec3148bd7ebb0cc08d6cfc21c2c44a98d7b20e3",
+    "fixture.json": "a7a378d9b948398cf28ed446543d3a3dd9b8f6c5bb7cf288dcd1e966628a80d3",
+    "samples.jsonl": "0144d78e4ecbe9c5bd3ebf852232dcb41ef979e7a8f2f810a25ae86e10a96cf1",
+    "validation.json": "5da5ae73339901553f313d9b79bacdfc27ac21ee16cf1668eec26cd6f640dc4b"
+  },
+  "source_files_sha256": {
+    "complete.json": "347390daab17fefc404c683a390cb86ac2c76472b79c80ab6397a0a630e25e76",
+    "fixtures.json": "3b5ba000652ba1f3166abb973fc52f40bb323cb940ada2d98a9177ad0ff4b9b1",
+    "manifest.json": "26dad00a0d5cbc46c47f69f3da9f08c480f8be73733356c432e1471e6fdfbbba",
+    "samples.jsonl": "9409bfc2d631e7610d047a1b402429f769ebb41eb9b4b1eccd6200f4c95ca22e",
+    "validation.json": "17620aa40be655fb3db766a3ef138c6355345f5221c2735c71e53dc128985c90"
+  },
+  "query_tokens": 24,
+  "payloads": {
+    "prefix_128": {
+      "sha256": "4345ca4033439cf49bde0b1f834b5f8544519d67c575c50b00dd913e85784c50",
+      "size": 14585984,
+      "shape": [
+        24,
+        151936
+      ]
+    },
+    "prefix_29": {
+      "sha256": "dcbababcebf9421f9c9532993d63ec990266bf857101cbfcfaf1192900775e14",
+      "size": 14585984,
+      "shape": [
+        24,
+        151936
+      ]
+    },
+    "rare_context": {
+      "sha256": "e63257cc4269015ff61b7a51f0a089a9abd147f04fbdaed2c05278a6de27efad",
+      "size": 14585984,
+      "shape": [
+        24,
+        151936
+      ]
+    },
+    "stock_hf": {
+      "sha256": "d23122069a3af3be1a3b96b515f0ff6d5c6e85ba619b54ee12f028bae466d43c",
+      "size": 14585984,
+      "shape": [
+        24,
+        151936
+      ]
+    }
+  },
+  "controls": [
+    {
+      "policy": "rare_context",
+      "layers_audited": 28,
+      "archived_entries_per_layer": 2515,
+      "whole_fact_present": true,
+      "full_chronological_coverage": false,
+      "independent_question_max_abs": 22.4765625,
+      "question_greedy_agreements": 15,
+      "generation_token_ids_equal_stock": false,
+      "correct_code": false
+    },
+    {
+      "policy": "prefix_29",
+      "layers_audited": 28,
+      "archived_entries_per_layer": 2540,
+      "whole_fact_present": true,
+      "full_chronological_coverage": false,
+      "independent_question_max_abs": 14.64453125,
+      "question_greedy_agreements": 18,
+      "generation_token_ids_equal_stock": false,
+      "correct_code": false
+    },
+    {
+      "policy": "prefix_128",
+      "layers_audited": 28,
+      "archived_entries_per_layer": 2639,
+      "whole_fact_present": true,
+      "full_chronological_coverage": false,
+      "independent_question_max_abs": 11.093994140625,
+      "question_greedy_agreements": 20,
+      "generation_token_ids_equal_stock": false,
+      "correct_code": true
+    }
+  ],
+  "scope": "Independent source, tokenizer, scoring and saved-logit verification; tensor-content equality is checked in the original CUDA trace, not rerun locally."
+}

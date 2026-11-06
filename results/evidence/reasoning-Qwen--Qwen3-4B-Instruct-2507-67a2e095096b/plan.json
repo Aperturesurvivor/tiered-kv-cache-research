@@ -1,0 +1,8 @@
+{
+  "fixture_sha256": "84dcbb2d4375efbcce2e0cbf375a823ab20896bef3654aee5932c7857134423e",
+  "model_id": "Qwen/Qwen3-4B-Instruct-2507",
+  "quality_rows": 176,
+  "repeated_timing_rows": 44,
+  "selector": "lexical_rare",
+  "total_rows": 220
+}

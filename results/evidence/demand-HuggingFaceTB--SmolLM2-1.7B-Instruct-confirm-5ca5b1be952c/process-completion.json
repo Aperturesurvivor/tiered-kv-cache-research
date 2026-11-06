@@ -1,0 +1,15 @@
+{
+  "observed_at": "2026-11-03T19:26:00Z",
+  "scope": "Direct Colab terminal inspection of the completed child while its checked dispatcher remained stopped.",
+  "pid": 164555,
+  "create_time": 1793731075.86,
+  "state": "zombie",
+  "exit_code": 0,
+  "source": "/proc/164555/stat field 52 decoded with os.waitstatus_to_exitcode",
+  "dispatcher_pid": 147912,
+  "dispatcher_create_time": 1793727382.84,
+  "samples_sha256_on_colab": "85f6cd18de7cdf68d9c174707eb3a5689ad397830e3b0266714896f35de5c660",
+  "downloaded_samples_sha256": "85f6cd18de7cdf68d9c174707eb3a5689ad397830e3b0266714896f35de5c660",
+  "source_revision": "4d17602a0339735630922e012938532202135dd1",
+  "control_recovery": "../archive-payloads/control-recovery-20261103T1920Z/recovery.json"
+}

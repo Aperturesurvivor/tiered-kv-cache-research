@@ -1,0 +1,51 @@
+{
+  "observed_epoch": 1793751067.6399474,
+  "supervisor_pid": 204660,
+  "supervisor_poll": 0,
+  "worker_pid": 227429,
+  "worker_create_time": 1793745899.96,
+  "worker_present": false,
+  "rows": 160,
+  "completion_marker": {
+    "natural_memory_rows": 120,
+    "rows": 160,
+    "synthetic_stale_rows": 40,
+    "weights_unchanged": true
+  },
+  "state": {
+    "status": "qwen15_memory_preserved",
+    "stage": "qwen15-memory",
+    "returncode": 0,
+    "completed": [
+      {
+        "stage": "cuda-tests",
+        "returncode": 0
+      },
+      {
+        "stage": "qwen15-plan",
+        "returncode": 0
+      },
+      {
+        "stage": "qwen4-plan",
+        "returncode": 0
+      },
+      {
+        "stage": "qwen15-memory",
+        "returncode": 0
+      }
+    ],
+    "archive_resumed": 1793751003.0003042,
+    "archive_status_after": "running",
+    "dispatcher_still_stopped": true
+  },
+  "archive_process": {
+    "pid": 176760,
+    "create_time": 1793733805.75,
+    "status": "running"
+  },
+  "queue_polls": {
+    "q4j": null,
+    "muj": null,
+    "sqj": null
+  }
+}

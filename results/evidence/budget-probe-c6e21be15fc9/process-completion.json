@@ -1,0 +1,7 @@
+{
+  "updated": 1793734744.580316,
+  "status": "probe_complete_dispatcher_still_paused",
+  "returncode": 0,
+  "budget_probe_returncode": 0,
+  "instruction": "Review both probes; preserve bounded archive parts and verify capacity before resuming the checked dispatcher."
+}

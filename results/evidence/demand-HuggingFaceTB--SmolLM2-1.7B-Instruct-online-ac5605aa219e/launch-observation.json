@@ -1,0 +1,11 @@
+{
+  "epoch": 1793795527.6278727,
+  "controller_pid": 64404,
+  "controller_create_time": 1793795464.47,
+  "controller_status": "sleeping",
+  "worker_pid": 64471,
+  "worker_create_time": 1793795475.63,
+  "worker_status": "running",
+  "plan_shell_wait": 0,
+  "plan_log_sha256": "9bbb4c978cb5312c61d9ebb5ac4d77da2b4673c5c2b1e1017509922184902b76"
+}

@@ -1,0 +1,43 @@
+{
+  "status": "passed",
+  "manuscript_sha256": "a891203e37d3addda93fee8992c57934c469cf9d0f23ff618a3651d6cad2bab2",
+  "validator_sha256": "969beb7b4772ad69b5af208ff19f5ad65652732d4ff3b2b8b282a406d37e363e",
+  "verified_results_sha256": "29a52ca72c58cb795b511413e74bcef024975a07ddb63ae80bc0ec99a499c5eb",
+  "source_sha256": {
+    "results/evidence/demand-Qwen--Qwen2.5-1.5B-Instruct-confirm-d8a93a273235/samples.jsonl": "6f154a9b5a3ee131ca7cf401e4be4815bf46a3dd12a2c823275358210a035366",
+    "results/evidence/demand-Qwen--Qwen2.5-1.5B-Instruct-confirm-d8a93a273235/latency.csv": "ae7c7d9e64be9ba5a0a297793661c614a70aec0b0b228cd1a0d43b5b3d22c081",
+    "results/evidence/demand-Qwen--Qwen3-0.6B-confirm-479bee540057/raw/demand-Qwen--Qwen3-0.6B-confirm-479bee540057/samples.jsonl": "50a27701355cd876d9a9da64ec8ff84ba108131493eb359369d48f8d7496b3c1",
+    "results/evidence/demand-Qwen--Qwen3-0.6B-confirm-479bee540057/latency.csv": "e1a554112c288c40919f9ebdbec48d2c87afcbd18a0dd10538e1fbf09d7c6d41",
+    "results/evidence/attention-device-cost-af741c7-attempt2/raw/samples.jsonl": "6ea0b3de505bce6bb7df3af5df7d6c75429b9935c8d1e4fb1475bf853df08862",
+    "results/evidence/reasoning-Qwen--Qwen2.5-1.5B-Instruct-8862fb5f28f2/samples.jsonl": "7407fb4d2dd3b6389e5042bad7cb544ce26d8e085383e23c65e859b8ced7afc8",
+    "results/evidence/reasoning-Qwen--Qwen3-4B-Instruct-2507-67a2e095096b/run/samples.jsonl": "a9d1841df37bc2f0bc4493e1374b2c939fcb168f3728821dfd91bc757c5c886b",
+    "results/evidence/memory-Qwen--Qwen2.5-1.5B-Instruct-566c642d5409/samples.jsonl": "8992971cc686896006dba4a1a79639de7d2b9314b9e5120a9d017d08a3ba280f",
+    "results/evidence/memory-Qwen--Qwen3-4B-Instruct-2507-991d4e87104b/run/samples.jsonl": "6ffdcc670a40842ae78a2db3de87cbe75c9347de3f1cdd5936fccba94c2c1544",
+    "results/evidence/attention-observer-ablation-fresh-1/observer-samples.jsonl": "4b9d52c203317c7359acbc7ec6b44a91cb39e7d1a88bcca4d4c9c17c174542cf",
+    "results/evidence/reasoning-Qwen--Qwen3-4B-Instruct-2507-67a2e095096b/run/manifest.json": "dfd3be8a05cf41170cab4245a6ca3d076b5b90e1ae16f6c50e4313bca01584b1",
+    "results/evidence/memory-Qwen--Qwen3-4B-Instruct-2507-991d4e87104b/run/manifest.json": "0b9c17385045c1b32e89fae442823f3315b07bddba2da2540fdc253dbb507740"
+  },
+  "raw_counts": {
+    "qwen15_confirmation": 264,
+    "qwen3_confirmation": 264,
+    "matched_reranker": 18,
+    "observer_ablation": 12,
+    "qwen15_reasoning": 220,
+    "qwen4_reasoning": 220,
+    "qwen15_memory": 160,
+    "qwen4_memory": 160
+  },
+  "checked_tables": [
+    "confirm",
+    "cost",
+    "reason",
+    "memory"
+  ],
+  "model_identity": "Qwen/Qwen3-4B-Instruct-2507@cdbee75f17c01a7cc42f958dc650907174af0554",
+  "limits": [
+    "Saved scores and measurements are aggregated, not re-decoded or rescored.",
+    "No model inference, tensor reconstruction, or full replay was performed.",
+    "Hash matches and aggregates do not establish independent replication.",
+    "Timing and cohort independence limits remain in the manuscript and evidence audit."
+  ]
+}

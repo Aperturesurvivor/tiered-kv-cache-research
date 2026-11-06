@@ -1,0 +1,31 @@
+{
+  "finished": 1793727377.5342166,
+  "jobs": [
+    {
+      "command": [
+        "-m",
+        "pytest",
+        "-q"
+      ],
+      "finished": 1793726780.0318456,
+      "label": "cuda-tests",
+      "returncode": 0,
+      "started": 1793726724.2031515,
+      "status": "complete"
+    },
+    {
+      "command": [
+        "-m",
+        "research.persistent_kv"
+      ],
+      "finished": 1793727377.4770415,
+      "label": "persistent-queries",
+      "returncode": 0,
+      "started": 1793726780.056319,
+      "status": "complete"
+    }
+  ],
+  "stage": "persistent",
+  "started": 1793726724.2031486,
+  "status": "complete"
+}

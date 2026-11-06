@@ -1,0 +1,8 @@
+{
+  "all_kv_exact": true,
+  "fixture_id": "transfer-literal-8192-283",
+  "plan_sha256": "dd31e825291215a5e35db43d11e79ae6de5b7a23e725f45e132066f96a943a29",
+  "prompt_max_abs": 0.0,
+  "status": "passed",
+  "weights_sha256": "fdf003e3fecca614b5f4cd70e02a7a0f7e28f9422bcd4fb509dcb025a8a4470a"
+}

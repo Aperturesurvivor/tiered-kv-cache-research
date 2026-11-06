@@ -1,0 +1,953 @@
+{
+  "definitions": {
+    "accounted_service_s": "mount_s + init_s + request_s + checkpoint_s; excludes shared prefill and cleanup; reranker index construction is included in init_s",
+    "generated_tokens": "number of generated token IDs emitted over both rounds; includes any EOS",
+    "host_sampled_peak_rss_bytes": "sampled process RSS peak, trajectory initialization through checkpoint; excludes shared prefill and mount",
+    "logical_read_bytes": "archive store logical reads, not measured physical storage traffic",
+    "model_token_evaluations": "actual model token forwards across both rounds including prompt and consumed generated tokens; excludes prefill",
+    "peak_allocated_bytes": "CUDA peak allocated during request after reset, includes model weights; excludes shared prefill and initialization peak",
+    "peak_reserved_bytes": "CUDA peak reserved during request after reset, includes allocator reserve",
+    "process_read_bytes": "OS-reported process read bytes; OS cache and filesystem accounting apply",
+    "process_read_chars": "OS-reported bytes passed through read syscalls; not physical disk traffic",
+    "request_s": "two rounds including durable per-round serialization; excludes mount, initialization, checkpoint and cleanup"
+  },
+  "groups": [
+    {
+      "arms": {
+        "reranker": {
+          "accounted_service_s": {
+            "max": 87.76483147600084,
+            "mean": 80.4520192938265,
+            "median": 81.35165727949061,
+            "min": 73.48191842799133
+          },
+          "checkpoint_s": {
+            "max": 0.1516425839945441,
+            "mean": 0.13126692299798984,
+            "median": 0.13183760050014826,
+            "min": 0.11151572699600365
+          },
+          "generated_tokens": {
+            "max": 163,
+            "mean": 136.5,
+            "median": 144.0,
+            "min": 109
+          },
+          "host_sampled_peak_rss_bytes": {
+            "max": 2249699328,
+            "mean": 2240264192,
+            "median": 2249678848.0,
+            "min": 2197106688
+          },
+          "init_s": {
+            "max": 3.0242292070033727,
+            "mean": 2.2951112684968393,
+            "median": 2.1542538309950032,
+            "min": 1.9114855219959281
+          },
+          "logical_read_bytes": {
+            "max": 1168773120,
+            "mean": 1049637546.6666666,
+            "median": 1067485184.0,
+            "min": 929640448
+          },
+          "model_token_evaluations": {
+            "max": 361,
+            "mean": 330.5,
+            "median": 336.0,
+            "min": 301
+          },
+          "mount_s": {
+            "max": 0.8896766180114355,
+            "mean": 0.6191209918348856,
+            "median": 0.5071041525006876,
+            "min": 0.4853031629900215
+          },
+          "peak_allocated_bytes": {
+            "max": 3309055488,
+            "mean": 3309055488,
+            "median": 3309055488.0,
+            "min": 3309055488
+          },
+          "peak_reserved_bytes": {
+            "max": 3728736256,
+            "mean": 3728736256,
+            "median": 3728736256.0,
+            "min": 3728736256
+          },
+          "prefill_s": {
+            "max": 4.416553026007023,
+            "mean": 3.7903188676694604,
+            "median": 3.6553041780061903,
+            "min": 3.452104367999709
+          },
+          "process_read_bytes": {
+            "max": 32768,
+            "mean": 8874.666666666666,
+            "median": 4096.0,
+            "min": 0
+          },
+          "process_read_chars": {
+            "max": 1179779383,
+            "mean": 1059713224.6666666,
+            "median": 1077726001.5,
+            "min": 938814403
+          },
+          "prompt_token_evaluations": {
+            "max": 199,
+            "mean": 195,
+            "median": 193.0,
+            "min": 193
+          },
+          "request_s": {
+            "max": 84.10288467200007,
+            "mean": 77.40652011049679,
+            "median": 78.45545057849813,
+            "min": 70.80967654498818
+          },
+          "transformer_forward_calls": {
+            "max": 361,
+            "mean": 330.5,
+            "median": 336.0,
+            "min": 301
+          }
+        },
+        "stock": {
+          "accounted_service_s": {
+            "max": 7.898009430995444,
+            "mean": 6.419941457839741,
+            "median": 6.23262838802475,
+            "min": 5.2704405689873965
+          },
+          "checkpoint_s": {
+            "max": 7.34988134354353e-07,
+            "mean": 5.304997709269325e-07,
+            "median": 4.759931471198797e-07,
+            "min": 4.3000909499824047e-07
+          },
+          "generated_tokens": {
+            "max": 163,
+            "mean": 134.16666666666666,
+            "median": 133.0,
+            "min": 110
+          },
+          "host_sampled_peak_rss_bytes": {
+            "max": 2249699328,
+            "mean": 2238431232,
+            "median": 2249687040.0,
+            "min": 2186682368
+          },
+          "init_s": {
+            "max": 0.16588780800520908,
+            "mean": 0.1390208763356592,
+            "median": 0.13527651699405396,
+            "min": 0.12781120699946769
+          },
+          "logical_read_bytes": {
+            "max": 175788032,
+            "mean": 175587328,
+            "median": 175558656.0,
+            "min": 175443968
+          },
+          "model_token_evaluations": {
+            "max": 361,
+            "mean": 328.1666666666667,
+            "median": 325.0,
+            "min": 308
+          },
+          "mount_s": {
+            "max": 0.8372686000075191,
+            "mean": 0.5562370756718641,
+            "median": 0.5030538185019395,
+            "min": 0.4887624110124307
+          },
+          "peak_allocated_bytes": {
+            "max": 3330292736,
+            "mean": 3329659221.3333335,
+            "median": 3329824000.0,
+            "min": 3328638976
+          },
+          "peak_reserved_bytes": {
+            "max": 3617587200,
+            "mean": 3616888149.3333335,
+            "median": 3617587200.0,
+            "min": 3615490048
+          },
+          "prefill_s": {
+            "max": 4.416553026007023,
+            "mean": 3.7903188676694604,
+            "median": 3.6553041780061903,
+            "min": 3.452104367999709
+          },
+          "process_read_bytes": {
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0
+          },
+          "process_read_chars": {
+            "max": 175819938,
+            "mean": 175632674.83333334,
+            "median": 175601444.0,
+            "min": 175490458
+          },
+          "prompt_token_evaluations": {
+            "max": 199,
+            "mean": 195,
+            "median": 193.0,
+            "min": 193
+          },
+          "request_s": {
+            "max": 7.257242181993206,
+            "mean": 5.724682975332446,
+            "median": 5.5989132190006785,
+            "min": 4.653866215987364
+          },
+          "transformer_forward_calls": {
+            "max": 164,
+            "mean": 135.16666666666666,
+            "median": 134.0,
+            "min": 111
+          }
+        }
+      },
+      "budget": 8192,
+      "fixtures": 6
+    },
+    {
+      "arms": {
+        "reranker": {
+          "accounted_service_s": {
+            "max": 119.65252270401106,
+            "mean": 113.78716045816206,
+            "median": 114.39306519149977,
+            "min": 107.69258395698853
+          },
+          "checkpoint_s": {
+            "max": 0.16502421599579975,
+            "mean": 0.13214526716668237,
+            "median": 0.12848011250025593,
+            "min": 0.11535219899087679
+          },
+          "generated_tokens": {
+            "max": 144,
+            "mean": 128.83333333333334,
+            "median": 134.0,
+            "min": 109
+          },
+          "host_sampled_peak_rss_bytes": {
+            "max": 2244878336,
+            "mean": 2211738965.3333335,
+            "median": 2215782400.0,
+            "min": 2139803648
+          },
+          "init_s": {
+            "max": 14.648778603994288,
+            "mean": 14.40037046566431,
+            "median": 14.35457355199469,
+            "min": 14.172449147998122
+          },
+          "logical_read_bytes": {
+            "max": 9561038848,
+            "mean": 9092618922.666666,
+            "median": 9172398080.0,
+            "min": 8666165248
+          },
+          "model_token_evaluations": {
+            "max": 342,
+            "mean": 322.8333333333333,
+            "median": 329.0,
+            "min": 301
+          },
+          "mount_s": {
+            "max": 4.12296391199925,
+            "mean": 2.991356855498452,
+            "median": 2.679263870995783,
+            "min": 2.41534871001204
+          },
+          "peak_allocated_bytes": {
+            "max": 3309055488,
+            "mean": 3309055488,
+            "median": 3309055488.0,
+            "min": 3309055488
+          },
+          "peak_reserved_bytes": {
+            "max": 3728736256,
+            "mean": 3728736256,
+            "median": 3728736256.0,
+            "min": 3728736256
+          },
+          "prefill_s": {
+            "max": 33.90224445199419,
+            "mean": 33.16375067933404,
+            "median": 32.94696526449843,
+            "min": 32.7831148920086
+          },
+          "process_read_bytes": {
+            "max": 249856,
+            "mean": 43008,
+            "median": 0.0,
+            "min": 0
+          },
+          "process_read_chars": {
+            "max": 9571710497,
+            "mean": 9102707198.333334,
+            "median": 9182792799.5,
+            "min": 8675586444
+          },
+          "prompt_token_evaluations": {
+            "max": 199,
+            "mean": 195,
+            "median": 193.0,
+            "min": 193
+          },
+          "request_s": {
+            "max": 101.07297765200201,
+            "mean": 96.26328786983261,
+            "median": 97.23110464050114,
+            "min": 90.571024948993
+          },
+          "transformer_forward_calls": {
+            "max": 342,
+            "mean": 322.8333333333333,
+            "median": 329.0,
+            "min": 301
+          }
+        },
+        "stock": {
+          "accounted_service_s": {
+            "max": 29.823339769005543,
+            "mean": 23.65808229117344,
+            "median": 23.412217603516183,
+            "min": 19.801471835002303
+          },
+          "checkpoint_s": {
+            "max": 6.47007254883647e-07,
+            "mean": 5.090041668154299e-07,
+            "median": 5.095062078908086e-07,
+            "min": 4.030007403343916e-07
+          },
+          "generated_tokens": {
+            "max": 166,
+            "mean": 131.83333333333334,
+            "median": 134.5,
+            "min": 109
+          },
+          "host_sampled_peak_rss_bytes": {
+            "max": 2323230720,
+            "mean": 2301827754.6666665,
+            "median": 2314313728.0,
+            "min": 2234003456
+          },
+          "init_s": {
+            "max": 1.0922076030110475,
+            "mean": 1.0195797953322956,
+            "median": 1.026536572499026,
+            "min": 0.9331839229998877
+          },
+          "logical_read_bytes": {
+            "max": 880431104,
+            "mean": 880230400,
+            "median": 880201728.0,
+            "min": 880087040
+          },
+          "model_token_evaluations": {
+            "max": 364,
+            "mean": 325.8333333333333,
+            "median": 327.5,
+            "min": 301
+          },
+          "mount_s": {
+            "max": 4.283551005006302,
+            "mean": 3.074411669668431,
+            "median": 2.554098660002637,
+            "min": 2.478562400996452
+          },
+          "peak_allocated_bytes": {
+            "max": 4216139264,
+            "mean": 4213145173.3333335,
+            "median": 4212335616.0,
+            "min": 4210383360
+          },
+          "peak_reserved_bytes": {
+            "max": 4313841664,
+            "mean": 4313142613.333333,
+            "median": 4313841664.0,
+            "min": 4311744512
+          },
+          "prefill_s": {
+            "max": 33.90224445199419,
+            "mean": 33.16375067933404,
+            "median": 32.94696526449843,
+            "min": 32.7831148920086
+          },
+          "process_read_bytes": {
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0
+          },
+          "process_read_chars": {
+            "max": 880590078,
+            "mean": 880386773.8333334,
+            "median": 880330783.5,
+            "min": 880245785
+          },
+          "prompt_token_evaluations": {
+            "max": 199,
+            "mean": 195,
+            "median": 193.0,
+            "min": 193
+          },
+          "request_s": {
+            "max": 24.574309370000265,
+            "mean": 19.564090317168546,
+            "median": 19.92924081500678,
+            "min": 16.192833362001693
+          },
+          "transformer_forward_calls": {
+            "max": 167,
+            "mean": 132.83333333333334,
+            "median": 135.5,
+            "min": 110
+          }
+        }
+      },
+      "budget": 32768,
+      "fixtures": 6
+    }
+  ],
+  "pairs": [
+    {
+      "arms": {
+        "reranker": {
+          "accounted_service_s": 87.76483147600084,
+          "checkpoint_s": 0.12605596199864522,
+          "generated_tokens": 163,
+          "host_sampled_peak_rss_bytes": 2249662464,
+          "init_s": 3.0242292070033727,
+          "logical_read_bytes": 1168773120,
+          "model_token_evaluations": 361,
+          "mount_s": 0.5116616349987453,
+          "peak_allocated_bytes": 3309055488,
+          "peak_reserved_bytes": 3728736256,
+          "prefill_s": 3.767300524006714,
+          "process_read_bytes": 0,
+          "process_read_chars": 1179779383,
+          "prompt_token_evaluations": 199,
+          "request_s": 84.10288467200007,
+          "transformer_forward_calls": 361
+        },
+        "stock": {
+          "accounted_service_s": 7.898009430995444,
+          "checkpoint_s": 4.3000909499824047e-07,
+          "generated_tokens": 163,
+          "host_sampled_peak_rss_bytes": 2249678848,
+          "init_s": 0.13328966598783154,
+          "logical_read_bytes": 175730688,
+          "model_token_evaluations": 361,
+          "mount_s": 0.5074771530053113,
+          "peak_allocated_bytes": 3329398272,
+          "peak_reserved_bytes": 3617587200,
+          "prefill_s": 3.767300524006714,
+          "process_read_bytes": 0,
+          "process_read_chars": 175784884,
+          "prompt_token_evaluations": 199,
+          "request_s": 7.257242181993206,
+          "transformer_forward_calls": 164
+        }
+      },
+      "budget": 8192,
+      "fixture_id": "transfer-linked_fact-8192-281",
+      "seed": 281,
+      "task": "linked_fact"
+    },
+    {
+      "arms": {
+        "reranker": {
+          "accounted_service_s": 73.6841643179796,
+          "checkpoint_s": 0.11151572699600365,
+          "generated_tokens": 110,
+          "host_sampled_peak_rss_bytes": 2249695232,
+          "init_s": 1.9581498229963472,
+          "logical_read_bytes": 986804224,
+          "model_token_evaluations": 308,
+          "mount_s": 0.4853031629900215,
+          "peak_allocated_bytes": 3309055488,
+          "peak_reserved_bytes": 3728736256,
+          "prefill_s": 4.072966916995938,
+          "process_read_bytes": 0,
+          "process_read_chars": 996186141,
+          "prompt_token_evaluations": 199,
+          "request_s": 71.12919560499722,
+          "transformer_forward_calls": 308
+        },
+        "stock": {
+          "accounted_service_s": 5.2704405689873965,
+          "checkpoint_s": 7.34988134354353e-07,
+          "generated_tokens": 110,
+          "host_sampled_peak_rss_bytes": 2249695232,
+          "init_s": 0.12781120699946769,
+          "logical_read_bytes": 175788032,
+          "model_token_evaluations": 308,
+          "mount_s": 0.4887624110124307,
+          "peak_allocated_bytes": 3329879552,
+          "peak_reserved_bytes": 3617587200,
+          "prefill_s": 4.072966916995938,
+          "process_read_bytes": 0,
+          "process_read_chars": 175819938,
+          "prompt_token_evaluations": 199,
+          "request_s": 4.653866215987364,
+          "transformer_forward_calls": 111
+        }
+      },
+      "budget": 8192,
+      "fixture_id": "transfer-linked_fact-8192-283",
+      "seed": 283,
+      "task": "linked_fact"
+    },
+    {
+      "arms": {
+        "reranker": {
+          "accounted_service_s": 80.63186219798808,
+          "checkpoint_s": 0.1347120639984496,
+          "generated_tokens": 139,
+          "host_sampled_peak_rss_bytes": 2197106688,
+          "init_s": 2.2690353669895558,
+          "logical_read_bytes": 1061396480,
+          "model_token_evaluations": 331,
+          "mount_s": 0.8266577870090259,
+          "peak_allocated_bytes": 3309055488,
+          "peak_reserved_bytes": 3728736256,
+          "prefill_s": 3.452104367999709,
+          "process_read_bytes": 0,
+          "process_read_chars": 1071490022,
+          "prompt_token_evaluations": 193,
+          "request_s": 77.40145697999105,
+          "transformer_forward_calls": 331
+        },
+        "stock": {
+          "accounted_service_s": 5.454646798985777,
+          "checkpoint_s": 4.789908416569233e-07,
+          "generated_tokens": 117,
+          "host_sampled_peak_rss_bytes": 2186682368,
+          "init_s": 0.1372633680002764,
+          "logical_read_bytes": 175558656,
+          "model_token_evaluations": 309,
+          "mount_s": 0.5063582269940525,
+          "peak_allocated_bytes": 3330292736,
+          "peak_reserved_bytes": 3615490048,
+          "prefill_s": 3.452104367999709,
+          "process_read_bytes": 0,
+          "process_read_chars": 175597737,
+          "prompt_token_evaluations": 193,
+          "request_s": 4.811024725000607,
+          "transformer_forward_calls": 118
+        }
+      },
+      "budget": 8192,
+      "fixture_id": "transfer-literal-8192-281",
+      "seed": 281,
+      "task": "literal"
+    },
+    {
+      "arms": {
+        "reranker": {
+          "accounted_service_s": 73.48191842799133,
+          "checkpoint_s": 0.13022291800007224,
+          "generated_tokens": 109,
+          "host_sampled_peak_rss_bytes": 2249699328,
+          "init_s": 2.0394722950004507,
+          "logical_read_bytes": 929640448,
+          "model_token_evaluations": 301,
+          "mount_s": 0.50254667000263,
+          "peak_allocated_bytes": 3309055488,
+          "peak_reserved_bytes": 3728736256,
+          "prefill_s": 3.4896805390017107,
+          "process_read_bytes": 32768,
+          "process_read_chars": 938814403,
+          "prompt_token_evaluations": 193,
+          "request_s": 70.80967654498818,
+          "transformer_forward_calls": 301
+        },
+        "stock": {
+          "accounted_service_s": 6.218051449031918,
+          "checkpoint_s": 4.5601336751133204e-07,
+          "generated_tokens": 133,
+          "host_sampled_peak_rss_bytes": 2249699328,
+          "init_s": 0.13206993701169267,
+          "logical_read_bytes": 175558656,
+          "model_token_evaluations": 325,
+          "mount_s": 0.49974941000982653,
+          "peak_allocated_bytes": 3329768448,
+          "peak_reserved_bytes": 3617587200,
+          "prefill_s": 3.4896805390017107,
+          "process_read_bytes": 0,
+          "process_read_chars": 175605151,
+          "prompt_token_evaluations": 193,
+          "request_s": 5.586231645997032,
+          "transformer_forward_calls": 134
+        }
+      },
+      "budget": 8192,
+      "fixture_id": "transfer-literal-8192-283",
+      "seed": 283,
+      "task": "literal"
+    },
+    {
+      "arms": {
+        "reranker": {
+          "accounted_service_s": 85.07788698200602,
+          "checkpoint_s": 0.13345228300022427,
+          "generated_tokens": 149,
+          "host_sampled_peak_rss_bytes": 2245722112,
+          "init_s": 2.5682953969953815,
+          "logical_read_bytes": 1077637120,
+          "model_token_evaluations": 341,
+          "mount_s": 0.8896766180114355,
+          "peak_allocated_bytes": 3309055488,
+          "peak_reserved_bytes": 3728736256,
+          "prefill_s": 3.5433078320056666,
+          "process_read_bytes": 12288,
+          "process_read_chars": 1088047418,
+          "prompt_token_evaluations": 193,
+          "request_s": 81.48646268399898,
+          "transformer_forward_calls": 341
+        },
+        "stock": {
+          "accounted_service_s": 6.247205327017582,
+          "checkpoint_s": 6.100017344579101e-07,
+          "generated_tokens": 133,
+          "host_sampled_peak_rss_bytes": 2245132288,
+          "init_s": 0.13780327200947795,
+          "logical_read_bytes": 175443968,
+          "model_token_evaluations": 325,
+          "mount_s": 0.4978066530020442,
+          "peak_allocated_bytes": 3329977344,
+          "peak_reserved_bytes": 3617587200,
+          "prefill_s": 3.5433078320056666,
+          "process_read_bytes": 0,
+          "process_read_chars": 175490458,
+          "prompt_token_evaluations": 193,
+          "request_s": 5.611594792004325,
+          "transformer_forward_calls": 134
+        }
+      },
+      "budget": 8192,
+      "fixture_id": "transfer-paraphrase-8192-281",
+      "seed": 281,
+      "task": "paraphrase"
+    },
+    {
+      "arms": {
+        "reranker": {
+          "accounted_service_s": 82.07145236099313,
+          "checkpoint_s": 0.1516425839945441,
+          "generated_tokens": 149,
+          "host_sampled_peak_rss_bytes": 2249699328,
+          "init_s": 1.9114855219959281,
+          "logical_read_bytes": 1073573888,
+          "model_token_evaluations": 341,
+          "mount_s": 0.4988800779974554,
+          "peak_allocated_bytes": 3309055488,
+          "peak_reserved_bytes": 3728736256,
+          "prefill_s": 4.416553026007023,
+          "process_read_bytes": 8192,
+          "process_read_chars": 1083961981,
+          "prompt_token_evaluations": 193,
+          "request_s": 79.50944417700521,
+          "transformer_forward_calls": 341
+        },
+        "stock": {
+          "accounted_service_s": 7.431295172020327,
+          "checkpoint_s": 4.7299545258283615e-07,
+          "generated_tokens": 149,
+          "host_sampled_peak_rss_bytes": 2249699328,
+          "init_s": 0.16588780800520908,
+          "logical_read_bytes": 175443968,
+          "model_token_evaluations": 341,
+          "mount_s": 0.8372686000075191,
+          "peak_allocated_bytes": 3328638976,
+          "peak_reserved_bytes": 3615490048,
+          "prefill_s": 4.416553026007023,
+          "process_read_bytes": 0,
+          "process_read_chars": 175497881,
+          "prompt_token_evaluations": 193,
+          "request_s": 6.4281382910121465,
+          "transformer_forward_calls": 150
+        }
+      },
+      "budget": 8192,
+      "fixture_id": "transfer-paraphrase-8192-283",
+      "seed": 283,
+      "task": "paraphrase"
+    },
+    {
+      "arms": {
+        "reranker": {
+          "accounted_service_s": 113.75218894699356,
+          "checkpoint_s": 0.12663057699683122,
+          "generated_tokens": 127,
+          "host_sampled_peak_rss_bytes": 2216693760,
+          "init_s": 14.326086508997832,
+          "logical_read_bytes": 9224990720,
+          "model_token_evaluations": 325,
+          "mount_s": 2.9077704950032057,
+          "peak_allocated_bytes": 3309055488,
+          "peak_reserved_bytes": 3728736256,
+          "prefill_s": 33.49508183999569,
+          "process_read_bytes": 0,
+          "process_read_chars": 9235144800,
+          "prompt_token_evaluations": 199,
+          "request_s": 96.39170136599569,
+          "transformer_forward_calls": 325
+        },
+        "stock": {
+          "accounted_service_s": 29.823339769005543,
+          "checkpoint_s": 5.250039976090193e-07,
+          "generated_tokens": 166,
+          "host_sampled_peak_rss_bytes": 2321272832,
+          "init_s": 0.9654788689949783,
+          "logical_read_bytes": 880373760,
+          "model_token_evaluations": 364,
+          "mount_s": 4.283551005006302,
+          "peak_allocated_bytes": 4210383360,
+          "peak_reserved_bytes": 4313841664,
+          "prefill_s": 33.49508183999569,
+          "process_read_bytes": 0,
+          "process_read_chars": 880569927,
+          "prompt_token_evaluations": 199,
+          "request_s": 24.574309370000265,
+          "transformer_forward_calls": 167
+        }
+      },
+      "budget": 32768,
+      "fixture_id": "transfer-linked_fact-32768-281",
+      "seed": 281,
+      "task": "linked_fact"
+    },
+    {
+      "arms": {
+        "reranker": {
+          "accounted_service_s": 119.65252270401106,
+          "checkpoint_s": 0.13735545900999568,
+          "generated_tokens": 144,
+          "host_sampled_peak_rss_bytes": 2139803648,
+          "init_s": 14.319225680999807,
+          "logical_read_bytes": 9561038848,
+          "model_token_evaluations": 342,
+          "mount_s": 4.12296391199925,
+          "peak_allocated_bytes": 3309055488,
+          "peak_reserved_bytes": 3728736256,
+          "prefill_s": 32.91461531299865,
+          "process_read_bytes": 0,
+          "process_read_chars": 9571710497,
+          "prompt_token_evaluations": 199,
+          "request_s": 101.07297765200201,
+          "transformer_forward_calls": 342
+        },
+        "stock": {
+          "accounted_service_s": 23.648268513017683,
+          "checkpoint_s": 5.160109139978886e-07,
+          "generated_tokens": 136,
+          "host_sampled_peak_rss_bytes": 2234003456,
+          "init_s": 0.9331839229998877,
+          "logical_read_bytes": 880431104,
+          "model_token_evaluations": 334,
+          "mount_s": 2.4878676799999084,
+          "peak_allocated_bytes": 4216139264,
+          "peak_reserved_bytes": 4311744512,
+          "prefill_s": 32.91461531299865,
+          "process_read_bytes": 0,
+          "process_read_chars": 880590078,
+          "prompt_token_evaluations": 199,
+          "request_s": 20.227216394006973,
+          "transformer_forward_calls": 137
+        }
+      },
+      "budget": 32768,
+      "fixture_id": "transfer-linked_fact-32768-283",
+      "seed": 283,
+      "task": "linked_fact"
+    },
+    {
+      "arms": {
+        "reranker": {
+          "accounted_service_s": 109.80582485398918,
+          "checkpoint_s": 0.13032964800368063,
+          "generated_tokens": 111,
+          "host_sampled_peak_rss_bytes": 2244878336,
+          "init_s": 14.648778603994288,
+          "logical_read_bytes": 8758722560,
+          "model_token_evaluations": 303,
+          "mount_s": 2.449552235993906,
+          "peak_allocated_bytes": 3309055488,
+          "peak_reserved_bytes": 3728736256,
+          "prefill_s": 32.97931521599821,
+          "process_read_bytes": 249856,
+          "process_read_chars": 8768215850,
+          "prompt_token_evaluations": 193,
+          "request_s": 92.5771643659973,
+          "transformer_forward_calls": 303
+        },
+        "stock": {
+          "accounted_service_s": 21.373333037015982,
+          "checkpoint_s": 4.6000059228390455e-07,
+          "generated_tokens": 109,
+          "host_sampled_peak_rss_bytes": 2323230720,
+          "init_s": 1.0922076030110475,
+          "logical_read_bytes": 880201728,
+          "model_token_evaluations": 301,
+          "mount_s": 4.088291612002649,
+          "peak_allocated_bytes": 4212335616,
+          "peak_reserved_bytes": 4311744512,
+          "prefill_s": 32.97931521599821,
+          "process_read_bytes": 0,
+          "process_read_chars": 880330760,
+          "prompt_token_evaluations": 193,
+          "request_s": 16.192833362001693,
+          "transformer_forward_calls": 110
+        }
+      },
+      "budget": 32768,
+      "fixture_id": "transfer-literal-32768-281",
+      "seed": 281,
+      "task": "literal"
+    },
+    {
+      "arms": {
+        "reranker": {
+          "accounted_service_s": 107.69258395698853,
+          "checkpoint_s": 0.11817950400291011,
+          "generated_tokens": 109,
+          "host_sampled_peak_rss_bytes": 2214871040,
+          "init_s": 14.55262225700426,
+          "logical_read_bytes": 8666165248,
+          "model_token_evaluations": 301,
+          "mount_s": 2.45075724698836,
+          "peak_allocated_bytes": 3309055488,
+          "peak_reserved_bytes": 3728736256,
+          "prefill_s": 32.90813236300892,
+          "process_read_bytes": 8192,
+          "process_read_chars": 8675586444,
+          "prompt_token_evaluations": 193,
+          "request_s": 90.571024948993,
+          "transformer_forward_calls": 301
+        },
+        "stock": {
+          "accounted_service_s": 19.801471835002303,
+          "checkpoint_s": 6.47007254883647e-07,
+          "generated_tokens": 109,
+          "host_sampled_peak_rss_bytes": 2307354624,
+          "init_s": 1.008102831998258,
+          "logical_read_bytes": 880201728,
+          "model_token_evaluations": 301,
+          "mount_s": 2.478562400996452,
+          "peak_allocated_bytes": 4212335616,
+          "peak_reserved_bytes": 4313841664,
+          "prefill_s": 32.90813236300892,
+          "process_read_bytes": 0,
+          "process_read_chars": 880330807,
+          "prompt_token_evaluations": 193,
+          "request_s": 16.314805955000338,
+          "transformer_forward_calls": 110
+        }
+      },
+      "budget": 32768,
+      "fixture_id": "transfer-literal-32768-283",
+      "seed": 283,
+      "task": "literal"
+    },
+    {
+      "arms": {
+        "reranker": {
+          "accounted_service_s": 116.78590085098404,
+          "checkpoint_s": 0.11535219899087679,
+          "generated_tokens": 141,
+          "host_sampled_peak_rss_bytes": 2243395584,
+          "init_s": 14.172449147998122,
+          "logical_read_bytes": 9223909376,
+          "model_token_evaluations": 333,
+          "mount_s": 3.601748532993952,
+          "peak_allocated_bytes": 3309055488,
+          "peak_reserved_bytes": 3728736256,
+          "prefill_s": 33.90224445199419,
+          "process_read_bytes": 0,
+          "process_read_chars": 9234307672,
+          "prompt_token_evaluations": 193,
+          "request_s": 98.89635097100108,
+          "transformer_forward_calls": 333
+        },
+        "stock": {
+          "accounted_service_s": 23.176166694014682,
+          "checkpoint_s": 4.030007403343916e-07,
+          "generated_tokens": 133,
+          "host_sampled_peak_rss_bytes": 2321842176,
+          "init_s": 1.0449703129997943,
+          "logical_read_bytes": 880087040,
+          "model_token_evaluations": 325,
+          "mount_s": 2.499930742007564,
+          "peak_allocated_bytes": 4212313088,
+          "peak_reserved_bytes": 4313841664,
+          "prefill_s": 33.90224445199419,
+          "process_read_bytes": 0,
+          "process_read_chars": 880245785,
+          "prompt_token_evaluations": 193,
+          "request_s": 19.631265236006584,
+          "transformer_forward_calls": 134
+        }
+      },
+      "budget": 32768,
+      "fixture_id": "transfer-paraphrase-32768-281",
+      "seed": 281,
+      "task": "paraphrase"
+    },
+    {
+      "arms": {
+        "reranker": {
+          "accounted_service_s": 115.03394143600599,
+          "checkpoint_s": 0.16502421599579975,
+          "generated_tokens": 141,
+          "host_sampled_peak_rss_bytes": 2210791424,
+          "init_s": 14.383060594991548,
+          "logical_read_bytes": 9120886784,
+          "model_token_evaluations": 333,
+          "mount_s": 2.41534871001204,
+          "peak_allocated_bytes": 3309055488,
+          "peak_reserved_bytes": 3728736256,
+          "prefill_s": 32.7831148920086,
+          "process_read_bytes": 0,
+          "process_read_chars": 9131277927,
+          "prompt_token_evaluations": 193,
+          "request_s": 98.0705079150066,
+          "transformer_forward_calls": 333
+        },
+        "stock": {
+          "accounted_service_s": 24.125913898984436,
+          "checkpoint_s": 5.030015017837286e-07,
+          "generated_tokens": 138,
+          "host_sampled_peak_rss_bytes": 2303262720,
+          "init_s": 1.0735352319898084,
+          "logical_read_bytes": 880087040,
+          "model_token_evaluations": 330,
+          "mount_s": 2.6082665779977106,
+          "peak_allocated_bytes": 4215364096,
+          "peak_reserved_bytes": 4313841664,
+          "prefill_s": 32.7831148920086,
+          "process_read_bytes": 0,
+          "process_read_chars": 880253286,
+          "prompt_token_evaluations": 193,
+          "request_s": 20.444111585995415,
+          "transformer_forward_calls": 139
+        }
+      },
+      "budget": 32768,
+      "fixture_id": "transfer-paraphrase-32768-283",
+      "seed": 283,
+      "task": "paraphrase"
+    }
+  ],
+  "plan_sha256": "dd31e825291215a5e35db43d11e79ae6de5b7a23e725f45e132066f96a943a29",
+  "samples_sha256": "c7cab93148fe9995085e092b2f19dc42171126ae506f76f72114b3d49e7a8d59",
+  "scope": "one observation per arm per fixture; outputs and model work can differ; no matched-token latency, repeated timing, statistical equivalence, physical SSD, or out-of-native-context claim"
+}

@@ -1,0 +1,555 @@
+[
+  {
+    "example_id": "niah-4096-0.1-83",
+    "gold_fully_available": true,
+    "index_build_or_open_s": 0.7076628720005829,
+    "index_disk_bytes": 61440,
+    "index_search_s": 0.0005709159995603841,
+    "k": 4,
+    "lookup_details": {},
+    "method": "lexical",
+    "query_encode_s": 0.0,
+    "selected_blocks": [
+      3,
+      0
+    ]
+  },
+  {
+    "example_id": "niah-4096-0.1-83",
+    "gold_fully_available": true,
+    "index_build_or_open_s": 0.7076628720005829,
+    "index_disk_bytes": 61440,
+    "index_search_s": 0.0002359569989494048,
+    "k": 16,
+    "lookup_details": {},
+    "method": "lexical",
+    "query_encode_s": 0.0,
+    "selected_blocks": [
+      3,
+      0
+    ]
+  },
+  {
+    "example_id": "niah-4096-0.1-83",
+    "gold_fully_available": true,
+    "index_build_or_open_s": 0.7076628720005829,
+    "index_disk_bytes": 61440,
+    "index_search_s": 0.00037921900002402253,
+    "k": 4,
+    "lookup_details": {
+      "candidate_cap": 64,
+      "candidate_term": "access",
+      "candidates": 1,
+      "posting_documents": 1,
+      "truncated": false
+    },
+    "method": "lexical_rare",
+    "query_encode_s": 0.0,
+    "selected_blocks": [
+      3
+    ]
+  },
+  {
+    "example_id": "niah-4096-0.1-83",
+    "gold_fully_available": true,
+    "index_build_or_open_s": 0.7076628720005829,
+    "index_disk_bytes": 61440,
+    "index_search_s": 0.00024673699954291806,
+    "k": 16,
+    "lookup_details": {
+      "candidate_cap": 64,
+      "candidate_term": "access",
+      "candidates": 1,
+      "posting_documents": 1,
+      "truncated": false
+    },
+    "method": "lexical_rare",
+    "query_encode_s": 0.0,
+    "selected_blocks": [
+      3
+    ]
+  },
+  {
+    "example_id": "niah-4096-0.1-83",
+    "gold_fully_available": true,
+    "index_build_or_open_s": 0.7076628720005829,
+    "index_disk_bytes": 61440,
+    "index_search_s": 0.00026972299929184373,
+    "k": 4,
+    "lookup_details": {},
+    "method": "semantic",
+    "query_encode_s": 0.02071792800052208,
+    "selected_blocks": [
+      3,
+      15,
+      0,
+      10
+    ]
+  },
+  {
+    "example_id": "niah-4096-0.1-83",
+    "gold_fully_available": true,
+    "index_build_or_open_s": 0.7076628720005829,
+    "index_disk_bytes": 61440,
+    "index_search_s": 0.00013537700033339206,
+    "k": 16,
+    "lookup_details": {},
+    "method": "semantic",
+    "query_encode_s": 0.02071792800052208,
+    "selected_blocks": [
+      3,
+      15,
+      0,
+      10,
+      12,
+      2,
+      9,
+      6,
+      13,
+      5,
+      7,
+      4,
+      11,
+      8,
+      1,
+      14
+    ]
+  },
+  {
+    "example_id": "niah-4096-0.1-83",
+    "gold_fully_available": true,
+    "index_build_or_open_s": 0.7076628720005829,
+    "index_disk_bytes": 61440,
+    "index_search_s": 0.0003958349989261478,
+    "k": 4,
+    "lookup_details": {},
+    "method": "hybrid_bounded",
+    "query_encode_s": 0.02071792800052208,
+    "selected_blocks": [
+      3,
+      0
+    ]
+  },
+  {
+    "example_id": "niah-4096-0.1-83",
+    "gold_fully_available": true,
+    "index_build_or_open_s": 0.7076628720005829,
+    "index_disk_bytes": 61440,
+    "index_search_s": 0.00026950400024361443,
+    "k": 16,
+    "lookup_details": {},
+    "method": "hybrid_bounded",
+    "query_encode_s": 0.02071792800052208,
+    "selected_blocks": [
+      3,
+      0
+    ]
+  },
+  {
+    "example_id": "niah-4096-0.1-83",
+    "gold_fully_available": true,
+    "index_build_or_open_s": 0.1269354560008651,
+    "index_disk_bytes": 40960,
+    "index_search_s": 0.0003593120000005001,
+    "k": 4,
+    "lookup_details": {
+      "before_neighbors": [
+        2,
+        3
+      ],
+      "candidate_cap": 64,
+      "candidate_term": "access",
+      "candidates": 2,
+      "metadata_padding": 32,
+      "neighbors": true,
+      "posting_documents": 2,
+      "truncated": false
+    },
+    "method": "lexical_rare_context",
+    "query_encode_s": 0.0,
+    "selected_blocks": [
+      2,
+      3,
+      1,
+      4
+    ]
+  },
+  {
+    "example_id": "niah-8192-0.1-83",
+    "gold_fully_available": true,
+    "index_build_or_open_s": 1.2584642239999084,
+    "index_disk_bytes": 143360,
+    "index_search_s": 0.000554465999812237,
+    "k": 4,
+    "lookup_details": {},
+    "method": "lexical",
+    "query_encode_s": 0.0,
+    "selected_blocks": [
+      6,
+      0
+    ]
+  },
+  {
+    "example_id": "niah-8192-0.1-83",
+    "gold_fully_available": true,
+    "index_build_or_open_s": 1.2584642239999084,
+    "index_disk_bytes": 143360,
+    "index_search_s": 0.00025968800036935136,
+    "k": 16,
+    "lookup_details": {},
+    "method": "lexical",
+    "query_encode_s": 0.0,
+    "selected_blocks": [
+      6,
+      0
+    ]
+  },
+  {
+    "example_id": "niah-8192-0.1-83",
+    "gold_fully_available": true,
+    "index_build_or_open_s": 1.2584642239999084,
+    "index_disk_bytes": 143360,
+    "index_search_s": 0.0004106939995836001,
+    "k": 4,
+    "lookup_details": {
+      "candidate_cap": 64,
+      "candidate_term": "access",
+      "candidates": 1,
+      "posting_documents": 1,
+      "truncated": false
+    },
+    "method": "lexical_rare",
+    "query_encode_s": 0.0,
+    "selected_blocks": [
+      6
+    ]
+  },
+  {
+    "example_id": "niah-8192-0.1-83",
+    "gold_fully_available": true,
+    "index_build_or_open_s": 1.2584642239999084,
+    "index_disk_bytes": 143360,
+    "index_search_s": 0.0002386920004937565,
+    "k": 16,
+    "lookup_details": {
+      "candidate_cap": 64,
+      "candidate_term": "access",
+      "candidates": 1,
+      "posting_documents": 1,
+      "truncated": false
+    },
+    "method": "lexical_rare",
+    "query_encode_s": 0.0,
+    "selected_blocks": [
+      6
+    ]
+  },
+  {
+    "example_id": "niah-8192-0.1-83",
+    "gold_fully_available": true,
+    "index_build_or_open_s": 1.2584642239999084,
+    "index_disk_bytes": 143360,
+    "index_search_s": 0.0003150120010104729,
+    "k": 4,
+    "lookup_details": {},
+    "method": "semantic",
+    "query_encode_s": 0.017374838000250747,
+    "selected_blocks": [
+      6,
+      0,
+      28,
+      47
+    ]
+  },
+  {
+    "example_id": "niah-8192-0.1-83",
+    "gold_fully_available": true,
+    "index_build_or_open_s": 1.2584642239999084,
+    "index_disk_bytes": 143360,
+    "index_search_s": 0.00025073200049519073,
+    "k": 16,
+    "lookup_details": {},
+    "method": "semantic",
+    "query_encode_s": 0.017374838000250747,
+    "selected_blocks": [
+      6,
+      0,
+      28,
+      47,
+      16,
+      10,
+      3,
+      36,
+      27,
+      32,
+      12,
+      2,
+      43,
+      41,
+      15,
+      34
+    ]
+  },
+  {
+    "example_id": "niah-8192-0.1-83",
+    "gold_fully_available": true,
+    "index_build_or_open_s": 1.2584642239999084,
+    "index_disk_bytes": 143360,
+    "index_search_s": 0.00031473200033360627,
+    "k": 4,
+    "lookup_details": {},
+    "method": "hybrid_bounded",
+    "query_encode_s": 0.017374838000250747,
+    "selected_blocks": [
+      6,
+      0
+    ]
+  },
+  {
+    "example_id": "niah-8192-0.1-83",
+    "gold_fully_available": true,
+    "index_build_or_open_s": 1.2584642239999084,
+    "index_disk_bytes": 143360,
+    "index_search_s": 0.00028270900111238007,
+    "k": 16,
+    "lookup_details": {},
+    "method": "hybrid_bounded",
+    "query_encode_s": 0.017374838000250747,
+    "selected_blocks": [
+      6,
+      0
+    ]
+  },
+  {
+    "example_id": "niah-8192-0.1-83",
+    "gold_fully_available": true,
+    "index_build_or_open_s": 0.3195150840001588,
+    "index_disk_bytes": 81920,
+    "index_search_s": 0.00036890599949401803,
+    "k": 4,
+    "lookup_details": {
+      "before_neighbors": [
+        6
+      ],
+      "candidate_cap": 64,
+      "candidate_term": "is",
+      "candidates": 1,
+      "metadata_padding": 32,
+      "neighbors": true,
+      "posting_documents": 1,
+      "truncated": false
+    },
+    "method": "lexical_rare_context",
+    "query_encode_s": 0.0,
+    "selected_blocks": [
+      6,
+      7,
+      5
+    ]
+  },
+  {
+    "example_id": "multikey-8192-0.5-83",
+    "gold_fully_available": true,
+    "index_build_or_open_s": 1.4729130460000306,
+    "index_disk_bytes": 147456,
+    "index_search_s": 0.0007217460006359033,
+    "k": 4,
+    "lookup_details": {},
+    "method": "lexical",
+    "query_encode_s": 0.0,
+    "selected_blocks": [
+      31,
+      3,
+      5,
+      15
+    ]
+  },
+  {
+    "example_id": "multikey-8192-0.5-83",
+    "gold_fully_available": true,
+    "index_build_or_open_s": 1.4729130460000306,
+    "index_disk_bytes": 147456,
+    "index_search_s": 0.00044935199912288226,
+    "k": 16,
+    "lookup_details": {},
+    "method": "lexical",
+    "query_encode_s": 0.0,
+    "selected_blocks": [
+      31,
+      3,
+      5,
+      15,
+      17,
+      20,
+      22,
+      25,
+      27,
+      8,
+      10,
+      12,
+      30,
+      33,
+      35,
+      40
+    ]
+  },
+  {
+    "example_id": "multikey-8192-0.5-83",
+    "gold_fully_available": true,
+    "index_build_or_open_s": 1.4729130460000306,
+    "index_disk_bytes": 147456,
+    "index_search_s": 0.00033609300044190604,
+    "k": 4,
+    "lookup_details": {
+      "candidate_cap": 64,
+      "candidate_term": "item_thpbhrkhkjmf",
+      "candidates": 1,
+      "posting_documents": 1,
+      "truncated": false
+    },
+    "method": "lexical_rare",
+    "query_encode_s": 0.0,
+    "selected_blocks": [
+      31
+    ]
+  },
+  {
+    "example_id": "multikey-8192-0.5-83",
+    "gold_fully_available": true,
+    "index_build_or_open_s": 1.4729130460000306,
+    "index_disk_bytes": 147456,
+    "index_search_s": 0.00024683199990249705,
+    "k": 16,
+    "lookup_details": {
+      "candidate_cap": 64,
+      "candidate_term": "item_thpbhrkhkjmf",
+      "candidates": 1,
+      "posting_documents": 1,
+      "truncated": false
+    },
+    "method": "lexical_rare",
+    "query_encode_s": 0.0,
+    "selected_blocks": [
+      31
+    ]
+  },
+  {
+    "example_id": "multikey-8192-0.5-83",
+    "gold_fully_available": false,
+    "index_build_or_open_s": 1.4729130460000306,
+    "index_disk_bytes": 147456,
+    "index_search_s": 0.0003192610001860885,
+    "k": 4,
+    "lookup_details": {},
+    "method": "semantic",
+    "query_encode_s": 0.016479744999742252,
+    "selected_blocks": [
+      20,
+      3,
+      8,
+      42
+    ]
+  },
+  {
+    "example_id": "multikey-8192-0.5-83",
+    "gold_fully_available": false,
+    "index_build_or_open_s": 1.4729130460000306,
+    "index_disk_bytes": 147456,
+    "index_search_s": 0.00029450099827954546,
+    "k": 16,
+    "lookup_details": {},
+    "method": "semantic",
+    "query_encode_s": 0.016479744999742252,
+    "selected_blocks": [
+      20,
+      3,
+      8,
+      42,
+      30,
+      14,
+      46,
+      25,
+      7,
+      44,
+      23,
+      27,
+      37,
+      28,
+      12,
+      33
+    ]
+  },
+  {
+    "example_id": "multikey-8192-0.5-83",
+    "gold_fully_available": false,
+    "index_build_or_open_s": 1.4729130460000306,
+    "index_disk_bytes": 147456,
+    "index_search_s": 0.001406743000188726,
+    "k": 4,
+    "lookup_details": {},
+    "method": "hybrid_bounded",
+    "query_encode_s": 0.016479744999742252,
+    "selected_blocks": [
+      3,
+      20,
+      8,
+      25
+    ]
+  },
+  {
+    "example_id": "multikey-8192-0.5-83",
+    "gold_fully_available": true,
+    "index_build_or_open_s": 1.4729130460000306,
+    "index_disk_bytes": 147456,
+    "index_search_s": 0.0012175969986856217,
+    "k": 16,
+    "lookup_details": {},
+    "method": "hybrid_bounded",
+    "query_encode_s": 0.016479744999742252,
+    "selected_blocks": [
+      3,
+      20,
+      8,
+      25,
+      30,
+      42,
+      27,
+      5,
+      31,
+      12,
+      14,
+      7,
+      33,
+      17,
+      22,
+      37
+    ]
+  },
+  {
+    "example_id": "multikey-8192-0.5-83",
+    "gold_fully_available": true,
+    "index_build_or_open_s": 0.3400136590007605,
+    "index_disk_bytes": 77824,
+    "index_search_s": 0.0005505310000444297,
+    "k": 4,
+    "lookup_details": {
+      "before_neighbors": [
+        31
+      ],
+      "candidate_cap": 64,
+      "candidate_term": "item_thpbhrkhkjmf",
+      "candidates": 1,
+      "metadata_padding": 32,
+      "neighbors": true,
+      "posting_documents": 1,
+      "truncated": false
+    },
+    "method": "lexical_rare_context",
+    "query_encode_s": 0.0,
+    "selected_blocks": [
+      31,
+      32,
+      30
+    ]
+  }
+]

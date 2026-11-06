@@ -1,0 +1,130 @@
+{
+  "controller_exit_scope": "direct Popen return code; supervisor recorded child wait return code separately",
+  "direct_terminal_sha256": "a08aca518b0973d807871b1006aa6b359976ad7922fac09d4ee554b40d61380b",
+  "files_sha256": {
+    "complete.json": "ae12782061f838714320ffbb0b1e47db800bedbf116030ad3bb5b42846b658cb",
+    "coverage.json": "e39c907a7df9779bd98fccde819e93817f606c7ae447cd440c282864f1386d3b",
+    "fixtures.json": "b753fdf670ef6dd83076f61a9a2d1e058eb305c9925f3d58ad3bd9fac1b67db2",
+    "index-resources.json": "1f41adccb605165cc13c997ff2e0c8d3786e2c4f72cbb14d7c976164fd1167ae",
+    "manifest.json": "ebcd2393029382218e490d761d6de4811f3b45561e59680b53d7c6c89bf87f04",
+    "online-tokens-default.json": "7b06334af3544f73073123cf855dd6823adbfc69618e0f941f9fdb35efba5470",
+    "online-tokens-full_buffered.json": "7b06334af3544f73073123cf855dd6823adbfc69618e0f941f9fdb35efba5470",
+    "online-tokens.json": "74a63515e198e9bb5e3e92fe6f2dec9484d6ca1ab35834098d73e69016aaa3bc",
+    "online.jsonl": "8a6bd8a191b2328bff0f7aaea65f13358e6f6b861f09f806d0426a40100086a8",
+    "samples.jsonl": "50a27701355cd876d9a9da64ec8ff84ba108131493eb359369d48f8d7496b3c1",
+    "validation.json": "4df9c2e81b1207bc47df5bd3d6aa33206b81df88eebb97c06aebc2a1a7af6ade"
+  },
+  "forced_pairs": [
+    {
+      "budget": 16384,
+      "example_id": "niah-16384-0.5-53-forced-0",
+      "forced_input_sha256": "a2fefdfceb0feccc277a1ec97023626409d213bc7a355d23bb458dcc8b4b2f01",
+      "forced_tokens": 144,
+      "prompt_tokens": 16256,
+      "selected_hash": "5f2c9e472d52e29f6ea4fc6c25c469b738f63668b1f27896497e8422e1d2f23a"
+    },
+    {
+      "budget": 16384,
+      "example_id": "niah-16384-0.5-53-forced-1",
+      "forced_input_sha256": "a2fefdfceb0feccc277a1ec97023626409d213bc7a355d23bb458dcc8b4b2f01",
+      "forced_tokens": 144,
+      "prompt_tokens": 16256,
+      "selected_hash": "5f2c9e472d52e29f6ea4fc6c25c469b738f63668b1f27896497e8422e1d2f23a"
+    },
+    {
+      "budget": 16384,
+      "example_id": "niah-16384-0.5-53-forced-2",
+      "forced_input_sha256": "a2fefdfceb0feccc277a1ec97023626409d213bc7a355d23bb458dcc8b4b2f01",
+      "forced_tokens": 144,
+      "prompt_tokens": 16256,
+      "selected_hash": "5f2c9e472d52e29f6ea4fc6c25c469b738f63668b1f27896497e8422e1d2f23a"
+    },
+    {
+      "budget": 32768,
+      "example_id": "niah-32768-0.5-53-forced-0",
+      "forced_input_sha256": "a2fefdfceb0feccc277a1ec97023626409d213bc7a355d23bb458dcc8b4b2f01",
+      "forced_tokens": 144,
+      "prompt_tokens": 32640,
+      "selected_hash": "5f2c9e472d52e29f6ea4fc6c25c469b738f63668b1f27896497e8422e1d2f23a"
+    },
+    {
+      "budget": 32768,
+      "example_id": "niah-32768-0.5-53-forced-1",
+      "forced_input_sha256": "a2fefdfceb0feccc277a1ec97023626409d213bc7a355d23bb458dcc8b4b2f01",
+      "forced_tokens": 144,
+      "prompt_tokens": 32640,
+      "selected_hash": "5f2c9e472d52e29f6ea4fc6c25c469b738f63668b1f27896497e8422e1d2f23a"
+    },
+    {
+      "budget": 32768,
+      "example_id": "niah-32768-0.5-53-forced-2",
+      "forced_input_sha256": "a2fefdfceb0feccc277a1ec97023626409d213bc7a355d23bb458dcc8b4b2f01",
+      "forced_tokens": 144,
+      "prompt_tokens": 32640,
+      "selected_hash": "5f2c9e472d52e29f6ea4fc6c25c469b738f63668b1f27896497e8422e1d2f23a"
+    },
+    {
+      "budget": 4096,
+      "example_id": "niah-4096-0.5-53-forced-0",
+      "forced_input_sha256": "a2fefdfceb0feccc277a1ec97023626409d213bc7a355d23bb458dcc8b4b2f01",
+      "forced_tokens": 144,
+      "prompt_tokens": 3968,
+      "selected_hash": "5222f35c32fcda37b08377cdb25f2b196d934510c4a46881859b7fc11ee80274"
+    },
+    {
+      "budget": 4096,
+      "example_id": "niah-4096-0.5-53-forced-1",
+      "forced_input_sha256": "a2fefdfceb0feccc277a1ec97023626409d213bc7a355d23bb458dcc8b4b2f01",
+      "forced_tokens": 144,
+      "prompt_tokens": 3968,
+      "selected_hash": "5222f35c32fcda37b08377cdb25f2b196d934510c4a46881859b7fc11ee80274"
+    },
+    {
+      "budget": 4096,
+      "example_id": "niah-4096-0.5-53-forced-2",
+      "forced_input_sha256": "a2fefdfceb0feccc277a1ec97023626409d213bc7a355d23bb458dcc8b4b2f01",
+      "forced_tokens": 144,
+      "prompt_tokens": 3968,
+      "selected_hash": "5222f35c32fcda37b08377cdb25f2b196d934510c4a46881859b7fc11ee80274"
+    },
+    {
+      "budget": 8192,
+      "example_id": "niah-8192-0.5-53-forced-0",
+      "forced_input_sha256": "a2fefdfceb0feccc277a1ec97023626409d213bc7a355d23bb458dcc8b4b2f01",
+      "forced_tokens": 144,
+      "prompt_tokens": 8064,
+      "selected_hash": "690fe32ff275e9f22ce0a5cf977fe471c5582a524aca4d75d6889c9d76152bbe"
+    },
+    {
+      "budget": 8192,
+      "example_id": "niah-8192-0.5-53-forced-1",
+      "forced_input_sha256": "a2fefdfceb0feccc277a1ec97023626409d213bc7a355d23bb458dcc8b4b2f01",
+      "forced_tokens": 144,
+      "prompt_tokens": 8064,
+      "selected_hash": "690fe32ff275e9f22ce0a5cf977fe471c5582a524aca4d75d6889c9d76152bbe"
+    },
+    {
+      "budget": 8192,
+      "example_id": "niah-8192-0.5-53-forced-2",
+      "forced_input_sha256": "a2fefdfceb0feccc277a1ec97023626409d213bc7a355d23bb458dcc8b4b2f01",
+      "forced_tokens": 144,
+      "prompt_tokens": 8064,
+      "selected_hash": "690fe32ff275e9f22ce0a5cf977fe471c5582a524aca4d75d6889c9d76152bbe"
+    }
+  ],
+  "matrix": {
+    "expected_rows": 264,
+    "missing_rows": 0,
+    "observed_rows": 264
+  },
+  "same_chunk_max_abs_by_probe": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "scope": "forced hashes compare 144 continuation argmaxes only; stock forced inputs derive from shared frozen source/example, not independently saved IDs; initial prompt argmax and logits not compared",
+  "status": "complete",
+  "supervisor_state_sha256": "c90baa9cba2896a0fd94627859bd0e9de5c6773cc88a1236dc2716c9d9c35f90",
+  "weight_scope": "initial actual digest is saved; completion marker records frozen post-run equality check, not a second saved digest"
+}

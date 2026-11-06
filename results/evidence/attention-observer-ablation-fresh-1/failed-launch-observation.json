@@ -1,0 +1,11 @@
+{
+  "controller_pid": 29575,
+  "controller_create_time": 1793787538.58,
+  "controller_shell_wait_returncode": 1,
+  "last_live_epoch": 1793787551.627513,
+  "preflight_child_pid": 29593,
+  "preflight_child_create_time": 1793787541.72,
+  "error": "FileNotFoundError for relative predecessor receipt after controller changed working directory; failure occurred before backup creation and worker launch",
+  "failed_controller_log_sha256": "dfa7ca1e1967ec0fcb0108b99d7cdb35afaef3a1fe8a8908f5196f1dadea03da",
+  "failed_controller_log_drive_path": "tiered-kv-results/observer-ablation-preflight-fresh-1/failed-controller.log"
+}

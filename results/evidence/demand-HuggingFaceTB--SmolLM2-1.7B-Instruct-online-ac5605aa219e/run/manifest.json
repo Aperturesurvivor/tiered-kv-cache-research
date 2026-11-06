@@ -1,0 +1,87 @@
+{
+  "encoder": [
+    "sentence-transformers/all-MiniLM-L6-v2",
+    "1110a243fdf4706b3f48f1d95db1a4f5529b4d41"
+  ],
+  "fixture_hash": "32da8906cc378ce83b81deaa35b9675423bf0c5e667b49c4b47180f867a0eb19",
+  "host_sha256": "4a9241e0a0d5a3dd1221dd44fa186aa3b32e9e16ab487321f1057c7f24d373cc",
+  "implementation_hash": "f7ca19eb099a1bcb94857406d26a7cd2cf9c5b8152c26a82f21d16bf278f14b0",
+  "index_sha256": "00bb7c5be5723d6c2779687b7a7bd47b26e2d56f49778a069dc996cf88b69c4c",
+  "limitation": "shared dense archive except online stage; archive checksum/open costs included in init, not steady decode",
+  "model": {
+    "config": {
+      "architectures": [
+        "LlamaForCausalLM"
+      ],
+      "attention_bias": false,
+      "attention_dropout": 0.0,
+      "bos_token_id": 1,
+      "eos_token_id": 2,
+      "hidden_act": "silu",
+      "hidden_size": 2048,
+      "initializer_range": 0.02,
+      "intermediate_size": 8192,
+      "max_position_embeddings": 8192,
+      "mlp_bias": false,
+      "model_type": "llama",
+      "num_attention_heads": 32,
+      "num_hidden_layers": 24,
+      "num_key_value_heads": 32,
+      "pad_token_id": 2,
+      "pretraining_tp": 1,
+      "rms_norm_eps": 1e-05,
+      "rope_scaling": null,
+      "rope_theta": 130000,
+      "tie_word_embeddings": true,
+      "torch_dtype": "bfloat16",
+      "transformers.js_config": {
+        "dtype": "q4",
+        "kv_cache_dtype": {
+          "fp16": "float16",
+          "q4f16": "float16"
+        },
+        "use_external_data_format": {
+          "model.onnx": true,
+          "model_fp16.onnx": true
+        }
+      },
+      "transformers_version": "4.42.3",
+      "use_cache": true,
+      "vocab_size": 49152
+    },
+    "gated": false,
+    "model_id": "HuggingFaceTB/SmolLM2-1.7B-Instruct",
+    "parameters": 1711376384,
+    "revision": "31b70e2e869a7173562077fd711b654946d38674"
+  },
+  "reuse_index_sha256": null,
+  "runtime": {
+    "capability": [
+      7,
+      5
+    ],
+    "cuda": "12.4",
+    "cudnn": 90100,
+    "cudnn_sdp": true,
+    "device": "cuda",
+    "flash_sdp": true,
+    "fp16_reduced": true,
+    "gpu": "Tesla T4",
+    "interop_threads": 1,
+    "machine": "x86_64",
+    "math_sdp": true,
+    "math_sdp_reduced": false,
+    "mem_efficient_sdp": true,
+    "numpy": "2.2.4",
+    "os": "Linux-6.6.159+-x86_64-with-glibc2.39",
+    "python": "3.13.16",
+    "tf32": false,
+    "threads": 1,
+    "torch": "2.6.0+cu124",
+    "transformers": "4.51.3"
+  },
+  "scope": "one lookup per question; fixed original-position exact KV retained during answer",
+  "script_sha256": "b9aa52324c7fff35b741110767f26644dad5c7a095de15a9707851a4b33b12a9",
+  "stage": "online",
+  "stock_sha256": "71356ff9eea980740fb4653467b46070e486e13fc17255d2ed1b504f41be4cae"
+}

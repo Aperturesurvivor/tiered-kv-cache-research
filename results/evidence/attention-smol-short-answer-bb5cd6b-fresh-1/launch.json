@@ -1,0 +1,10 @@
+{
+  "plan_pid": 37235,
+  "plan_create_time": 1793789252.29,
+  "plan_shell_wait_returncode": 0,
+  "controller_pid": 37486,
+  "controller_create_time": 1793789303.39,
+  "guard_epoch": 1793789293.1977336,
+  "free_bytes": 209837670400,
+  "gpu_free_mib": 14913
+}

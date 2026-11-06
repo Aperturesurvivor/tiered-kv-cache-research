@@ -1,0 +1,13 @@
+{
+  "observed_epoch": 1793769860.992174,
+  "controller_pid": 323496,
+  "controller_create_time": 1793769232.3,
+  "controller_returncode": 0,
+  "worker_pid": 323602,
+  "worker_create_time": 1793769254.0,
+  "worker_pid_exists": false,
+  "local_marker": {
+    "rows": 12,
+    "weights_unchanged": true
+  }
+}

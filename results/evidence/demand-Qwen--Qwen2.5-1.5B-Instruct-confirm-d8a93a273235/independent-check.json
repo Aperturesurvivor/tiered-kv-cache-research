@@ -1,0 +1,15 @@
+{
+  "source_revision": "4d17602a0339735630922e012938532202135dd1",
+  "frozen_implementation_hash_verified": true,
+  "frozen_research_hashes_verified": [
+    "script_sha256",
+    "index_sha256",
+    "stock_sha256",
+    "host_sha256"
+  ],
+  "fixture_examples": 30,
+  "fixture_sha256": "8067130eba2d679f3c967665551845a225f5f2949a7458cfbab1d85d39fa7d78",
+  "independent_tokenizer_regeneration": "exact canonical JSON digest match",
+  "verification_script_sha256": "614e1682cef6a2608d5e7e2faf1ca8754f3a88a12b78c00d48e8a29db4166333",
+  "scope": "local source and fixture verification; actual CUDA checks remain in raw validation.json"
+}

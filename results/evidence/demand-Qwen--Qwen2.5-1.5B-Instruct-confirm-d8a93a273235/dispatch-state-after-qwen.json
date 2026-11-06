@@ -1,0 +1,47 @@
+{
+  "jobs": [
+    {
+      "command": [
+        "-m",
+        "pytest",
+        "-q"
+      ],
+      "finished": 1793727448.7674165,
+      "label": "cuda-tests",
+      "returncode": 0,
+      "started": 1793727385.772959,
+      "status": "complete"
+    },
+    {
+      "command": [
+        "-m",
+        "research.demand_kv",
+        "--model",
+        "Qwen/Qwen2.5-1.5B-Instruct",
+        "--stage",
+        "confirm"
+      ],
+      "finished": 1793731075.8435328,
+      "label": "Qwen--Qwen2.5-1.5B-Instruct",
+      "returncode": 0,
+      "started": 1793727448.7949243,
+      "status": "complete"
+    },
+    {
+      "command": [
+        "-m",
+        "research.demand_kv",
+        "--model",
+        "HuggingFaceTB/SmolLM2-1.7B-Instruct",
+        "--stage",
+        "confirm"
+      ],
+      "label": "HuggingFaceTB--SmolLM2-1.7B-Instruct",
+      "started": 1793731075.9253201,
+      "status": "running"
+    }
+  ],
+  "stage": "confirm",
+  "started": 1793727385.7729557,
+  "status": "running"
+}

@@ -1,0 +1,11 @@
+{
+  "verification_script_sha256": "6abf97120bb9347831988bcde4d0ffa647fb00c7c6169669b959ed5bf2664e07",
+  "helper_commit": "bad9bebeeb450d6b97039cac39a038ccd554ec27",
+  "helper_sha256": "1e78e6adcfcaef5730cc5aef3242c683838959fc9b99b7144bd3c98453a9188b",
+  "run_identity_digest": "c6e21be15fc994baa7cbb08a92472d5460f0b8b0ece1112625a7d8d4429cf256",
+  "randomized_observation_order_verified": 48,
+  "tokenizer_decoded_predictions_verified": 36,
+  "source_checkpoint_identities_recorded": 12,
+  "samples_sha256": "c6f9420791b3ab878d05aec80f4fc7f386db9ba7af13bf10b88cf47d24140974",
+  "scope": "Independent helper, order and tokenizer checks plus report_budget matrix/source/score validation; source checkpoint bytes were checked on Colab, not redownloaded here."
+}

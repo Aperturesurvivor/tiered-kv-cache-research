@@ -1,0 +1,11 @@
+{
+  "observed_terminal_time": 1793738247.4798691,
+  "supervisor_pid": 192625,
+  "supervisor_returncode": 0,
+  "archive_pid": 176760,
+  "archive_create_time": 1793733805.75,
+  "archive_popen_poll": null,
+  "archive_status": "running",
+  "dispatcher_status": "stopped",
+  "source": "Live Colab terminal Popen.poll and psutil observation after completion, not inferred from a state file."
+}

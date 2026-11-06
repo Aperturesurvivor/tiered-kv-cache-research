@@ -1,0 +1,204 @@
+{
+  "samples_sha256": "8992971cc686896006dba4a1a79639de7d2b9314b9e5120a9d017d08a3ba280f",
+  "formula": "archive_checksum_mount_s + controller_init_s + request_s + checkpoint_s",
+  "limits": [
+    "Stock controls use two 128-token rounds; no single-pass vanilla baseline is measured.",
+    "Shared prefill and index construction are excluded.",
+    "Sum of recorded components, not a fresh whole-deployment wall timer.",
+    "One trial per correlated episode/question; timing is not replicated."
+  ],
+  "groups": [
+    {
+      "budget": 8192,
+      "policy": "sparse-memory-addresses-r2-cap128",
+      "rows": 10,
+      "mean_components_s": {
+        "archive_checksum_mount_s": 0.49890356750038334,
+        "controller_init_s": 0.06445390169974416,
+        "request_s": 27.2511255893005,
+        "checkpoint_s": 0.6262894894003693
+      },
+      "mean_accounted_service_s": 28.440772547901
+    },
+    {
+      "budget": 8192,
+      "policy": "sparse-memory-both-r2-cap128",
+      "rows": 10,
+      "mean_components_s": {
+        "archive_checksum_mount_s": 0.5384440460991755,
+        "controller_init_s": 0.0692027209996013,
+        "request_s": 41.73348652630084,
+        "checkpoint_s": 0.6777015484010918
+      },
+      "mean_accounted_service_s": 43.01883484180071
+    },
+    {
+      "budget": 8192,
+      "policy": "sparse-memory-both-stale-r2-cap128",
+      "rows": 10,
+      "mean_components_s": {
+        "archive_checksum_mount_s": 0.5426197957007389,
+        "controller_init_s": 0.0649194011981308,
+        "request_s": 42.094659005400175,
+        "checkpoint_s": 0.666893406098825
+      },
+      "mean_accounted_service_s": 43.369091608397866
+    },
+    {
+      "budget": 8192,
+      "policy": "sparse-memory-none-r2-cap128",
+      "rows": 10,
+      "mean_components_s": {
+        "archive_checksum_mount_s": 0.5964316480007256,
+        "controller_init_s": 0.06848370450097718,
+        "request_s": 27.63949097190052,
+        "checkpoint_s": 0.649669746998552
+      },
+      "mean_accounted_service_s": 28.954076071400777
+    },
+    {
+      "budget": 8192,
+      "policy": "sparse-memory-notes-r2-cap128",
+      "rows": 10,
+      "mean_components_s": {
+        "archive_checksum_mount_s": 0.5383309614990139,
+        "controller_init_s": 0.06603389079973568,
+        "request_s": 41.57923189090216,
+        "checkpoint_s": 0.6430943999992451
+      },
+      "mean_accounted_service_s": 42.82669114320015
+    },
+    {
+      "budget": 8192,
+      "policy": "stock-memory-none-r2-cap128",
+      "rows": 10,
+      "mean_components_s": {
+        "archive_checksum_mount_s": 0.5128337773996463,
+        "controller_init_s": 0.1341741511991131,
+        "request_s": 5.773466241099231,
+        "checkpoint_s": 5.010639870306477e-05
+      },
+      "mean_accounted_service_s": 6.420524276096694
+    },
+    {
+      "budget": 8192,
+      "policy": "stock-memory-notes-r2-cap128",
+      "rows": 10,
+      "mean_components_s": {
+        "archive_checksum_mount_s": 0.5171567006007536,
+        "controller_init_s": 0.13916687530072522,
+        "request_s": 6.399431722999725,
+        "checkpoint_s": 6.342600026982836e-05
+      },
+      "mean_accounted_service_s": 7.055818724901473
+    },
+    {
+      "budget": 8192,
+      "policy": "stock-memory-notes-stale-r2-cap128",
+      "rows": 10,
+      "mean_components_s": {
+        "archive_checksum_mount_s": 0.6172385803023644,
+        "controller_init_s": 0.13887441189872335,
+        "request_s": 5.821336239300581,
+        "checkpoint_s": 5.880269964109175e-05
+      },
+      "mean_accounted_service_s": 6.57750803420131
+    },
+    {
+      "budget": 32768,
+      "policy": "sparse-memory-addresses-r2-cap128",
+      "rows": 10,
+      "mean_components_s": {
+        "archive_checksum_mount_s": 2.7908373055986884,
+        "controller_init_s": 0.06296787970059085,
+        "request_s": 27.039334932500786,
+        "checkpoint_s": 0.6901681150993682
+      },
+      "mean_accounted_service_s": 30.583308232899434
+    },
+    {
+      "budget": 32768,
+      "policy": "sparse-memory-both-r2-cap128",
+      "rows": 10,
+      "mean_components_s": {
+        "archive_checksum_mount_s": 3.0737506277990176,
+        "controller_init_s": 0.06819178400182864,
+        "request_s": 38.981685253300384,
+        "checkpoint_s": 0.6949665829000878
+      },
+      "mean_accounted_service_s": 42.81859424800132
+    },
+    {
+      "budget": 32768,
+      "policy": "sparse-memory-both-stale-r2-cap128",
+      "rows": 10,
+      "mean_components_s": {
+        "archive_checksum_mount_s": 3.05004087329944,
+        "controller_init_s": 0.06535660959998495,
+        "request_s": 37.662005307599614,
+        "checkpoint_s": 0.65813153459967
+      },
+      "mean_accounted_service_s": 41.43553432509871
+    },
+    {
+      "budget": 32768,
+      "policy": "sparse-memory-none-r2-cap128",
+      "rows": 10,
+      "mean_components_s": {
+        "archive_checksum_mount_s": 2.8486600167001597,
+        "controller_init_s": 0.06371731609979178,
+        "request_s": 26.900307134899776,
+        "checkpoint_s": 0.622690414700628
+      },
+      "mean_accounted_service_s": 30.435374882400357
+    },
+    {
+      "budget": 32768,
+      "policy": "sparse-memory-notes-r2-cap128",
+      "rows": 10,
+      "mean_components_s": {
+        "archive_checksum_mount_s": 3.226991040399298,
+        "controller_init_s": 0.06668642050062772,
+        "request_s": 38.90090828600078,
+        "checkpoint_s": 0.6810420009009249
+      },
+      "mean_accounted_service_s": 42.87562774780163
+    },
+    {
+      "budget": 32768,
+      "policy": "stock-memory-none-r2-cap128",
+      "rows": 10,
+      "mean_components_s": {
+        "archive_checksum_mount_s": 3.103295521500695,
+        "controller_init_s": 1.1089207423006884,
+        "request_s": 25.061486740301188,
+        "checkpoint_s": 4.774210028699599e-05
+      },
+      "mean_accounted_service_s": 29.273750746202857
+    },
+    {
+      "budget": 32768,
+      "policy": "stock-memory-notes-r2-cap128",
+      "rows": 10,
+      "mean_components_s": {
+        "archive_checksum_mount_s": 3.036630446799245,
+        "controller_init_s": 1.075463095100713,
+        "request_s": 24.046267786800307,
+        "checkpoint_s": 4.5266302186064423e-05
+      },
+      "mean_accounted_service_s": 28.158406595002454
+    },
+    {
+      "budget": 32768,
+      "policy": "stock-memory-notes-stale-r2-cap128",
+      "rows": 10,
+      "mean_components_s": {
+        "archive_checksum_mount_s": 2.4726221283010092,
+        "controller_init_s": 1.0748759262998646,
+        "request_s": 24.137784002499394,
+        "checkpoint_s": 4.1935899935197086e-05
+      },
+      "mean_accounted_service_s": 27.685323993000203
+    }
+  ]
+}

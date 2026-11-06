@@ -1,0 +1,19 @@
+{
+  "controller_pid": 323496,
+  "controller_create_time": 1793769232.3,
+  "launch_epoch": 1793769232.3770857,
+  "child_pid": 323602,
+  "child_create_time": 1793769254.0,
+  "child_observed_epoch": 1793769300.1030874,
+  "child_status": "running",
+  "command": [
+    "/usr/bin/python3",
+    "-u",
+    "supervisor.py",
+    "--bundle",
+    "demand-kv-4d17602.zip",
+    "--stage",
+    "summaries",
+    "--execute"
+  ]
+}

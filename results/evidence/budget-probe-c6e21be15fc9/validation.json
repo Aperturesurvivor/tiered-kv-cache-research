@@ -1,0 +1,194 @@
+{
+  "parity": {
+    "argmax_margins": [
+      0.765625,
+      0.1484375,
+      0.3671875,
+      0.7421875,
+      2.2421875,
+      2.140625,
+      2.1875,
+      2.5,
+      2.9453125,
+      3.03125,
+      3.4921875,
+      3.78125,
+      3.6484375,
+      3.921875,
+      4.2265625,
+      4.234375,
+      4.4921875
+    ],
+    "atol": 0.0001,
+    "cross_shape": {
+      "adapter_max_abs": 0.01953125,
+      "scope": "diagnostic only: chunked vs one-shot floating-point computation",
+      "stock_greedy_agreement": true,
+      "stock_max_abs": 0.01953125
+    },
+    "greedy_agreement": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "length": 512,
+    "max_errors": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "probe": "synthetic",
+    "rtol": 0.0001,
+    "same_chunk_stock": [
+      {
+        "greedy_agreement": true,
+        "label": "prefill-128",
+        "max_abs": 0.0,
+        "stock_margin": 0.1015625
+      },
+      {
+        "greedy_agreement": true,
+        "label": "prefill-256",
+        "max_abs": 0.0,
+        "stock_margin": 0.7109375
+      },
+      {
+        "greedy_agreement": true,
+        "label": "prefill-384",
+        "max_abs": 0.0,
+        "stock_margin": 0.3125
+      },
+      {
+        "greedy_agreement": true,
+        "label": "prefill-512",
+        "max_abs": 0.0,
+        "stock_margin": 0.765625
+      },
+      {
+        "greedy_agreement": true,
+        "label": "decode-1",
+        "max_abs": 0.0,
+        "stock_margin": 0.1484375
+      },
+      {
+        "greedy_agreement": true,
+        "label": "decode-2",
+        "max_abs": 0.0,
+        "stock_margin": 0.3671875
+      },
+      {
+        "greedy_agreement": true,
+        "label": "decode-3",
+        "max_abs": 0.0,
+        "stock_margin": 0.7421875
+      },
+      {
+        "greedy_agreement": true,
+        "label": "decode-4",
+        "max_abs": 0.0,
+        "stock_margin": 2.2421875
+      },
+      {
+        "greedy_agreement": true,
+        "label": "decode-5",
+        "max_abs": 0.0,
+        "stock_margin": 2.1484375
+      },
+      {
+        "greedy_agreement": true,
+        "label": "decode-6",
+        "max_abs": 0.0,
+        "stock_margin": 2.1796875
+      },
+      {
+        "greedy_agreement": true,
+        "label": "decode-7",
+        "max_abs": 0.0,
+        "stock_margin": 2.5078125
+      },
+      {
+        "greedy_agreement": true,
+        "label": "decode-8",
+        "max_abs": 0.0,
+        "stock_margin": 2.9375
+      },
+      {
+        "greedy_agreement": true,
+        "label": "decode-9",
+        "max_abs": 0.0,
+        "stock_margin": 3.015625
+      },
+      {
+        "greedy_agreement": true,
+        "label": "decode-10",
+        "max_abs": 0.0,
+        "stock_margin": 3.4921875
+      },
+      {
+        "greedy_agreement": true,
+        "label": "decode-11",
+        "max_abs": 0.0,
+        "stock_margin": 3.78125
+      },
+      {
+        "greedy_agreement": true,
+        "label": "decode-12",
+        "max_abs": 0.0,
+        "stock_margin": 3.6328125
+      },
+      {
+        "greedy_agreement": true,
+        "label": "decode-13",
+        "max_abs": 0.0,
+        "stock_margin": 3.921875
+      },
+      {
+        "greedy_agreement": true,
+        "label": "decode-14",
+        "max_abs": 0.0,
+        "stock_margin": 4.21875
+      },
+      {
+        "greedy_agreement": true,
+        "label": "decode-15",
+        "max_abs": 0.0,
+        "stock_margin": 4.2421875
+      },
+      {
+        "greedy_agreement": true,
+        "label": "decode-16",
+        "max_abs": 0.0,
+        "stock_margin": 4.484375
+      }
+    ]
+  },
+  "weights_sha256": "fdf003e3fecca614b5f4cd70e02a7a0f7e28f9422bcd4fb509dcb025a8a4470a"
+}

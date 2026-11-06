@@ -1,0 +1,8 @@
+{
+  "all_kv_exact": true,
+  "fixture_id": "transfer-paraphrase-8192-281",
+  "plan_sha256": "acc9b8bf76c59b1f1c82746f46e223f8a669bce8f8709a0e25ca25eda8a4b66a",
+  "prompt_max_abs": 0.0,
+  "status": "passed",
+  "weights_sha256": "7c6fdf96c2489792315a773d9f8c5fc279ddf4fd5b4088734c4abf9237e53183"
+}

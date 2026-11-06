@@ -1,0 +1,23 @@
+defaults:
+  W: 2000
+  C: 32
+  B: 1024
+  R: 128
+  k: 4
+  merge: mean_rot
+configs:
+  - {id: full, overrides: {full: true}}
+  - {id: default, overrides: {}}
+  - {id: w1, overrides: {W: 1}}
+  - {id: w10, overrides: {W: 10}}
+  - {id: w100, overrides: {W: 100}}
+  - {id: b256, overrides: {B: 256}}
+  - {id: b4096, overrides: {B: 4096}}
+  - {id: k1, overrides: {k: 1}}
+  - {id: k16, overrides: {k: 16}}
+  - {id: k32, overrides: {k: 32}}
+  - {id: mfirst, overrides: {merge: first}}
+  - {id: mpre, overrides: {merge: mean_pre}}
+  - {id: retrieval_only, overrides: {C: 0}}
+  - {id: compression_only, overrides: {k: 0}}
+  - {id: recent_only, overrides: {C: 0, k: 0}}

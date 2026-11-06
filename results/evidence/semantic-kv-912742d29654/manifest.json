@@ -1,0 +1,52 @@
+{
+  "coverage_sha256": "f2a5dbdae26675c2aacc332210cbcea7c6a16ac5378614d1b9d1e25fb98016e2",
+  "fixture_hash": "bc883625666f449c6098fb5483c39f2b7cbbb906b04f01757ff55dc64b8849b7",
+  "host_sha256": "4a9241e0a0d5a3dd1221dd44fa186aa3b32e9e16ab487321f1057c7f24d373cc",
+  "implementation_hash": "f475033511e781773f3d253a0de0836b96a8598e221578eb3e72b57632f8b24a",
+  "index_manifest": {
+    "block_size": 128,
+    "encoder_device": "cpu",
+    "encoder_dtype": "float32",
+    "encoder_id": "sentence-transformers/all-MiniLM-L6-v2",
+    "encoder_revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "fixture_hash": "bc883625666f449c6098fb5483c39f2b7cbbb906b04f01757ff55dc64b8849b7",
+    "fusion": "RRF constant 60",
+    "generator_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+    "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+    "probe_sha256": "aaaf92343b6abc47a96278b9a52b3ddcf955d3aa0ca13ae827001ba20c93cd21",
+    "query_policy": "original question only; fixed selection for the answer",
+    "recent_window": 2000,
+    "semantic_search": "streamed exact cosine scan; not ANN",
+    "source_sha256": "a8c052553249b5726a9a56bf18e84845bac0756f84c2c7834978f9eef87cf864"
+  },
+  "protocol": "query_replay",
+  "runtime": {
+    "capability": [
+      7,
+      5
+    ],
+    "cuda": "12.4",
+    "cudnn": 90100,
+    "cudnn_sdp": true,
+    "device": "cuda",
+    "flash_sdp": true,
+    "fp16_reduced": true,
+    "gpu": "Tesla T4",
+    "interop_threads": 1,
+    "machine": "x86_64",
+    "math_sdp": true,
+    "math_sdp_reduced": false,
+    "mem_efficient_sdp": true,
+    "numpy": "2.2.4",
+    "os": "Linux-6.6.159+-x86_64-with-glibc2.39",
+    "python": "3.13.16",
+    "tf32": false,
+    "threads": 1,
+    "torch": "2.6.0+cu124",
+    "transformers": "4.51.3"
+  },
+  "scope": "shared exact archive; complete question uses tested policy; fixed retrieved KV stays resident through answer",
+  "script_sha256": "28adeeb129b01e6c1cd35570092d95da6fe20d0e839cf6d587ce9b5a59fe3f41",
+  "stock_sha256": "9a3dbd95d5dc557fb4b4261ca4d394d6169e23b465b1b4c2fb32645a09316d83",
+  "timing_boundary": "initial archive prefill, controller initialization, index construction, query embedding/search, question replay and steady decode are separate"
+}

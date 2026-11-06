@@ -1,0 +1,1347 @@
+{
+  "verification_script_sha256": "614e1682cef6a2608d5e7e2faf1ca8754f3a88a12b78c00d48e8a29db4166333",
+  "report_matrix_verifier_sha256": "0f983c47b03c3a050680158b4932acd028201c51d8f1ea8a7d3d051dd5bae3de",
+  "samples_sha256": "6f154a9b5a3ee131ca7cf401e4be4815bf46a3dd12a2c823275358210a035366",
+  "matrix": {
+    "expected_rows": 264,
+    "observed_rows": 264,
+    "missing_rows": 0
+  },
+  "position_checks": [
+    {
+      "example_id": "niah-4096-0.1-53",
+      "policy": "rare_context",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-4096-0.1-53",
+      "policy": "full_buffered",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-4096-0.1-53",
+      "policy": "semantic_fast",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-4096-0.1-53",
+      "policy": "sink_only",
+      "answer_span_complete": false,
+      "whole_record_complete": false,
+      "correct_code": false
+    },
+    {
+      "example_id": "niah-4096-0.1-53",
+      "policy": "lexical_fast",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-4096-0.1-53",
+      "policy": "rare_fast",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-4096-0.1-71",
+      "policy": "rare_context",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-4096-0.1-71",
+      "policy": "lexical_fast",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-4096-0.1-71",
+      "policy": "rare_fast",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-4096-0.1-71",
+      "policy": "sink_only",
+      "answer_span_complete": false,
+      "whole_record_complete": false,
+      "correct_code": false
+    },
+    {
+      "example_id": "niah-4096-0.1-71",
+      "policy": "semantic_fast",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-4096-0.1-71",
+      "policy": "full_buffered",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-4096-0.5-53",
+      "policy": "lexical_fast",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-4096-0.5-53",
+      "policy": "semantic_fast",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-4096-0.5-53",
+      "policy": "sink_only",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-4096-0.5-53",
+      "policy": "rare_fast",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-4096-0.5-53",
+      "policy": "rare_context",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-4096-0.5-53",
+      "policy": "full_buffered",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-4096-0.5-71",
+      "policy": "lexical_fast",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-4096-0.5-71",
+      "policy": "sink_only",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-4096-0.5-71",
+      "policy": "semantic_fast",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-4096-0.5-71",
+      "policy": "rare_fast",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-4096-0.5-71",
+      "policy": "rare_context",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-4096-0.5-71",
+      "policy": "full_buffered",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-4096-0.9-53",
+      "policy": "rare_context",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-4096-0.9-53",
+      "policy": "sink_only",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-4096-0.9-53",
+      "policy": "rare_fast",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-4096-0.9-53",
+      "policy": "full_buffered",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-4096-0.9-53",
+      "policy": "semantic_fast",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-4096-0.9-53",
+      "policy": "lexical_fast",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-4096-0.9-71",
+      "policy": "semantic_fast",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-4096-0.9-71",
+      "policy": "lexical_fast",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-4096-0.9-71",
+      "policy": "full_buffered",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-4096-0.9-71",
+      "policy": "rare_context",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-4096-0.9-71",
+      "policy": "rare_fast",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-4096-0.9-71",
+      "policy": "sink_only",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-8192-0.1-53",
+      "policy": "semantic_fast",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-8192-0.1-53",
+      "policy": "sink_only",
+      "answer_span_complete": false,
+      "whole_record_complete": false,
+      "correct_code": false
+    },
+    {
+      "example_id": "niah-8192-0.1-53",
+      "policy": "rare_fast",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-8192-0.1-53",
+      "policy": "rare_context",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-8192-0.1-53",
+      "policy": "lexical_fast",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-8192-0.1-53",
+      "policy": "full_buffered",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-8192-0.1-71",
+      "policy": "full_buffered",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-8192-0.1-71",
+      "policy": "rare_fast",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-8192-0.1-71",
+      "policy": "semantic_fast",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-8192-0.1-71",
+      "policy": "lexical_fast",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-8192-0.1-71",
+      "policy": "rare_context",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-8192-0.1-71",
+      "policy": "sink_only",
+      "answer_span_complete": false,
+      "whole_record_complete": false,
+      "correct_code": false
+    },
+    {
+      "example_id": "niah-8192-0.5-53",
+      "policy": "lexical_fast",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-8192-0.5-53",
+      "policy": "rare_context",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-8192-0.5-53",
+      "policy": "sink_only",
+      "answer_span_complete": false,
+      "whole_record_complete": false,
+      "correct_code": false
+    },
+    {
+      "example_id": "niah-8192-0.5-53",
+      "policy": "full_buffered",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-8192-0.5-53",
+      "policy": "semantic_fast",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-8192-0.5-53",
+      "policy": "rare_fast",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-8192-0.5-71",
+      "policy": "rare_context",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-8192-0.5-71",
+      "policy": "semantic_fast",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-8192-0.5-71",
+      "policy": "rare_fast",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-8192-0.5-71",
+      "policy": "full_buffered",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-8192-0.5-71",
+      "policy": "sink_only",
+      "answer_span_complete": false,
+      "whole_record_complete": false,
+      "correct_code": false
+    },
+    {
+      "example_id": "niah-8192-0.5-71",
+      "policy": "lexical_fast",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-8192-0.9-53",
+      "policy": "lexical_fast",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-8192-0.9-53",
+      "policy": "semantic_fast",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-8192-0.9-53",
+      "policy": "full_buffered",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-8192-0.9-53",
+      "policy": "rare_fast",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-8192-0.9-53",
+      "policy": "rare_context",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-8192-0.9-53",
+      "policy": "sink_only",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-8192-0.9-71",
+      "policy": "full_buffered",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-8192-0.9-71",
+      "policy": "rare_fast",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-8192-0.9-71",
+      "policy": "sink_only",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-8192-0.9-71",
+      "policy": "lexical_fast",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-8192-0.9-71",
+      "policy": "rare_context",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-8192-0.9-71",
+      "policy": "semantic_fast",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-16384-0.1-53",
+      "policy": "lexical_fast",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-16384-0.1-53",
+      "policy": "full_buffered",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-16384-0.1-53",
+      "policy": "semantic_fast",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-16384-0.1-53",
+      "policy": "sink_only",
+      "answer_span_complete": false,
+      "whole_record_complete": false,
+      "correct_code": false
+    },
+    {
+      "example_id": "niah-16384-0.1-53",
+      "policy": "rare_fast",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-16384-0.1-53",
+      "policy": "rare_context",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-16384-0.1-71",
+      "policy": "semantic_fast",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-16384-0.1-71",
+      "policy": "rare_fast",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-16384-0.1-71",
+      "policy": "lexical_fast",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-16384-0.1-71",
+      "policy": "full_buffered",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-16384-0.1-71",
+      "policy": "sink_only",
+      "answer_span_complete": false,
+      "whole_record_complete": false,
+      "correct_code": false
+    },
+    {
+      "example_id": "niah-16384-0.1-71",
+      "policy": "rare_context",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-16384-0.5-53",
+      "policy": "semantic_fast",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-16384-0.5-53",
+      "policy": "sink_only",
+      "answer_span_complete": false,
+      "whole_record_complete": false,
+      "correct_code": false
+    },
+    {
+      "example_id": "niah-16384-0.5-53",
+      "policy": "rare_context",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-16384-0.5-53",
+      "policy": "lexical_fast",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-16384-0.5-53",
+      "policy": "rare_fast",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-16384-0.5-53",
+      "policy": "full_buffered",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-16384-0.5-71",
+      "policy": "semantic_fast",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-16384-0.5-71",
+      "policy": "lexical_fast",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-16384-0.5-71",
+      "policy": "rare_fast",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-16384-0.5-71",
+      "policy": "rare_context",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-16384-0.5-71",
+      "policy": "full_buffered",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-16384-0.5-71",
+      "policy": "sink_only",
+      "answer_span_complete": false,
+      "whole_record_complete": false,
+      "correct_code": false
+    },
+    {
+      "example_id": "niah-16384-0.9-53",
+      "policy": "semantic_fast",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-16384-0.9-53",
+      "policy": "rare_fast",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-16384-0.9-53",
+      "policy": "sink_only",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-16384-0.9-53",
+      "policy": "rare_context",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-16384-0.9-53",
+      "policy": "full_buffered",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-16384-0.9-53",
+      "policy": "lexical_fast",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-16384-0.9-71",
+      "policy": "rare_context",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-16384-0.9-71",
+      "policy": "rare_fast",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-16384-0.9-71",
+      "policy": "semantic_fast",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-16384-0.9-71",
+      "policy": "full_buffered",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-16384-0.9-71",
+      "policy": "sink_only",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-16384-0.9-71",
+      "policy": "lexical_fast",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-32768-0.1-53",
+      "policy": "full_buffered",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-32768-0.1-53",
+      "policy": "semantic_fast",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-32768-0.1-53",
+      "policy": "rare_fast",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-32768-0.1-53",
+      "policy": "rare_context",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-32768-0.1-53",
+      "policy": "lexical_fast",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-32768-0.1-53",
+      "policy": "sink_only",
+      "answer_span_complete": false,
+      "whole_record_complete": false,
+      "correct_code": false
+    },
+    {
+      "example_id": "niah-32768-0.1-71",
+      "policy": "rare_fast",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-32768-0.1-71",
+      "policy": "sink_only",
+      "answer_span_complete": false,
+      "whole_record_complete": false,
+      "correct_code": false
+    },
+    {
+      "example_id": "niah-32768-0.1-71",
+      "policy": "lexical_fast",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-32768-0.1-71",
+      "policy": "rare_context",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-32768-0.1-71",
+      "policy": "full_buffered",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-32768-0.1-71",
+      "policy": "semantic_fast",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-32768-0.5-53",
+      "policy": "rare_fast",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": false
+    },
+    {
+      "example_id": "niah-32768-0.5-53",
+      "policy": "full_buffered",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-32768-0.5-53",
+      "policy": "semantic_fast",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": false
+    },
+    {
+      "example_id": "niah-32768-0.5-53",
+      "policy": "lexical_fast",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": false
+    },
+    {
+      "example_id": "niah-32768-0.5-53",
+      "policy": "rare_context",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-32768-0.5-53",
+      "policy": "sink_only",
+      "answer_span_complete": false,
+      "whole_record_complete": false,
+      "correct_code": false
+    },
+    {
+      "example_id": "niah-32768-0.5-71",
+      "policy": "sink_only",
+      "answer_span_complete": false,
+      "whole_record_complete": false,
+      "correct_code": false
+    },
+    {
+      "example_id": "niah-32768-0.5-71",
+      "policy": "lexical_fast",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": false
+    },
+    {
+      "example_id": "niah-32768-0.5-71",
+      "policy": "rare_fast",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": false
+    },
+    {
+      "example_id": "niah-32768-0.5-71",
+      "policy": "semantic_fast",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-32768-0.5-71",
+      "policy": "full_buffered",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-32768-0.5-71",
+      "policy": "rare_context",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-32768-0.9-53",
+      "policy": "full_buffered",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-32768-0.9-53",
+      "policy": "sink_only",
+      "answer_span_complete": false,
+      "whole_record_complete": false,
+      "correct_code": false
+    },
+    {
+      "example_id": "niah-32768-0.9-53",
+      "policy": "rare_context",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": false
+    },
+    {
+      "example_id": "niah-32768-0.9-53",
+      "policy": "rare_fast",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": false
+    },
+    {
+      "example_id": "niah-32768-0.9-53",
+      "policy": "semantic_fast",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": false
+    },
+    {
+      "example_id": "niah-32768-0.9-53",
+      "policy": "lexical_fast",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": false
+    },
+    {
+      "example_id": "niah-32768-0.9-71",
+      "policy": "full_buffered",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "niah-32768-0.9-71",
+      "policy": "semantic_fast",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": false
+    },
+    {
+      "example_id": "niah-32768-0.9-71",
+      "policy": "rare_context",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": false
+    },
+    {
+      "example_id": "niah-32768-0.9-71",
+      "policy": "lexical_fast",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": false
+    },
+    {
+      "example_id": "niah-32768-0.9-71",
+      "policy": "sink_only",
+      "answer_span_complete": false,
+      "whole_record_complete": false,
+      "correct_code": false
+    },
+    {
+      "example_id": "niah-32768-0.9-71",
+      "policy": "rare_fast",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": false
+    },
+    {
+      "example_id": "multikey-32768-0.5-53",
+      "policy": "lexical_fast",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "multikey-32768-0.5-53",
+      "policy": "rare_fast",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": false
+    },
+    {
+      "example_id": "multikey-32768-0.5-53",
+      "policy": "full_buffered",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "multikey-32768-0.5-53",
+      "policy": "semantic_fast",
+      "answer_span_complete": false,
+      "whole_record_complete": false,
+      "correct_code": false
+    },
+    {
+      "example_id": "multikey-32768-0.5-53",
+      "policy": "sink_only",
+      "answer_span_complete": false,
+      "whole_record_complete": false,
+      "correct_code": false
+    },
+    {
+      "example_id": "multikey-32768-0.5-53",
+      "policy": "rare_context",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "multikey-32768-0.5-71",
+      "policy": "semantic_fast",
+      "answer_span_complete": false,
+      "whole_record_complete": false,
+      "correct_code": false
+    },
+    {
+      "example_id": "multikey-32768-0.5-71",
+      "policy": "full_buffered",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "multikey-32768-0.5-71",
+      "policy": "rare_context",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": false
+    },
+    {
+      "example_id": "multikey-32768-0.5-71",
+      "policy": "rare_fast",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": false
+    },
+    {
+      "example_id": "multikey-32768-0.5-71",
+      "policy": "lexical_fast",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": false
+    },
+    {
+      "example_id": "multikey-32768-0.5-71",
+      "policy": "sink_only",
+      "answer_span_complete": false,
+      "whole_record_complete": false,
+      "correct_code": false
+    },
+    {
+      "example_id": "fact-literal-32768-53",
+      "policy": "sink_only",
+      "answer_span_complete": false,
+      "whole_record_complete": false,
+      "correct_code": false
+    },
+    {
+      "example_id": "fact-literal-32768-53",
+      "policy": "rare_context",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": false
+    },
+    {
+      "example_id": "fact-literal-32768-53",
+      "policy": "semantic_fast",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": false
+    },
+    {
+      "example_id": "fact-literal-32768-53",
+      "policy": "lexical_fast",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": false
+    },
+    {
+      "example_id": "fact-literal-32768-53",
+      "policy": "rare_fast",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": false
+    },
+    {
+      "example_id": "fact-literal-32768-53",
+      "policy": "full_buffered",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "fact-paraphrase-32768-53",
+      "policy": "lexical_fast",
+      "answer_span_complete": false,
+      "whole_record_complete": false,
+      "correct_code": false
+    },
+    {
+      "example_id": "fact-paraphrase-32768-53",
+      "policy": "sink_only",
+      "answer_span_complete": false,
+      "whole_record_complete": false,
+      "correct_code": false
+    },
+    {
+      "example_id": "fact-paraphrase-32768-53",
+      "policy": "full_buffered",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "fact-paraphrase-32768-53",
+      "policy": "rare_context",
+      "answer_span_complete": false,
+      "whole_record_complete": false,
+      "correct_code": false
+    },
+    {
+      "example_id": "fact-paraphrase-32768-53",
+      "policy": "semantic_fast",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": false
+    },
+    {
+      "example_id": "fact-paraphrase-32768-53",
+      "policy": "rare_fast",
+      "answer_span_complete": false,
+      "whole_record_complete": false,
+      "correct_code": false
+    },
+    {
+      "example_id": "fact-literal-32768-71",
+      "policy": "semantic_fast",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": false
+    },
+    {
+      "example_id": "fact-literal-32768-71",
+      "policy": "full_buffered",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "fact-literal-32768-71",
+      "policy": "lexical_fast",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "fact-literal-32768-71",
+      "policy": "rare_fast",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": false
+    },
+    {
+      "example_id": "fact-literal-32768-71",
+      "policy": "rare_context",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "fact-literal-32768-71",
+      "policy": "sink_only",
+      "answer_span_complete": false,
+      "whole_record_complete": false,
+      "correct_code": false
+    },
+    {
+      "example_id": "fact-paraphrase-32768-71",
+      "policy": "lexical_fast",
+      "answer_span_complete": false,
+      "whole_record_complete": false,
+      "correct_code": false
+    },
+    {
+      "example_id": "fact-paraphrase-32768-71",
+      "policy": "sink_only",
+      "answer_span_complete": false,
+      "whole_record_complete": false,
+      "correct_code": false
+    },
+    {
+      "example_id": "fact-paraphrase-32768-71",
+      "policy": "rare_fast",
+      "answer_span_complete": false,
+      "whole_record_complete": false,
+      "correct_code": false
+    },
+    {
+      "example_id": "fact-paraphrase-32768-71",
+      "policy": "full_buffered",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": true
+    },
+    {
+      "example_id": "fact-paraphrase-32768-71",
+      "policy": "semantic_fast",
+      "answer_span_complete": true,
+      "whole_record_complete": true,
+      "correct_code": false
+    },
+    {
+      "example_id": "fact-paraphrase-32768-71",
+      "policy": "rare_context",
+      "answer_span_complete": false,
+      "whole_record_complete": false,
+      "correct_code": false
+    }
+  ],
+  "timing_controls": [
+    {
+      "example_id": "niah-4096-0.5-53-forced-0",
+      "forced_argmax_hash_match": true,
+      "timed_call_count_match": true,
+      "all_call_count_match": true
+    },
+    {
+      "example_id": "niah-4096-0.5-53-forced-1",
+      "forced_argmax_hash_match": true,
+      "timed_call_count_match": true,
+      "all_call_count_match": true
+    },
+    {
+      "example_id": "niah-4096-0.5-53-forced-2",
+      "forced_argmax_hash_match": true,
+      "timed_call_count_match": true,
+      "all_call_count_match": true
+    },
+    {
+      "example_id": "niah-8192-0.5-53-forced-0",
+      "forced_argmax_hash_match": true,
+      "timed_call_count_match": true,
+      "all_call_count_match": true
+    },
+    {
+      "example_id": "niah-8192-0.5-53-forced-1",
+      "forced_argmax_hash_match": true,
+      "timed_call_count_match": true,
+      "all_call_count_match": true
+    },
+    {
+      "example_id": "niah-8192-0.5-53-forced-2",
+      "forced_argmax_hash_match": true,
+      "timed_call_count_match": true,
+      "all_call_count_match": true
+    },
+    {
+      "example_id": "niah-16384-0.5-53-forced-0",
+      "forced_argmax_hash_match": true,
+      "timed_call_count_match": true,
+      "all_call_count_match": true
+    },
+    {
+      "example_id": "niah-16384-0.5-53-forced-1",
+      "forced_argmax_hash_match": true,
+      "timed_call_count_match": true,
+      "all_call_count_match": true
+    },
+    {
+      "example_id": "niah-16384-0.5-53-forced-2",
+      "forced_argmax_hash_match": true,
+      "timed_call_count_match": true,
+      "all_call_count_match": true
+    },
+    {
+      "example_id": "niah-32768-0.5-53-forced-0",
+      "forced_argmax_hash_match": true,
+      "timed_call_count_match": true,
+      "all_call_count_match": true
+    },
+    {
+      "example_id": "niah-32768-0.5-53-forced-1",
+      "forced_argmax_hash_match": true,
+      "timed_call_count_match": true,
+      "all_call_count_match": true
+    },
+    {
+      "example_id": "niah-32768-0.5-53-forced-2",
+      "forced_argmax_hash_match": true,
+      "timed_call_count_match": true,
+      "all_call_count_match": true
+    }
+  ],
+  "scope": "Position metadata and forced-continuation argmax hashes; not tensor-content, full-logit or free-generation equivalence."
+}

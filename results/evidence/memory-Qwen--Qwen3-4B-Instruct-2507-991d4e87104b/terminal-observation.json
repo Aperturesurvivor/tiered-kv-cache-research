@@ -1,0 +1,12 @@
+{
+  "backend_boot_id": "f2a4a03a-a73e-4bca-9557-f756da7da01c",
+  "controller_create_time": 1793820298.26,
+  "controller_pid": 173086,
+  "controller_pid_exists": false,
+  "controller_shell_wait_returncode": 0,
+  "observation_epoch": 1793832343.6052272,
+  "state_sha256": "517a677e9dce82534ff479b3697652d5fb490b7973d005c583802de820d8cc2b",
+  "worker_create_time": 1793820333.5,
+  "worker_pid": 173261,
+  "worker_pid_exists": false
+}

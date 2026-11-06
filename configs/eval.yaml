@@ -1,0 +1,15 @@
+pilot:
+  budgets: [8192, 32768]
+  depths: [0.1, 0.5, 0.9]
+  seeds: [11]
+  reports_per_band: 1
+  latency_budgets: [8192, 16384, 32768]
+  latency_trials: 3
+confirm:
+  budgets: [8192, 32768]
+  depths: [0.05, 0.25, 0.5, 0.75, 0.95]
+  seeds: [11, 23, 37]
+  reports_per_band: 6
+  latency_budgets: [1024, 4096, 8192, 16384, 32768]
+  latency_trials: 3
+online-smoke: {tokens: 2048, checkpoint: 1024}

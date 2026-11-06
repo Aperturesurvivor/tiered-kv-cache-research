@@ -1,0 +1,12 @@
+{
+  "observed_terminal_time": 1793739074.4218764,
+  "supervisor_pid": 197933,
+  "supervisor_create_time": 1793738817.93,
+  "supervisor_returncode": 0,
+  "worker_pid": 197944,
+  "worker_create_time": 1793738818.6,
+  "archive_pid": 176760,
+  "archive_popen_poll": null,
+  "archive_status": "running",
+  "source": "Direct Colab terminal Popen.poll and psutil observation after completion."
+}

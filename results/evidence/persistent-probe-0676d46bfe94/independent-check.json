@@ -1,0 +1,70 @@
+{
+  "verification_script_sha256": "284f303bf32fb5e29fd56df127537234d3e203ed055b441afe1b538adfc450e1",
+  "source_revision": "23964ff04123671c230249d7b58ebe7403616b0f",
+  "raw_files_sha256": {
+    "manifest.json": "b3207afdf498eac6b18d6f0ec9c5148f422d57728ce084abcb98d58cc3963797",
+    "complete.json": "bb220a59a6adb5e8739d6fd9716edfbd541916aa1743df5f6c4350614f11ce08",
+    "fixture.json": "89723d9cd5c242f7516454baaa32d107d47162c8b7322935a01acd57a4a19677",
+    "samples.jsonl": "f07965053dc8679a3ddc5bfaf8152662da330930ce85b2464733d74607bb132d",
+    "validation.json": "5da5ae73339901553f313d9b79bacdfc27ac21ee16cf1668eec26cd6f640dc4b"
+  },
+  "source_files_sha256": {
+    "complete.json": "347390daab17fefc404c683a390cb86ac2c76472b79c80ab6397a0a630e25e76",
+    "fixtures.json": "3b5ba000652ba1f3166abb973fc52f40bb323cb940ada2d98a9177ad0ff4b9b1",
+    "manifest.json": "26dad00a0d5cbc46c47f69f3da9f08c480f8be73733356c432e1471e6fdfbbba",
+    "samples.jsonl": "9409bfc2d631e7610d047a1b402429f769ebb41eb9b4b1eccd6200f4c95ca22e",
+    "validation.json": "17620aa40be655fb3db766a3ef138c6355345f5221c2735c71e53dc128985c90"
+  },
+  "query_tokens": 24,
+  "payloads": {
+    "all_kv_retrieval": {
+      "sha256": "d23122069a3af3be1a3b96b515f0ff6d5c6e85ba619b54ee12f028bae466d43c",
+      "size": 14585984,
+      "shape": [
+        24,
+        151936
+      ]
+    },
+    "rare_context": {
+      "sha256": "e63257cc4269015ff61b7a51f0a089a9abd147f04fbdaed2c05278a6de27efad",
+      "size": 14585984,
+      "shape": [
+        24,
+        151936
+      ]
+    },
+    "stock_hf": {
+      "sha256": "d23122069a3af3be1a3b96b515f0ff6d5c6e85ba619b54ee12f028bae466d43c",
+      "size": 14585984,
+      "shape": [
+        24,
+        151936
+      ]
+    }
+  },
+  "controls": [
+    {
+      "policy": "rare_context",
+      "layers_audited": 28,
+      "archived_entries_per_layer": 2515,
+      "whole_fact_present": true,
+      "full_chronological_coverage": false,
+      "independent_question_max_abs": 22.4765625,
+      "question_greedy_agreements": 15,
+      "generation_token_ids_equal_stock": false,
+      "correct_code": false
+    },
+    {
+      "policy": "all_kv_retrieval",
+      "layers_audited": 28,
+      "archived_entries_per_layer": 31718,
+      "whole_fact_present": true,
+      "full_chronological_coverage": true,
+      "independent_question_max_abs": 0.0,
+      "question_greedy_agreements": 24,
+      "generation_token_ids_equal_stock": true,
+      "correct_code": true
+    }
+  ],
+  "scope": "Independent source, tokenizer, scoring and saved-logit verification; tensor-content equality is checked in the original CUDA trace, not rerun locally."
+}

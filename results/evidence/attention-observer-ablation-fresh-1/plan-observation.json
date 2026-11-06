@@ -1,0 +1,17 @@
+{
+  "plan_pid": 28845,
+  "plan_create_time": 1793787381.15,
+  "shell_wait_returncode": 0,
+  "status": "plan_passed",
+  "boot_id": "f2a4a03a-a73e-4bca-9557-f756da7da01c",
+  "verified_members": 74,
+  "bundle_sha256": "259fba2a50b0f60a15b7d1492f85fb4738f4a0dff96bcd1e65708f0f91ef1ad5",
+  "controller_sha256": "3fcc70b48951ad626500e8fcb23cab6aa83b331691697b968e53b09def95e121",
+  "predecessor_receipt_sha256": "19b3b8e448d5245a5f8a3d4a49c626474140f547b2b946fb8adfc639b059c4a3",
+  "predecessor_state_sha256": "b888bf57128045e51022cd44243f57835e021a2b4dcb961684f6ee4ae41690d6",
+  "plan_sha256": "dd31e825291215a5e35db43d11e79ae6de5b7a23e725f45e132066f96a943a29",
+  "plan_log_sha256": "d1b25dd948d58da3156aa87d438b01112630f2989de9a3f45b3cc35a48dc01cf",
+  "plan_log_drive_path": "tiered-kv-results/observer-ablation-preflight-fresh-1/plan.log",
+  "disk_guard_bytes": 9761886720,
+  "scope": "plan only; no experiment execution"
+}

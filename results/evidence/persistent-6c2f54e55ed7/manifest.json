@@ -1,0 +1,38 @@
+{
+  "cache_conditions": [
+    "warm",
+    "advised_cold_KV_only"
+  ],
+  "fixture_sha256": "6b6340c703f4f264f06e53c5b2f015669e0a7f7c3a5f3d24cf5662d768fa3efd",
+  "index_cache": "warm metadata; no encoder needed for exact-identifier lookup",
+  "index_sha256": "98dea8e79913a6b9c48a415096e8308ba5d7e7508807ddc2021d3d7118c17e28",
+  "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "runtime": {
+    "capability": [
+      7,
+      5
+    ],
+    "cuda": "12.4",
+    "cudnn": 90100,
+    "cudnn_sdp": true,
+    "device": "cuda",
+    "flash_sdp": true,
+    "fp16_reduced": true,
+    "gpu": "Tesla T4",
+    "interop_threads": 1,
+    "machine": "x86_64",
+    "math_sdp": true,
+    "math_sdp_reduced": false,
+    "mem_efficient_sdp": true,
+    "numpy": "2.2.4",
+    "os": "Linux-6.6.159+-x86_64-with-glibc2.39",
+    "python": "3.13.16",
+    "tf32": false,
+    "threads": 1,
+    "torch": "2.6.0+cu124",
+    "transformers": "4.51.3"
+  },
+  "scope": "three distinct cold facts in consecutive questions; archive mounted once per session",
+  "script_sha256": "281fe332656fa5bd638daa4cde25757c11cb3dc6ca2c625d926b8e8e98dfc07d",
+  "source": "c34ae62f98c06bf1d14af674994d04f4594da12c604a072753de768c933f79ec"
+}

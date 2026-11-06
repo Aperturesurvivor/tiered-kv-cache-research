@@ -1,0 +1,238 @@
+{
+  "context_scaling": [],
+  "failures": [],
+  "fixtures_sha256": "b3517f5370dee04f858efa5a7149b0c9396e31179e2ee5677a5b059380531481",
+  "latency": [],
+  "latency_trial_ranges": [],
+  "limitations": [
+    "one run is not cross-model validation",
+    "token timings within a trial are correlated",
+    "quality cases reuse some target IDs; case counts are not independent factual coverage",
+    "decode timing excludes index lookup, archive mounting and prefill; separate costs remain visible",
+    "stock HF is the practical no-disk full-cache speed baseline",
+    "online ingestion starts empty and feeds every token serially; its full baseline also writes KV to disk",
+    "online text indices and fixture tokens were prepared offline; incremental indexing and constant whole-process RAM are not demonstrated",
+    "online cases are different fixtures, not repeated timing trials; stored KV is exact for each policy trajectory, not necessarily equal to dense-ingestion KV"
+  ],
+  "manifest_sha256": "a49e655f2be2a762d7f340cc93d6ee3b5b9e33a54e650f6b3df2948724820d58",
+  "matrix_coverage": {
+    "expected_rows": 9,
+    "missing_rows": 0,
+    "observed_rows": 9
+  },
+  "online_ingestion": [
+    {
+      "active_KV_entries": 2004,
+      "archive_tokens": 3938,
+      "checkpoint_s": 3.328153991998988,
+      "cuda_ingestion_peak_GiB": 1.3696751594543457,
+      "cuda_query_decode_peak_GiB": 1.370241641998291,
+      "example_id": "niah-4096-0.1-83",
+      "ingestion_s": 306.1686395050019,
+      "ingestion_tokens_s": 12.862192569319838,
+      "logical_write_MiB": 434.4375,
+      "policy": "sink_only",
+      "retrieval_activation_position": 3938
+    },
+    {
+      "active_KV_entries": 2516,
+      "archive_tokens": 3938,
+      "checkpoint_s": 3.269158343999152,
+      "cuda_ingestion_peak_GiB": 1.3696751594543457,
+      "cuda_query_decode_peak_GiB": 1.4307069778442383,
+      "example_id": "niah-4096-0.1-83",
+      "ingestion_s": 307.309451213001,
+      "ingestion_tokens_s": 12.81444480296999,
+      "logical_write_MiB": 434.875,
+      "policy": "rare_context",
+      "retrieval_activation_position": 3938
+    },
+    {
+      "active_KV_entries": 3976,
+      "archive_tokens": 3938,
+      "checkpoint_s": 2.4019218899993575,
+      "cuda_ingestion_peak_GiB": 1.5869011878967285,
+      "cuda_query_decode_peak_GiB": 1.5909428596496582,
+      "example_id": "niah-4096-0.1-83",
+      "ingestion_s": 195.8979688369982,
+      "ingestion_tokens_s": 20.1023013325713,
+      "logical_write_MiB": 434.875,
+      "policy": "full_buffered",
+      "retrieval_activation_position": null
+    },
+    {
+      "active_KV_entries": 8072,
+      "archive_tokens": 8034,
+      "checkpoint_s": 2.713510950001364,
+      "cuda_ingestion_peak_GiB": 2.0562729835510254,
+      "cuda_query_decode_peak_GiB": 2.06016206741333,
+      "example_id": "niah-8192-0.1-83",
+      "ingestion_s": 422.3942508069995,
+      "ingestion_tokens_s": 19.0201452426276,
+      "logical_write_MiB": 882.875,
+      "policy": "full_buffered",
+      "retrieval_activation_position": null
+    },
+    {
+      "active_KV_entries": 2516,
+      "archive_tokens": 8034,
+      "checkpoint_s": 4.64852358799908,
+      "cuda_ingestion_peak_GiB": 1.3723225593566895,
+      "cuda_query_decode_peak_GiB": 1.4329042434692383,
+      "example_id": "niah-8192-0.1-83",
+      "ingestion_s": 647.8145812799994,
+      "ingestion_tokens_s": 12.40169676966183,
+      "logical_write_MiB": 882.875,
+      "policy": "rare_context",
+      "retrieval_activation_position": 8034
+    },
+    {
+      "active_KV_entries": 2004,
+      "archive_tokens": 8034,
+      "checkpoint_s": 4.6222337239996705,
+      "cuda_ingestion_peak_GiB": 1.3723225593566895,
+      "cuda_query_decode_peak_GiB": 1.3728890419006348,
+      "example_id": "niah-8192-0.1-83",
+      "ingestion_s": 657.4596513270008,
+      "ingestion_tokens_s": 12.219761294528672,
+      "logical_write_MiB": 882.765625,
+      "policy": "sink_only",
+      "retrieval_activation_position": 8034
+    },
+    {
+      "active_KV_entries": 2004,
+      "archive_tokens": 8034,
+      "checkpoint_s": 4.586127516999113,
+      "cuda_ingestion_peak_GiB": 1.3696751594543457,
+      "cuda_query_decode_peak_GiB": 1.370241641998291,
+      "example_id": "multikey-8192-0.5-83",
+      "ingestion_s": 657.4229780520036,
+      "ingestion_tokens_s": 12.22044295410145,
+      "logical_write_MiB": 884.734375,
+      "policy": "sink_only",
+      "retrieval_activation_position": 8034
+    },
+    {
+      "active_KV_entries": 2388,
+      "archive_tokens": 8034,
+      "checkpoint_s": 4.964032858002611,
+      "cuda_ingestion_peak_GiB": 1.3696751594543457,
+      "cuda_query_decode_peak_GiB": 1.4155702590942383,
+      "example_id": "multikey-8192-0.5-83",
+      "ingestion_s": 655.588249796001,
+      "ingestion_tokens_s": 12.254643066741869,
+      "logical_write_MiB": 882.875,
+      "policy": "rare_context",
+      "retrieval_activation_position": 8034
+    },
+    {
+      "active_KV_entries": 8071,
+      "archive_tokens": 8034,
+      "checkpoint_s": 4.176207630000135,
+      "cuda_ingestion_peak_GiB": 2.0562729835510254,
+      "cuda_query_decode_peak_GiB": 2.0600857734680176,
+      "example_id": "multikey-8192-0.5-83",
+      "ingestion_s": 419.6412903370001,
+      "ingestion_tokens_s": 19.14492254455742,
+      "logical_write_MiB": 882.765625,
+      "policy": "full_buffered",
+      "retrieval_activation_position": null
+    }
+  ],
+  "quality": [
+    {
+      "cases": 3,
+      "code_present": 2,
+      "cold_cases": 3,
+      "cold_code_present": 2,
+      "full_correct_cases": 2,
+      "full_correct_retained": 2,
+      "oracle": false,
+      "policy": "full_buffered",
+      "strict_correct": 2
+    },
+    {
+      "cases": 3,
+      "code_present": 3,
+      "cold_cases": 3,
+      "cold_code_present": 3,
+      "full_correct_cases": 2,
+      "full_correct_retained": 2,
+      "oracle": false,
+      "policy": "rare_context",
+      "strict_correct": 3
+    },
+    {
+      "cases": 3,
+      "code_present": 0,
+      "cold_cases": 3,
+      "cold_code_present": 0,
+      "full_correct_cases": 2,
+      "full_correct_retained": 0,
+      "oracle": false,
+      "policy": "sink_only",
+      "strict_correct": 0
+    }
+  ],
+  "quality_by_budget": [
+    {
+      "budget": 4096,
+      "cases": 1,
+      "code_present": 1,
+      "full_correct_cases": 1,
+      "full_correct_retained": 1,
+      "policy": "full_buffered",
+      "strict_correct": 1
+    },
+    {
+      "budget": 8192,
+      "cases": 2,
+      "code_present": 1,
+      "full_correct_cases": 1,
+      "full_correct_retained": 1,
+      "policy": "full_buffered",
+      "strict_correct": 1
+    },
+    {
+      "budget": 4096,
+      "cases": 1,
+      "code_present": 1,
+      "full_correct_cases": 1,
+      "full_correct_retained": 1,
+      "policy": "rare_context",
+      "strict_correct": 1
+    },
+    {
+      "budget": 8192,
+      "cases": 2,
+      "code_present": 2,
+      "full_correct_cases": 1,
+      "full_correct_retained": 1,
+      "policy": "rare_context",
+      "strict_correct": 2
+    },
+    {
+      "budget": 4096,
+      "cases": 1,
+      "code_present": 0,
+      "full_correct_cases": 1,
+      "full_correct_retained": 0,
+      "policy": "sink_only",
+      "strict_correct": 0
+    },
+    {
+      "budget": 8192,
+      "cases": 2,
+      "code_present": 0,
+      "full_correct_cases": 1,
+      "full_correct_retained": 0,
+      "policy": "sink_only",
+      "strict_correct": 0
+    }
+  ],
+  "samples_sha256": "da15d6a18d41b52d5bac2b7235a3ab6fc511d0b216f235751b46f0aa4948c3d7",
+  "source_rows": 9,
+  "status": "complete_run",
+  "successful_rows": 9,
+  "summaries": []
+}
